@@ -3,13 +3,12 @@
 
 用法：
   .venv/bin/python scripts/prepare_data.py en     # LibriSpeech test-clean（读 data/_cache/test-clean.tar.gz）
-  .venv/bin/python scripts/prepare_data.py zh     # AISHELL-1 test（读 data/_cache/aishell1-test/，需用户先放好）
+  .venv/bin/python scripts/prepare_data.py zh     # FLEURS 中文 test（读 data/_cache/fleurs-zh/，需用户先放好）
 
 口径：随机 N 条，seed=42（datasets.yaml），时长限 2–15s，16kHz 原样落盘（不重采样）。
 en 抽完默认删除 346MB 缓存 tarball（磁盘紧张；--keep-cache 保留）。
-zh 源（用户手动下载，二选一）：
-  - modelscope: .venv/bin/pip install modelscope && modelscope download --dataset modelscope/AISHELL-1 --local_dir data/_cache/aishell1-full
-  - 任意 AISHELL-1 test 布局：data/_cache/aishell1-test/ 内含 wav/**.wav(+).trans.txt 即可
+zh 源（用户手动下载 2 个文件到 data/_cache/fleurs-zh/，URL 见 datasets.yaml）：
+  test.tar.gz (525MB, 音频) + test.tsv (0.5MB, 转写)
 """
 import argparse
 import io
@@ -104,54 +103,61 @@ def prep_en(args) -> None:
         print(f"已删缓存 {tarball}（--keep-cache 可保留）")
 
 
-def find_aishell_root(base: Path) -> Path:
-    """定位含 wav/ 的 test 目录，兼容多种解压布局。"""
-    hits = [p for p in base.rglob("wav") if p.is_dir() and "test" in str(p).lower()]
-    if not hits:
-        raise SystemExit(f"{base} 下找不到 AISHELL-1 test 的 wav/ 目录")
-    return hits[0].parent
-
-
 def prep_zh(args) -> None:
+    """FLEURS cmn_hans_cn test：test.tar.gz 内 *.wav + test.tsv（制表符分列）。"""
     import soundfile as sf
 
-    base = ROOT / "data/_cache/aishell1-test"
-    if not base.exists():
-        raise SystemExit(f"缺 {base}（用户手动下载 AISHELL-1 test，见文件头注释）")
-    test_dir = find_aishell_root(base)
-    print(f"AISHELL test 根目录: {test_dir}")
+    base = ROOT / "data/_cache/fleurs-zh"
+    tsv, tgz = base / "test.tsv", base / "test.tar.gz"
+    if not (tsv.exists() and tgz.exists()):
+        raise SystemExit(f"缺 {tsv} / {tgz}（用户手动下载，URL 见 datasets.yaml）")
 
-    # transcript：test 目录下 *.txt，BAC009S0002W0122 大家好 这种格式
+    # tsv 无表头：一列是 xxx.wav 文件名，文本列取其余列中 CJK 最多的
     texts = {}
-    for txt in test_dir.rglob("*.txt"):
-        for line in txt.read_text(encoding="utf-8", errors="ignore").splitlines():
-            parts = line.strip().split(None, 1)
-            if len(parts) == 2 and parts[0].startswith("BAC"):
-                texts[parts[0]] = parts[1]
-
-    candidates = []
-    for wav in test_dir.rglob("*.wav"):
-        uid = wav.stem
-        if uid not in texts:
+    for line in tsv.read_text(encoding="utf-8").splitlines():
+        cols = line.split("\t")
+        wav_idx = next((i for i, c in enumerate(cols) if c.strip().endswith(".wav")), None)
+        if wav_idx is None:
             continue
-        info = sf.info(str(wav))
-        if info.samplerate == SR:
-            candidates.append((uid, info.duration, wav))
-    chosen = pick(candidates, N)
+        others = [c for i, c in enumerate(cols) if i != wav_idx]
+        text = max(others, key=lambda c: len(re.findall(r"[一-鿿]", c)), default="")
+        if text.strip():
+            texts[Path(cols[wav_idx].strip()).stem] = text.strip()
+    print(f"tsv 转写: {len(texts)} 条")
 
-    out = ROOT / "data/aishell1-test"
-    manifest = []
-    for i, (uid, dur, src) in enumerate(chosen):
-        data, sr = sf.read(str(src), dtype="float32")
-        check_sr(sr, uid)
-        wav = out / f"zh_{i:03d}.wav"
-        write_wav(wav, data, sr)
-        manifest.append(
-            dict(id=wav.stem, lang="zh", wav=str(wav.relative_to(ROOT)),
-                 text=texts[uid], text_norm=normalize(texts[uid], "zh"),
-                 duration=round(dur, 2), source_uid=uid)
-        )
+    with tarfile.open(tgz) as tf:
+        durations = {}
+        for m in tf:
+            if m.name.endswith(".wav"):
+                info = sf.info(io.BytesIO(tf.extractfile(m).read()))
+                durations[Path(m.name).stem] = (info.duration, info.samplerate)
+        candidates = [
+            (uid, dur, None)
+            for uid, (dur, sr) in durations.items()
+            if uid in texts and sr == SR
+        ]
+        chosen = pick(candidates, N)
+        chosen_ids = {uid for uid, _, _ in chosen}
+
+        out = ROOT / "data/fleurs-zh"
+        manifest = []
+        for m in tf:
+            uid = Path(m.name).stem
+            if not (m.name.endswith(".wav") and uid in chosen_ids):
+                continue
+            data, sr = sf.read(io.BytesIO(tf.extractfile(m).read()), dtype="float32")
+            check_sr(sr, uid)
+            wav = out / f"zh_{len(manifest):03d}.wav"
+            write_wav(wav, data, sr)
+            manifest.append(
+                dict(id=wav.stem, lang="zh", wav=str(wav.relative_to(ROOT)),
+                     text=texts[uid], text_norm=normalize(texts[uid], "zh"),
+                     duration=round(len(data) / sr, 2), source_uid=uid)
+            )
     write_manifest(out, manifest)
+    if not args.keep_cache:
+        tgz.unlink()
+        print(f"已删缓存 {tgz}（--keep-cache 可保留）")
 
 
 def write_manifest(out: Path, manifest: list) -> None:

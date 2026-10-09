@@ -1,19 +1,23 @@
 # 数据集注册表。采样策略：随机 N 条，固定 seed=42 保证可复现。
 seed: 42
 asr:
-  aishell1-test:
+  # zh 源 2026-10-09 由 AISHELL-1 改为 FLEURS 中文 test（用户拍板：AISHELL 太大）
+  fleurs-zh:
     lang: zh
     n: 30
-    # AISHELL-1 test 子集；modelscope 镜像（国内可达），失败回退 HF
-    source: modelscope
-    ms_dataset: AISHELL-1/test  # scripts/prepare_data.py 内解析
+    source: hf-mirror
+    # 手动下载 2 个文件到 data/_cache/fleurs-zh/：
+    #   https://hf-mirror.com/datasets/google/fleurs/resolve/main/data/cmn_hans_cn/audio/test.tar.gz  (525MB)
+    #   https://hf-mirror.com/datasets/google/fleurs/resolve/main/data/cmn_hans_cn/test.tsv           (0.5MB)
+    config: cmn_hans_cn
   librispeech-test-clean:
     lang: en
     n: 30
     source: openslr
     url: https://www.openslr.org/resources/12/test-clean.tar.gz  # ~346MB, 抽取 30 条后清理
+  # P2 顺延（2026-10-09）；届时与 fleurs-zh 同法手动下载 ja_jp/ko_kr/yue_hant_hk
   fleurs-ja: {lang: ja, n: 10, source: hf, hf_dataset: google/fleurs, hf_config: ja_jp, split: test}
   fleurs-ko: {lang: ko, n: 10, source: hf, hf_dataset: google/fleurs, hf_config: ko_kr, split: test}
   fleurs-yue: {lang: yue, n: 10, source: hf, hf_dataset: google/fleurs, hf_config: yue_hant_hk, split: test}
 tts:
-  texts: bench/data/tts_texts.json  # P3 编写，固定 30 条
+  texts: bench/data/tts_texts.json  # 固定 30 条：zh12/en12/ja2/ko2/yue2

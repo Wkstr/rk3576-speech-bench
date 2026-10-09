@@ -34,5 +34,8 @@ for LANG in en zh; do
   run "zipformer-large__cpu__${LANG}" cpu "$M" \
     "$L/cpu/encoder-epoch-99-avg-1.onnx" "$L/cpu/decoder-epoch-99-avg-1.onnx" \
     "$L/cpu/joiner-epoch-99-avg-1.onnx" "$L/cpu/tokens.txt"
+  # large NPU（自转 chunk32，2026-10-09 转入）
+  run "zipformer-large__rknn-2.3.2__${LANG}" rknn "$M" \
+    "$L/rknn-2.3.2/encoder.rknn" "$L/rknn-2.3.2/decoder.rknn" "$L/rknn-2.3.2/joiner.rknn" "$L/rknn-2.3.2/tokens.txt"
 done
 echo "全部完成: results/asr/"

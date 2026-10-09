@@ -52,6 +52,8 @@ def main() -> None:
 
     for task in ("asr", "tts"):
         for name, m in (cfg.get(task) or {}).items():
+            if m.get("enabled") is False:  # 移出当前范围的模型
+                continue
             for variant, v in m["variants"].items():
                 if wanted and f"{name}:{variant}" not in wanted:
                     continue

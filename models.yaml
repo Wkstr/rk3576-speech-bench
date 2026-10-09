@@ -23,11 +23,14 @@ asr:
     streaming: true
     languages: [zh, en]
     variants:
-      rknn:
-        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-rk3576-streaming-zipformer-bilingual-zh-en-2023-02-20.tar.bz2
+      # 官方版未下载（#2861 叠词问题暂缓）；正式 NPU 版 = 自转 rknn-2.3.2（chunk32 变体）
+      rknn-2.3.2:
+        note: self-converted via scripts/convert_rknn.py --target-platform rk3576
       cpu:
         url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20.tar.bz2
+  # SenseVoice 移出当前范围（用户 2026-10-09 拍板，后续需要再补）
   sensevoice:
+    enabled: false
     desc: SenseVoice-Small 中英日韩粤 (RKNN 为 20s 定长版, 需 VAD 分段)
     streaming: false
     languages: [zh, en, ja, ko, yue]
@@ -44,11 +47,47 @@ asr:
       cpu:
         url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-base.tar.bz2
 
-# VAD，SenseVoice 长音频分段用
+# VAD，SenseVoice 长音频分段用（P2 恢复时再用）
 aux:
   silero-vad:
     url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx
     dest: models/silero_vad.onnx
+  # Matcha 声码器（散文件，直接放 models/vocos/）
+  vocos:
+    url: https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/vocos-22khz-univ.onnx
+    dest: models/vocos/vocos-22khz-univ.onnx
 
-# P3 填入 TTS 条目
-tts: {}
+# TTS：全部先跑 CPU（fp32）；RKNN 化尝试在 P4。Matcha 需搭配 aux.vocos 声码器。
+# MMS 官方 sherpa 只打包了 eng（无 zh/ja/ko/yue），只作 en 地板。
+tts:
+  piper-zh-huayan:
+    desc: Piper VITS zh 华颜 medium（CPU 基线）
+    languages: [zh]
+    variants:
+      cpu:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-zh_CN-huayan-medium.tar.bz2
+  piper-en-ryan:
+    desc: Piper VITS en ryan medium（CPU 基线）
+    languages: [en]
+    variants:
+      cpu:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-ryan-medium.tar.bz2
+  matcha-zh-en:
+    desc: Matcha 中英双语 + vocos 声码器（RKNN 主力候选，先 CPU）
+    languages: [zh, en]
+    needs: [vocos]
+    variants:
+      cpu:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/matcha-icefall-zh-en.tar.bz2
+  kokoro:
+    desc: Kokoro-82M 多语 v1.1（CPU 先行，NPU 进阶）
+    languages: [zh, en, ja, ko, yue]
+    variants:
+      cpu:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_1.tar.bz2
+  mms-eng:
+    desc: MMS-TTS en（多语言地板，sherpa 未打包 zh）
+    languages: [en]
+    variants:
+      cpu:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-mms-eng.tar.bz2
