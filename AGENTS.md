@@ -14,15 +14,11 @@
 - `models/_cache/` 里可能有中断的残留 tarball，同名覆盖或删除均可
 - 唯一例外：`setup/install.sh` 里的 pip 安装和 librknnrt 下载已由脚本完成，不算手动范围
 
-### 当前需要（解 P1 阻塞）
+### P1 阻塞已解（2026-10-09）
 
-| 文件 | 来源 | 放到 |
-|---|---|---|
-| 自转 zipformer small RKNN（encoder/decoder/joiner.rknn） | 用户在自己 x86 PC 上转（步骤见会话/toolkit2 2.3.2 x86_64 + `scripts/convert_rknn.py`） | `models/zipformer-small-bilingual/rknn-2.3.2/` |
+自转 zipformer small RKNN（toolkit2 2.3.2，chunk96 变体，fp16）板上验证通过：5/5 测试音频输出正确，RTF 0.15–0.19（CPU fp32 基线 0.25）。正式 NPU 版 = `models/zipformer-small-bilingual/rknn-2.3.2/`；官方 `rknn/` 版（#2861，输出全 blank）仅留作报告对照。CPU 对照须用 `cpu/96/` 子目录同 chunk 口径。决策与验证细节：`.agents/notes/implemented/process/2026-10-09-zipformer-rknn-self-conversion.md`。
 
-背景：官方 rk3576 zipformer RKNN 模型在 RK3576 上输出异常（small 全空/large 叠词，sherpa-onnx#2861），系 toolkit 2.1.0 Beta 期转换；改用 2.3.2 重转。
-
-已到位：librknnrt 2.3.2 / zipformer small CPU / SenseVoice RKNN / silero VAD。librknnrt 2.1.0 不需要（#2861 证实换版本无效）。arm64 版 toolkit2 wheel 在 `~/.local/rknn/wheels/`（板上转换方案已弃用，留作后备）。
+已到位：librknnrt 2.3.2 / zipformer small CPU + 自转 RKNN / SenseVoice RKNN / silero VAD。librknnrt 2.1.0 不需要（#2861 证实换版本无效）。arm64 版 toolkit2 wheel 在 `~/.local/rknn/wheels/`（板上转换方案已弃用，留作后备）。
 
 ### 可提前下（P1 后半程 ~ P2 用）
 

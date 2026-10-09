@@ -55,6 +55,9 @@ def main() -> None:
             for variant, v in m["variants"].items():
                 if wanted and f"{name}:{variant}" not in wanted:
                     continue
+                if "url" not in v:  # 自转变体无下载源，仅登记
+                    print(f"[skip] {name}:{variant} — {v.get('note', 'self-converted')}")
+                    continue
                 print(f"[get] {name}:{variant} — {m['desc']}")
                 install_variant(name, variant, v["url"])
 

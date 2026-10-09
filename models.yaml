@@ -1,4 +1,6 @@
-# 模型注册表。variant: rknn = NPU(int8 官方转换), cpu = onnxruntime fp32 基线。
+# 模型注册表。variant: rknn = NPU 官方转换, rknn-2.3.2 = 自转(toolkit2 2.3.2), cpu = onnxruntime fp32 基线。
+# 官方 RKNN zipformer 实为 fp16（非 int8）且在 RK3576 上输出异常（sherpa-onnx#2861）；
+# zipformer 的正式 NPU 版是自转 rknn-2.3.2，官方 rknn 仅留作对照。无 url 的变体为手动产物，下载器跳过。
 # url 中 rk3576 与 rk3588 模型按 sherpa-onnx 官方说明可互换使用（同 RKNPU2 代）。
 asr:
   zipformer-small-bilingual:
@@ -6,8 +8,14 @@ asr:
     streaming: true
     languages: [zh, en]
     variants:
+      # 官方版 RK3576 上输出全 blank（#2861），仅留作报告对照
       rknn:
         url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-rk3576-streaming-zipformer-small-bilingual-zh-en-2023-02-16.tar.bz2
+      # 正式 NPU 版：用户 x86 PC 自转（toolkit2 2.3.2 + scripts/convert_rknn.py，fp16，
+      # 输入为 cpu/96/ 的 chunk96 fp32 ONNX），板上 5/5 冒烟通过，RTF 0.15–0.19。
+      # CPU 对照须用 cpu/96/ 子目录保持同 chunk 口径。
+      rknn-2.3.2:
+        note: self-converted via scripts/convert_rknn.py --target-platform rk3576
       cpu:
         url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-small-bilingual-zh-en-2023-02-16.tar.bz2
   zipformer-large-bilingual:
