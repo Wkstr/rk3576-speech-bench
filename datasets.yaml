@@ -1,0 +1,19 @@
+# 数据集注册表。采样策略：随机 N 条，固定 seed=42 保证可复现。
+seed: 42
+asr:
+  aishell1-test:
+    lang: zh
+    n: 30
+    # AISHELL-1 test 子集；modelscope 镜像（国内可达），失败回退 HF
+    source: modelscope
+    ms_dataset: AISHELL-1/test  # scripts/prepare_data.py 内解析
+  librispeech-test-clean:
+    lang: en
+    n: 30
+    source: openslr
+    url: https://www.openslr.org/resources/12/test-clean.tar.gz  # ~346MB, 抽取 30 条后清理
+  fleurs-ja: {lang: ja, n: 10, source: hf, hf_dataset: google/fleurs, hf_config: ja_jp, split: test}
+  fleurs-ko: {lang: ko, n: 10, source: hf, hf_dataset: google/fleurs, hf_config: ko_kr, split: test}
+  fleurs-yue: {lang: yue, n: 10, source: hf, hf_dataset: google/fleurs, hf_config: yue_hant_hk, split: test}
+tts:
+  texts: bench/data/tts_texts.json  # P3 编写，固定 30 条

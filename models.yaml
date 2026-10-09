@@ -1,0 +1,46 @@
+# 模型注册表。variant: rknn = NPU(int8 官方转换), cpu = onnxruntime fp32 基线。
+# url 中 rk3576 与 rk3588 模型按 sherpa-onnx 官方说明可互换使用（同 RKNPU2 代）。
+asr:
+  zipformer-small-bilingual:
+    desc: streaming zipformer small 中英双语 (2023-02-16)
+    streaming: true
+    languages: [zh, en]
+    variants:
+      rknn:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-rk3576-streaming-zipformer-small-bilingual-zh-en-2023-02-16.tar.bz2
+      cpu:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-small-bilingual-zh-en-2023-02-16.tar.bz2
+  zipformer-large-bilingual:
+    desc: streaming zipformer 中英双语 大杯 (2023-02-20)
+    streaming: true
+    languages: [zh, en]
+    variants:
+      rknn:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-rk3576-streaming-zipformer-bilingual-zh-en-2023-02-20.tar.bz2
+      cpu:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20.tar.bz2
+  sensevoice:
+    desc: SenseVoice-Small 中英日韩粤 (RKNN 为 20s 定长版, 需 VAD 分段)
+    streaming: false
+    languages: [zh, en, ja, ko, yue]
+    variants:
+      rknn:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-rk3576-20-seconds-sense-voice-zh-en-ja-ko-yue-2024-07-17.tar.bz2
+      cpu:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17.tar.bz2
+  whisper-base:
+    desc: Whisper base (P4 自转 RKNN; 先备 CPU 基线)
+    streaming: false
+    languages: [zh, en, ja, ko, yue]
+    variants:
+      cpu:
+        url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-base.tar.bz2
+
+# VAD，SenseVoice 长音频分段用
+aux:
+  silero-vad:
+    url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx
+    dest: models/silero_vad.onnx
+
+# P3 填入 TTS 条目
+tts: {}

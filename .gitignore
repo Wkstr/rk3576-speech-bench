@@ -1,0 +1,30 @@
+# === 大文件：模型与数据集（不入库）===
+# 获取方式见 AGENTS.md / models.yaml / datasets.yaml
+models/
+data/
+
+# 结果中的音频落盘（TTS 样本等；JSON 结果保留入库以便复现与追溯）
+# P5 发布站点若需托管生成音频，届时再与用户确认
+results/**/*.wav
+results/**/*.flac
+results/**/*.mp3
+results/**/*.ogg
+
+# === Python ===
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# === 压缩包残留 ===
+*.tar.bz2
+*.tar.gz
+*.tgz
+
+# === agent 会话过程产物（本地状态，不入库）===
+.agents/
+.planning/
+
+# === 系统/编辑器 ===
+.DS_Store
+*.swp
