@@ -14,9 +14,15 @@
 - `models/_cache/` 里可能有中断的残留 tarball，同名覆盖或删除均可
 - 唯一例外：`setup/install.sh` 里的 pip 安装和 librknnrt 下载已由脚本完成，不算手动范围
 
-### 当前需要
+### 当前需要（解 P1 阻塞）
 
-无。（librknnrt 2.3.2 / zipformer small CPU / SenseVoice RKNN / silero VAD 均已到位；librknnrt 2.1.0 不需要了——上游 issue #2861 证实换版本无效）
+| 文件 | URL | 放到 |
+|---|---|---|
+| rknn-toolkit2 arm64 wheel（35MB） | https://github.com/airockchip/rknn-toolkit2/raw/master/rknn-toolkit2/packages/arm64/rknn_toolkit2-2.3.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl | `~/.local/rknn/wheels/`（新建目录） |
+
+用途：板上用 toolkit2 2.3.2 重转 zipformer RKNN 模型（官方版系 2.1.0 Beta 期转换，在 RK3576 上输出异常，见 sherpa-onnx#2861）。到位后 agent 建 `.venv-rknn` 安装并跑 `scripts/convert_rknn.py`。
+
+已到位：librknnrt 2.3.2 / zipformer small CPU / SenseVoice RKNN / silero VAD。librknnrt 2.1.0 不需要（#2861 证实换版本无效）。
 
 ### 可提前下（P1 后半程 ~ P2 用）
 

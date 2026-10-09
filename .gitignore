@@ -11,15 +11,16 @@ results/**/*.mp3
 results/**/*.ogg
 
 # === Python ===
-.venv/
+.venv*/
 __pycache__/
 *.py[cod]
 *.egg-info/
 
-# === 压缩包残留 ===
+# === 压缩包与工具 wheel（用户手动下载，不入库）===
 *.tar.bz2
 *.tar.gz
 *.tgz
+*.whl
 
 # === agent 会话过程产物（本地状态，不入库）===
 .agents/
