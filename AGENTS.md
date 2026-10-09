@@ -20,15 +20,19 @@
 
 已到位：librknnrt 2.3.2 / zipformer small CPU + 自转 RKNN / SenseVoice RKNN / silero VAD。librknnrt 2.1.0 不需要（#2861 证实换版本无效）。arm64 版 toolkit2 wheel 在 `~/.local/rknn/wheels/`（板上转换方案已弃用，留作后备）。
 
-### 可提前下（P1 后半程 ~ P2 用）
+### 当前需要（解 zh 数据阻塞）
 
-| 文件 | URL | 放到 |
+| 文件 | 来源 | 放到 |
 |---|---|---|
-| zipformer large CPU | https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20.tar.bz2 | 解压到 `models/zipformer-large-bilingual/cpu/` |
-| SenseVoice CPU | https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17.tar.bz2 | 解压到 `models/sensevoice/cpu/` |
-| LibriSpeech test-clean | https://www.openslr.org/resources/12/test-clean.tar.gz | `data/_cache/test-clean.tar.gz`（不解压，脚本处理） |
+| AISHELL-1 test（zh 样本源，只要 test 子集） | `.venv/bin/pip install modelscope && .venv/bin/modelscope download --dataset modelscope/AISHELL-1 --local_dir data/_cache/aishell1-full`，或任意含 wav/ + transcript 的 AISHELL-1 test 布局 | `data/_cache/aishell1-test/`（modelscope 全量包则放 `data/_cache/aishell1-full/`，脚本自动定位 test） |
 
-注：zipformer large RKNN 版暂缓——上游 issue #2861 报告其有“叠词”输出，是否纳入矩阵待用户拍板。
+已到位：zipformer large CPU（已解压入库）、LibriSpeech test-clean（已抽 30 条，缓存已清）。SenseVoice 全线移出当前范围（用户拍板 2026-10-09，后续需要再补）。
+
+### 可选提权（改善资源曲线）
+
+`sudo chmod o+r /sys/kernel/debug/rknpu/load` —— 不解则 sysmon 的 npu_load 全为 null（其余 CPU/RSS/温度不受影响）。
+
+注：zipformer large RKNN 版暂缓——上游 issue #2861 报告其有“叠词”输出；small 自转路线已验证成功，large 是否照转待用户拍板。
 
 ## 环境
 
