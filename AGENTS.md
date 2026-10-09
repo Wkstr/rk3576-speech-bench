@@ -16,13 +16,13 @@
 
 ### 当前需要（解 P1 阻塞）
 
-| 文件 | URL | 放到 |
+| 文件 | 来源 | 放到 |
 |---|---|---|
-| rknn-toolkit2 arm64 wheel（35MB） | https://github.com/airockchip/rknn-toolkit2/raw/master/rknn-toolkit2/packages/arm64/rknn_toolkit2-2.3.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl | `~/.local/rknn/wheels/`（新建目录） |
+| 自转 zipformer small RKNN（encoder/decoder/joiner.rknn） | 用户在自己 x86 PC 上转（步骤见会话/toolkit2 2.3.2 x86_64 + `scripts/convert_rknn.py`） | `models/zipformer-small-bilingual/rknn-2.3.2/` |
 
-用途：板上用 toolkit2 2.3.2 重转 zipformer RKNN 模型（官方版系 2.1.0 Beta 期转换，在 RK3576 上输出异常，见 sherpa-onnx#2861）。到位后 agent 建 `.venv-rknn` 安装并跑 `scripts/convert_rknn.py`。
+背景：官方 rk3576 zipformer RKNN 模型在 RK3576 上输出异常（small 全空/large 叠词，sherpa-onnx#2861），系 toolkit 2.1.0 Beta 期转换；改用 2.3.2 重转。
 
-已到位：librknnrt 2.3.2 / zipformer small CPU / SenseVoice RKNN / silero VAD。librknnrt 2.1.0 不需要（#2861 证实换版本无效）。
+已到位：librknnrt 2.3.2 / zipformer small CPU / SenseVoice RKNN / silero VAD。librknnrt 2.1.0 不需要（#2861 证实换版本无效）。arm64 版 toolkit2 wheel 在 `~/.local/rknn/wheels/`（板上转换方案已弃用，留作后备）。
 
 ### 可提前下（P1 后半程 ~ P2 用）
 
