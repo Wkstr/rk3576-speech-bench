@@ -46,6 +46,11 @@ export LD_LIBRARY_PATH="$HOME/.local/rknn/lib"   # 跑 sherpa 必须
 - NPU 详细日志：`export RKNN_LOG_LEVEL=5`
 - 磁盘紧张（/ 剩 ~20GB）：数据集只采样子集，大压缩包用完即删
 
+## 提交约定
+
+- 提交信息用**英文** + Conventional Commits 简洁风（caveman-commit：只说意图，why 优先于 what，无 AI 署名）
+- 仓库：github.com/Wkstr/rk3576-speech-bench（私有，P5 发布时翻公开）
+
 ## 评测口径（已定，别回退）
 
 - 报告双语（中文正文 + 英文摘要）；样本 zh/en 各 30、日韩粤各 10；数字带 Wilson 95% 置信区间
