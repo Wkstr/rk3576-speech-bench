@@ -71,7 +71,7 @@ def main() -> None:
              "zipformer-large__rknn-2.3.2", "zipformer-large__cpu",
              "qwen3-asr__rknn-w4a16"]
     for base in order:
-        for lang in ("zh", "en"):
+        for lang in ("zh", "en", "mix"):
             r = asr_j.get(f"{base}__{lang}")
             if not r:
                 continue
