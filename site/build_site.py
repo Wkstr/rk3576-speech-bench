@@ -24,7 +24,7 @@ ASR_NAMES = {
     "zipformer-small__cpu96": ("Zipformer small", "CPU fp32"),
     "zipformer-large__rknn-2.3.2": ("Zipformer large", "NPU fp16"),
     "zipformer-large__cpu": ("Zipformer large", "CPU fp32"),
-    "qwen3-asr__rknn-w4a16": ("Qwen3-ASR (rkvoice-stream)", "NPU fp16+w4a16"),
+    "qwen3-asr__rknn-w4a16": ("Qwen3-ASR", "NPU fp16+w4a16"),
 }
 TTS_NAMES = {
     "piper-zh-huayan__zh": ("Piper zh (huayan)", "VITS", "zh"),
