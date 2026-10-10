@@ -1,0 +1,217 @@
+{
+  "config": {
+    "tag": "mms-eng__en",
+    "type": "vits",
+    "provider": "cpu",
+    "num_threads": 4,
+    "model": "models/mms-eng/cpu/model.onnx",
+    "langs": [
+      "en"
+    ],
+    "roundtrip_asr": "zipformer-small cpu96",
+    "board": "Seeed Studio ReComputer RK3576 Dev Kit",
+    "kernel": "6.1.115-vendor-seeed-rk3576",
+    "machine": "aarch64",
+    "date_utc": "2026-10-10T03:09:47+00:00"
+  },
+  "sysmon": {
+    "samples": 985,
+    "cpu_pct_mean": 58.0,
+    "cpu_pct_peak": 100.0,
+    "rss_mb_peak": 534.8,
+    "temp_soc_peak_c": 45.3,
+    "temp_bigcore_peak_c": 49.9,
+    "temp_littlecore_peak_c": 49.9,
+    "temp_ddr_peak_c": 44.4,
+    "temp_npu_peak_c": 43.5,
+    "temp_gpu_peak_c": 46.2
+  },
+  "aggregate": {
+    "rtf_mean": 1.6551,
+    "rtfx": 0.6,
+    "gen_time_s": {
+      "mean": 7.546,
+      "p50": 6.039,
+      "p95": 14.992
+    },
+    "roundtrip_error_rate": {
+      "center": 0.3119,
+      "wilson95": [
+        0.2396,
+        0.3843
+      ],
+      "errors": 47,
+      "units": 153
+    }
+  },
+  "items": [
+    {
+      "id": "en_01",
+      "lang": "en",
+      "text": "What's the weather like today?",
+      "duration": 1.78,
+      "gen_time_s": 3.048,
+      "rtf": 1.714,
+      "roundtrip": {
+        "hyp": "ONCE THE WEATHER LIKE TODAY",
+        "errors": 1,
+        "ref_units": 5,
+        "error_rate": 0.2
+      }
+    },
+    {
+      "id": "en_02",
+      "lang": "en",
+      "text": "Please turn off the lights in the kitchen.",
+      "duration": 2.0,
+      "gen_time_s": 3.811,
+      "rtf": 1.9069,
+      "roundtrip": {
+        "hyp": "PLEASE TERM OFF THE LIGHTS IN THE KITCHEN",
+        "errors": 1,
+        "ref_units": 8,
+        "error_rate": 0.125
+      }
+    },
+    {
+      "id": "en_03",
+      "lang": "en",
+      "text": "My flight leaves at seven thirty tomorrow morning.",
+      "duration": 3.04,
+      "gen_time_s": 5.298,
+      "rtf": 1.7454,
+      "roundtrip": {
+        "hyp": "ME FLIGHT LEAVES AT SEVEN THIRTY TOMORROW MORNING",
+        "errors": 1,
+        "ref_units": 8,
+        "error_rate": 0.125
+      }
+    },
+    {
+      "id": "en_04",
+      "lang": "en",
+      "text": "The meeting has been moved to Room 204 on the second floor.",
+      "duration": 4.44,
+      "gen_time_s": 7.654,
+      "rtf": 1.7257,
+      "roundtrip": {
+        "hyp": "MAKING AS BEEN MOVED TO ROOM HURT ON THE SECOND FOUR",
+        "errors": 5,
+        "ref_units": 12,
+        "error_rate": 0.4167
+      }
+    },
+    {
+      "id": "en_05",
+      "lang": "en",
+      "text": "This recipe calls for 300 grams of flour and a pinch of salt.",
+      "duration": 3.81,
+      "gen_time_s": 5.973,
+      "rtf": 1.5667,
+      "roundtrip": {
+        "hyp": "THIS RISET CALLS FOR FUN GRAHAMS OF FLOWER AND A PINCHER SALT",
+        "errors": 6,
+        "ref_units": 13,
+        "error_rate": 0.4615
+      }
+    },
+    {
+      "id": "en_06",
+      "lang": "en",
+      "text": "Artificial intelligence is changing the way we access information.",
+      "duration": 4.14,
+      "gen_time_s": 6.966,
+      "rtf": 1.681,
+      "roundtrip": {
+        "hyp": "OUR DEFICIAL INTELLIGENCE IS CHANGING THE WAY WE ACCESS INFORMATION",
+        "errors": 2,
+        "ref_units": 9,
+        "error_rate": 0.2222
+      }
+    },
+    {
+      "id": "en_07",
+      "lang": "en",
+      "text": "Could you remind me to call the dentist at three this afternoon?",
+      "duration": 3.83,
+      "gen_time_s": 5.957,
+      "rtf": 1.5551,
+      "roundtrip": {
+        "hyp": "COULD YOU REMIND ME TO CALL ADENTIST A THREE THIS AFTERNOON",
+        "errors": 3,
+        "ref_units": 12,
+        "error_rate": 0.25
+      }
+    },
+    {
+      "id": "en_08",
+      "lang": "en",
+      "text": "The library is open from 9 AM to 6 PM on weekdays.",
+      "duration": 3.59,
+      "gen_time_s": 6.039,
+      "rtf": 1.6827,
+      "roundtrip": {
+        "hyp": "THOUGH LIBRARIES OPEN FROM THEM TO MAN WE GAZE",
+        "errors": 9,
+        "ref_units": 12,
+        "error_rate": 0.75
+      }
+    },
+    {
+      "id": "en_09",
+      "lang": "en",
+      "text": "She bought 2 tickets for the concert on Saturday, May 14th.",
+      "duration": 4.07,
+      "gen_time_s": 6.96,
+      "rtf": 1.7085,
+      "roundtrip": {
+        "hyp": "SHE BOUGHT ATTAKE HITS FOR THE CONCERT ON CENTURY HOTH",
+        "errors": 5,
+        "ref_units": 11,
+        "error_rate": 0.4545
+      }
+    },
+    {
+      "id": "en_10",
+      "lang": "en",
+      "text": "According to a recent study, walking eight thousand steps a day can significantly reduce the risk of heart disease.",
+      "duration": 7.67,
+      "gen_time_s": 13.877,
+      "rtf": 1.8088,
+      "roundtrip": {
+        "hyp": "ACCORDING TO A RECENT STUDY WALKING ACHEPS A DAY CONSIGNIFICATELY REDUCE THE RISK OF HEART TO CEASE",
+        "errors": 7,
+        "ref_units": 19,
+        "error_rate": 0.3684
+      }
+    },
+    {
+      "id": "en_11",
+      "lang": "en",
+      "text": "The new update adds support for voice commands, so you can control the app without touching your phone.",
+      "duration": 6.52,
+      "gen_time_s": 9.977,
+      "rtf": 1.5295,
+      "roundtrip": {
+        "hyp": "THE NEW UPDATE HAD SUPPORT FOR VOICE COMMAND SO YOU CAN CONTROL THE APP WITHOUT TOUCHING YOUR PHONE",
+        "errors": 2,
+        "ref_units": 18,
+        "error_rate": 0.1111
+      }
+    },
+    {
+      "id": "en_12",
+      "lang": "en",
+      "text": "With the spread of high-speed networks and edge computing, more and more smart devices can run speech recognition locally without uploading audio to the cloud.",
+      "duration": 9.82,
+      "gen_time_s": 14.992,
+      "rtf": 1.5273,
+      "roundtrip": {
+        "hyp": "WITH THE SPREAD OF HIGH SPEED NETWORKS AND EDGE COMPUTING MORE AND MORE SMARK DIFFICES CAN RUN SPEECH RECOGNITION LOOKING WITHOUT A PLODING AUDIO TO THE CLOUD",
+        "errors": 5,
+        "ref_units": 26,
+        "error_rate": 0.1923
+      }
+    }
+  ]
+}

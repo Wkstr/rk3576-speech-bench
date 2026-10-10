@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 # P1 跑分矩阵：zipformer small(rknn-2.3.2 / cpu96) + large(cpu) × zh/en。
-# 用法：bash bench/run_p1.sh [limit]   # limit 非空则每配置只跑前 N 条（冒烟）
+# 用法：bash bench/run_p1.sh [limit] [langs]  # limit 非空则每配置只跑前 N 条（冒烟）；langs 默认 "en zh"
 set -euo pipefail
 cd "$(dirname "$0")/.."
 export LD_LIBRARY_PATH="$HOME/.local/rknn/lib"
 PY=.venv/bin/python
 LIMIT=${1:-0}
+LANGS=${2:-"en zh"}
 
 S=models/zipformer-small-bilingual
 L=models/zipformer-large-bilingual
@@ -18,9 +19,9 @@ run() { # tag provider manifest encoder decoder joiner tokens
     --limit "$LIMIT"
 }
 
-for LANG in en zh; do
+for LANG in $LANGS; do
   M="data/librispeech-test-clean/manifest.jsonl"
-  [ "$LANG" = zh ] && M="data/aishell1-test/manifest.jsonl"
+  [ "$LANG" = zh ] && M="data/fleurs-zh/manifest.jsonl"
   [ -f "$M" ] || { echo "[skip] $M 不存在"; continue; }
 
   # small NPU（自转 chunk96）

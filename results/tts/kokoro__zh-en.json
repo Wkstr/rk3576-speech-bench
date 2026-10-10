@@ -1,0 +1,386 @@
+{
+  "config": {
+    "tag": "kokoro__zh-en",
+    "type": "kokoro",
+    "provider": "cpu",
+    "num_threads": 4,
+    "model": "models/kokoro/cpu/model.onnx",
+    "langs": [
+      "zh",
+      "en"
+    ],
+    "roundtrip_asr": "zipformer-small cpu96",
+    "board": "Seeed Studio ReComputer RK3576 Dev Kit",
+    "kernel": "6.1.115-vendor-seeed-rk3576",
+    "machine": "aarch64",
+    "date_utc": "2026-10-10T03:07:57+00:00"
+  },
+  "sysmon": {
+    "samples": 2874,
+    "cpu_pct_mean": 56.0,
+    "cpu_pct_peak": 100.0,
+    "rss_mb_peak": 944.2,
+    "temp_soc_peak_c": 44.4,
+    "temp_bigcore_peak_c": 49.9,
+    "temp_littlecore_peak_c": 49.9,
+    "temp_ddr_peak_c": 44.4,
+    "temp_npu_peak_c": 43.5,
+    "temp_gpu_peak_c": 46.2
+  },
+  "aggregate": {
+    "rtf_mean": 2.8741,
+    "rtfx": 0.35,
+    "gen_time_s": {
+      "mean": 11.4866,
+      "p50": 9.677,
+      "p95": 20.386
+    },
+    "roundtrip_error_rate": {
+      "center": 0.2984,
+      "wilson95": [
+        0.2531,
+        0.3436
+      ],
+      "errors": 115,
+      "units": 388
+    }
+  },
+  "items": [
+    {
+      "id": "zh_01",
+      "lang": "zh",
+      "text": "今天天气怎么样？",
+      "duration": 1.59,
+      "gen_time_s": 5.204,
+      "rtf": 3.2694,
+      "roundtrip": {
+        "hyp": "今天天气怎么样",
+        "errors": 0,
+        "ref_units": 7,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "zh_02",
+      "lang": "zh",
+      "text": "请把客厅的灯打开。",
+      "duration": 1.89,
+      "gen_time_s": 6.24,
+      "rtf": 3.3053,
+      "roundtrip": {
+        "hyp": "请把课听的灯打开",
+        "errors": 2,
+        "ref_units": 8,
+        "error_rate": 0.25
+      }
+    },
+    {
+      "id": "zh_03",
+      "lang": "zh",
+      "text": "明天上午十点我有一个会议。",
+      "duration": 2.41,
+      "gen_time_s": 7.511,
+      "rtf": 3.1195,
+      "roundtrip": {
+        "hyp": "明天上午十点我有一个会议",
+        "errors": 0,
+        "ref_units": 12,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "zh_04",
+      "lang": "zh",
+      "text": "北京到上海的高铁大约需要四个半小时。",
+      "duration": 3.49,
+      "gen_time_s": 9.194,
+      "rtf": 2.6362,
+      "roundtrip": {
+        "hyp": "北京到上海的高铁大约需要四个半小时",
+        "errors": 0,
+        "ref_units": 17,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "zh_05",
+      "lang": "zh",
+      "text": "这道菜的配方需要三百克面粉和两个鸡蛋。",
+      "duration": 3.61,
+      "gen_time_s": 10.075,
+      "rtf": 2.794,
+      "roundtrip": {
+        "hyp": "这道菜的配方需要三百克免等合两个鸡蛋",
+        "errors": 3,
+        "ref_units": 18,
+        "error_rate": 0.1667
+      }
+    },
+    {
+      "id": "zh_06",
+      "lang": "zh",
+      "text": "人工智能正在改变我们获取信息的方式。",
+      "duration": 3.26,
+      "gen_time_s": 8.693,
+      "rtf": 2.6702,
+      "roundtrip": {
+        "hyp": "人工智能正在改变我们获取信息的方式",
+        "errors": 0,
+        "ref_units": 17,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "zh_07",
+      "lang": "zh",
+      "text": "请提醒我下午三点给客户回电话。",
+      "duration": 3.05,
+      "gen_time_s": 8.702,
+      "rtf": 2.8534,
+      "roundtrip": {
+        "hyp": "请提醒我下午三点给客户回电话",
+        "errors": 0,
+        "ref_units": 14,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "zh_08",
+      "lang": "zh",
+      "text": "2026年的春节是2月17日，星期二。",
+      "duration": 5.25,
+      "gen_time_s": 16.701,
+      "rtf": 3.1787,
+      "roundtrip": {
+        "hyp": "TWO THOUSAND TWENTY SIX YANDA TWINSIA SHRITOYA SEVENTEEN YEAR SEEN TI R",
+        "errors": 60,
+        "ref_units": 17,
+        "error_rate": 3.5294
+      }
+    },
+    {
+      "id": "zh_09",
+      "lang": "zh",
+      "text": "这个应用支持中文和English双语切换。",
+      "duration": 3.55,
+      "gen_time_s": 11.174,
+      "rtf": 3.1519,
+      "roundtrip": {
+        "hyp": "这个应用支持中文和 ENGLISH双语气还",
+        "errors": 2,
+        "ref_units": 20,
+        "error_rate": 0.1
+      }
+    },
+    {
+      "id": "zh_10",
+      "lang": "zh",
+      "text": "根据最新的研究报告，每天走八千步可以显著降低心血管疾病的风险。",
+      "duration": 6.04,
+      "gen_time_s": 17.061,
+      "rtf": 2.8247,
+      "roundtrip": {
+        "hyp": "根据最新的研究报告每天走八千不可以显著讲低薪血管疾病的风险",
+        "errors": 3,
+        "ref_units": 29,
+        "error_rate": 0.1034
+      }
+    },
+    {
+      "id": "zh_11",
+      "lang": "zh",
+      "text": "他们家养了一只金毛犬，每天早上都要带它去公园跑两圈，风雨无阻。",
+      "duration": 6.28,
+      "gen_time_s": 19.103,
+      "rtf": 3.0429,
+      "roundtrip": {
+        "hyp": "他们家养了一只金毛犬每天早上都要带他去公园跑两圈方宇无所",
+        "errors": 4,
+        "ref_units": 28,
+        "error_rate": 0.1429
+      }
+    },
+    {
+      "id": "zh_12",
+      "lang": "zh",
+      "text": "随着5G网络的普及和边缘计算的发展，越来越多的智能设备可以在本地完成语音识别，不需要把音频上传到云端。",
+      "duration": 10.52,
+      "gen_time_s": 31.996,
+      "rtf": 3.0413,
+      "roundtrip": {
+        "hyp": "C者 FIVE G网络的普及和边缘计算的发展越来越多的智能设备可以在本地完成语音识别不需要把音频上传到云短",
+        "errors": 7,
+        "ref_units": 48,
+        "error_rate": 0.1458
+      }
+    },
+    {
+      "id": "en_01",
+      "lang": "en",
+      "text": "What's the weather like today?",
+      "duration": 1.45,
+      "gen_time_s": 5.006,
+      "rtf": 3.462,
+      "roundtrip": {
+        "hyp": "WHATS THE WEATH LIKE TODAY",
+        "errors": 1,
+        "ref_units": 5,
+        "error_rate": 0.2
+      }
+    },
+    {
+      "id": "en_02",
+      "lang": "en",
+      "text": "Please turn off the lights in the kitchen.",
+      "duration": 1.95,
+      "gen_time_s": 6.171,
+      "rtf": 3.1633,
+      "roundtrip": {
+        "hyp": "PLEASE TURN OFF THE LIGHTS IN THE KITCHEN",
+        "errors": 0,
+        "ref_units": 8,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "en_03",
+      "lang": "en",
+      "text": "My flight leaves at seven thirty tomorrow morning.",
+      "duration": 2.61,
+      "gen_time_s": 7.405,
+      "rtf": 2.841,
+      "roundtrip": {
+        "hyp": "SEVEN THIRTY TOMORROW MORNING",
+        "errors": 4,
+        "ref_units": 8,
+        "error_rate": 0.5
+      }
+    },
+    {
+      "id": "en_04",
+      "lang": "en",
+      "text": "The meeting has been moved to Room 204 on the second floor.",
+      "duration": 3.59,
+      "gen_time_s": 9.856,
+      "rtf": 2.7426,
+      "roundtrip": {
+        "hyp": "THE MEETING HAS BEEN MOVED TO ROOM TWO HUNDRED FOUR ON THE SECOND FLOOR",
+        "errors": 3,
+        "ref_units": 12,
+        "error_rate": 0.25
+      }
+    },
+    {
+      "id": "en_05",
+      "lang": "en",
+      "text": "This recipe calls for 300 grams of flour and a pinch of salt.",
+      "duration": 3.65,
+      "gen_time_s": 10.412,
+      "rtf": 2.8519,
+      "roundtrip": {
+        "hyp": "THIS RECIPE CALLS FOR THREE HUNDRED GRANDS OF FLOW AND A PINCH OF SALT",
+        "errors": 4,
+        "ref_units": 13,
+        "error_rate": 0.3077
+      }
+    },
+    {
+      "id": "en_06",
+      "lang": "en",
+      "text": "Artificial intelligence is changing the way we access information.",
+      "duration": 3.61,
+      "gen_time_s": 10.349,
+      "rtf": 2.8657,
+      "roundtrip": {
+        "hyp": "ARTIFICIAL INTELLIGENCE IS CHANGING THE WAY WE ACCESS IN PASTEN",
+        "errors": 2,
+        "ref_units": 9,
+        "error_rate": 0.2222
+      }
+    },
+    {
+      "id": "en_07",
+      "lang": "en",
+      "text": "Could you remind me to call the dentist at three this afternoon?",
+      "duration": 3.06,
+      "gen_time_s": 8.612,
+      "rtf": 2.8143,
+      "roundtrip": {
+        "hyp": "COULD YOU REMIND ME TO CALL THE DENTIST AT THREE THIS AF NOON",
+        "errors": 2,
+        "ref_units": 12,
+        "error_rate": 0.1667
+      }
+    },
+    {
+      "id": "en_08",
+      "lang": "en",
+      "text": "The library is open from 9 AM to 6 PM on weekdays.",
+      "duration": 3.59,
+      "gen_time_s": 9.677,
+      "rtf": 2.6987,
+      "roundtrip": {
+        "hyp": "THE LIBRARY IS OPEN FROM NINE AM TO SIX P M ON WEEKDAYS",
+        "errors": 4,
+        "ref_units": 12,
+        "error_rate": 0.3333
+      }
+    },
+    {
+      "id": "en_09",
+      "lang": "en",
+      "text": "She bought 2 tickets for the concert on Saturday, May 14th.",
+      "duration": 3.01,
+      "gen_time_s": 8.668,
+      "rtf": 2.8813,
+      "roundtrip": {
+        "hyp": "SHE BROUGHT TO TICKETS THE CONST ON SARADAY MAY FOURTEENTH",
+        "errors": 6,
+        "ref_units": 11,
+        "error_rate": 0.5455
+      }
+    },
+    {
+      "id": "en_10",
+      "lang": "en",
+      "text": "According to a recent study, walking eight thousand steps a day can significantly reduce the risk of heart disease.",
+      "duration": 5.8,
+      "gen_time_s": 15.204,
+      "rtf": 2.6214,
+      "roundtrip": {
+        "hyp": "ACCORDING TO A RECENT STUDY WALKING EIGHT THOUSAND STEPS A DAY CAN SIGNIFICANTLY REDUCE THE RISK OF HEART DISEASE",
+        "errors": 0,
+        "ref_units": 19,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "en_11",
+      "lang": "en",
+      "text": "The new update adds support for voice commands, so you can control the app without touching your phone.",
+      "duration": 4.61,
+      "gen_time_s": 12.279,
+      "rtf": 2.6654,
+      "roundtrip": {
+        "hyp": "SUPPORT FOR VOICE COMMANDS SO YOU CAN CONTROL THE APP WITHOUT TOUCHING YOUR PHONE",
+        "errors": 4,
+        "ref_units": 18,
+        "error_rate": 0.2222
+      }
+    },
+    {
+      "id": "en_12",
+      "lang": "en",
+      "text": "With the spread of high-speed networks and edge computing, more and more smart devices can run speech recognition locally without uploading audio to the cloud.",
+      "duration": 8.05,
+      "gen_time_s": 20.386,
+      "rtf": 2.533,
+      "roundtrip": {
+        "hyp": "HIGH SPEED NETWORKS AND EDGE COMPUTING MORE AND MORE SMART DEVICES CAN RUN SPEECH RECOGNITION LOCALLY WITHOUT UPLOADING AUDIO TO THE CLOUD",
+        "errors": 4,
+        "ref_units": 26,
+        "error_rate": 0.1538
+      }
+    }
+  ]
+}

@@ -22,25 +22,20 @@ librknnrt 2.1.0 不需要（#2861 证实换版本无效）。arm64 版 toolkit2 
 
 ### 当前需要
 
-| 文件 | URL / 来源 | 放到 |
-|---|---|---|
-| FLEURS 中文 test 音频（525MB） | https://hf-mirror.com/datasets/google/fleurs/resolve/main/data/cmn_hans_cn/audio/test.tar.gz | `data/_cache/fleurs-zh/test.tar.gz`（不解压） |
-| FLEURS 中文 test 转写（0.5MB） | https://hf-mirror.com/datasets/google/fleurs/resolve/main/data/cmn_hans_cn/test.tsv | `data/_cache/fleurs-zh/test.tsv` |
-| Piper zh（64MB） | https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-zh_CN-huayan-medium.tar.bz2 | 解压到 `models/piper-zh-huayan/cpu/` |
-| Piper en（64MB） | https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-ryan-medium.tar.bz2 | 解压到 `models/piper-en-ryan/cpu/` |
-| Matcha 中英（75MB） | https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/matcha-icefall-zh-en.tar.bz2 | 解压到 `models/matcha-zh-en/cpu/` |
-| vocos 声码器（51MB，Matcha 用） | https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/vocos-22khz-univ.onnx | `models/vocos/vocos-22khz-univ.onnx`（散文件） |
-| Kokoro 多语（347MB） | https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_1.tar.bz2 | 解压到 `models/kokoro/cpu/` |
-| MMS en（102MB） | https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-mms-eng.tar.bz2 | 解压到 `models/mms-eng/cpu/` |
+**全部下载已到位**（2026-10-10）：FLEURS zh 已采样 30 条（tarball 已删）；TTS 五模型已解压到 `models/<name>/cpu/` + vocos 在 `models/vocos/`。P2 恢复时需另下 FLEURS ja_jp/ko_kr/yue_hant_hk（同 zh 链接换语言码）。
 
 zh 源已从 AISHELL-1 换成 FLEURS cmn_hans_cn test（用户拍板 2026-10-09：AISHELL 太大；FLEURS 与 P2 日韩粤同源）。
-已到位：zipformer small CPU+自转 RKNN / large CPU+自转 RKNN（`rknn-2.3.2/`）/ LibriSpeech en 30 条已采样。SenseVoice 全线移出当前范围（用户拍板，后续需要再补）。MMS 官方只打包了 eng，无 zh。
+已到位：zipformer small CPU+自转 RKNN / large CPU+自转 RKNN（`rknn-2.3.2/`）/ LibriSpeech en 30 条 + FLEURS zh 30 条已采样 / TTS 五模型。SenseVoice 全线移出当前范围（用户拍板，后续需要再补）。MMS 官方只打包了 eng，无 zh。
+
+### P3 状态（2026-10-10）
+
+TTS 矩阵跑完（`bash bench/run_p3.sh`）：RTF matcha 0.25 < piper-en 0.32 < piper-zh 0.34 < mms 1.66 < kokoro 2.87；roundtrip ER 13%–37%（口径=可懂度下界，数字口读/同音词不归一化）。回译截尾坑（尾部需补 1s 静音）与口径依据：`.agents/notes/implemented/testing/2026-10-10-tts-roundtrip-harness.md`。kokoro 只跑 zh+en（裁判是中英双语，ja/ko/yue 回译无意义，属 P2）。
 
 ### 可选提权（改善资源曲线）
 
 `sudo chmod o+r /sys/kernel/debug/rknpu/load` —— 不解则 sysmon 的 npu_load 全为 null（其余 CPU/RSS/温度不受影响）。
 
-注：zipformer large 自转 RKNN 已到位（用户 2026-10-09 转好，放 `rknn-2.3.2/`）；官方版叠词问题（#2861）与我们无关，但 large 冒烟出现过一次双词重复，报告阶段在语料上定量再下结论。
+注：zipformer large 自转 RKNN 已到位并语料级验收（2026-10-10）：en WER 11.4% 与 cpu 完全相同且 30/30 逐条一致，叠词定量 0 次（此前 smoke 的 ALWAYS ALWAYS 为孤立事件）；zh CER 7.57% vs cpu 7.76%。large 的 rknn 与 cpu RTF 同为 0.41（NPU 对 large 无加速），报告如实呈现。
 
 ## 环境
 

@@ -124,6 +124,9 @@ def main() -> None:
         rt = None
         if asr is not None and dur > 0.3:
             w16 = _resample(wav, audio.sample_rate, 16000)
+            # 尾部补 1s 静音：流式 zipformer 需要尾静音冲刷最后 chunk 的右上下文，
+            # TTS 音频尾音戛然而止，不补会被截尾（zh_01 “今天天气怎么样” → “今天天”）。
+            w16 = np.concatenate([w16, np.zeros(16000, dtype=np.float32)])
             hyp, _ = pass_throughput(asr, w16)
             errors, units = edit_counts(t["text"], hyp, t["lang"])
             rt = dict(hyp=hyp, errors=errors, ref_units=units,

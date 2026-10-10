@@ -1,0 +1,217 @@
+{
+  "config": {
+    "tag": "piper-zh-huayan__zh",
+    "type": "vits",
+    "provider": "cpu",
+    "num_threads": 4,
+    "model": "models/piper-zh-huayan/cpu/zh_CN-huayan-medium.onnx",
+    "langs": [
+      "zh"
+    ],
+    "roundtrip_asr": "zipformer-small cpu96",
+    "board": "Seeed Studio ReComputer RK3576 Dev Kit",
+    "kernel": "6.1.115-vendor-seeed-rk3576",
+    "machine": "aarch64",
+    "date_utc": "2026-10-10T03:01:16+00:00"
+  },
+  "sysmon": {
+    "samples": 250,
+    "cpu_pct_mean": 67.7,
+    "cpu_pct_peak": 100.0,
+    "rss_mb_peak": 552.6,
+    "temp_soc_peak_c": 42.5,
+    "temp_bigcore_peak_c": 47.2,
+    "temp_littlecore_peak_c": 48.1,
+    "temp_ddr_peak_c": 42.5,
+    "temp_npu_peak_c": 41.6,
+    "temp_gpu_peak_c": 44.4
+  },
+  "aggregate": {
+    "rtf_mean": 0.3392,
+    "rtfx": 2.95,
+    "gen_time_s": {
+      "mean": 1.3415,
+      "p50": 1.084,
+      "p95": 3.147
+    },
+    "roundtrip_error_rate": {
+      "center": 0.1336,
+      "wilson95": [
+        0.0909,
+        0.1764
+      ],
+      "errors": 30,
+      "units": 235
+    }
+  },
+  "items": [
+    {
+      "id": "zh_01",
+      "lang": "zh",
+      "text": "今天天气怎么样？",
+      "duration": 1.47,
+      "gen_time_s": 0.558,
+      "rtf": 0.3803,
+      "roundtrip": {
+        "hyp": "今天天气怎么样",
+        "errors": 0,
+        "ref_units": 7,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "zh_02",
+      "lang": "zh",
+      "text": "请把客厅的灯打开。",
+      "duration": 2.03,
+      "gen_time_s": 0.684,
+      "rtf": 0.3367,
+      "roundtrip": {
+        "hyp": "请把客厅的灯打开",
+        "errors": 0,
+        "ref_units": 8,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "zh_03",
+      "lang": "zh",
+      "text": "明天上午十点我有一个会议。",
+      "duration": 2.49,
+      "gen_time_s": 0.98,
+      "rtf": 0.3938,
+      "roundtrip": {
+        "hyp": "明天上午十点我有一个会议",
+        "errors": 0,
+        "ref_units": 12,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "zh_04",
+      "lang": "zh",
+      "text": "北京到上海的高铁大约需要四个半小时。",
+      "duration": 3.74,
+      "gen_time_s": 1.33,
+      "rtf": 0.3556,
+      "roundtrip": {
+        "hyp": "北京到上海的高铁大月需要四个半小时",
+        "errors": 1,
+        "ref_units": 17,
+        "error_rate": 0.0588
+      }
+    },
+    {
+      "id": "zh_05",
+      "lang": "zh",
+      "text": "这道菜的配方需要三百克面粉和两个鸡蛋。",
+      "duration": 3.67,
+      "gen_time_s": 1.243,
+      "rtf": 0.339,
+      "roundtrip": {
+        "hyp": "这道菜的配方需要三百颗面粉和两个鸡蛋",
+        "errors": 1,
+        "ref_units": 18,
+        "error_rate": 0.0556
+      }
+    },
+    {
+      "id": "zh_06",
+      "lang": "zh",
+      "text": "人工智能正在改变我们获取信息的方式。",
+      "duration": 3.1,
+      "gen_time_s": 1.084,
+      "rtf": 0.3498,
+      "roundtrip": {
+        "hyp": "人工智能正在改变我们获取信息的方式",
+        "errors": 0,
+        "ref_units": 17,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "zh_07",
+      "lang": "zh",
+      "text": "请提醒我下午三点给客户回电话。",
+      "duration": 3.02,
+      "gen_time_s": 1.034,
+      "rtf": 0.3423,
+      "roundtrip": {
+        "hyp": "请提醒我下午三点给客户回电话",
+        "errors": 0,
+        "ref_units": 14,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "zh_08",
+      "lang": "zh",
+      "text": "2026年的春节是2月17日，星期二。",
+      "duration": 3.51,
+      "gen_time_s": 1.294,
+      "rtf": 0.3686,
+      "roundtrip": {
+        "hyp": "二千二十六年的春节是二月十七日星期二",
+        "errors": 8,
+        "ref_units": 17,
+        "error_rate": 0.4706
+      }
+    },
+    {
+      "id": "zh_09",
+      "lang": "zh",
+      "text": "这个应用支持中文和English双语切换。",
+      "duration": 2.87,
+      "gen_time_s": 0.969,
+      "rtf": 0.338,
+      "roundtrip": {
+        "hyp": "这个应用支持中文何用双语切换",
+        "errors": 8,
+        "ref_units": 20,
+        "error_rate": 0.4
+      }
+    },
+    {
+      "id": "zh_10",
+      "lang": "zh",
+      "text": "根据最新的研究报告，每天走八千步可以显著降低心血管疾病的风险。",
+      "duration": 6.14,
+      "gen_time_s": 1.903,
+      "rtf": 0.3099,
+      "roundtrip": {
+        "hyp": "根据最新的盐就报告每天走霸千不可以显著降低心血管疾病的风险",
+        "errors": 4,
+        "ref_units": 29,
+        "error_rate": 0.1379
+      }
+    },
+    {
+      "id": "zh_11",
+      "lang": "zh",
+      "text": "他们家养了一只金毛犬，每天早上都要带它去公园跑两圈，风雨无阻。",
+      "duration": 5.57,
+      "gen_time_s": 1.872,
+      "rtf": 0.3362,
+      "roundtrip": {
+        "hyp": "他们家养了一只金毛犬每天早上都要带他去公园跑两圈风雨无阻",
+        "errors": 1,
+        "ref_units": 28,
+        "error_rate": 0.0357
+      }
+    },
+    {
+      "id": "zh_12",
+      "lang": "zh",
+      "text": "随着5G网络的普及和边缘计算的发展，越来越多的智能设备可以在本地完成语音识别，不需要把音频上传到云端。",
+      "duration": 9.85,
+      "gen_time_s": 3.147,
+      "rtf": 0.3195,
+      "roundtrip": {
+        "hyp": "随者五句网络的普及和变圆计算的发展越来越多的智能设备可以在本地玩成语音识别不需要把音频商传到云端",
+        "errors": 7,
+        "ref_units": 48,
+        "error_rate": 0.1458
+      }
+    }
+  ]
+}

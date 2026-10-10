@@ -1,0 +1,217 @@
+{
+  "config": {
+    "tag": "piper-en-ryan__en",
+    "type": "vits",
+    "provider": "cpu",
+    "num_threads": 4,
+    "model": "models/piper-en-ryan/cpu/en_US-ryan-medium.onnx",
+    "langs": [
+      "en"
+    ],
+    "roundtrip_asr": "zipformer-small cpu96",
+    "board": "Seeed Studio ReComputer RK3576 Dev Kit",
+    "kernel": "6.1.115-vendor-seeed-rk3576",
+    "machine": "aarch64",
+    "date_utc": "2026-10-10T03:01:48+00:00"
+  },
+  "sysmon": {
+    "samples": 225,
+    "cpu_pct_mean": 68.7,
+    "cpu_pct_peak": 100.0,
+    "rss_mb_peak": 512.1,
+    "temp_soc_peak_c": 42.5,
+    "temp_bigcore_peak_c": 48.1,
+    "temp_littlecore_peak_c": 48.1,
+    "temp_ddr_peak_c": 42.5,
+    "temp_npu_peak_c": 41.6,
+    "temp_gpu_peak_c": 44.4
+  },
+  "aggregate": {
+    "rtf_mean": 0.3247,
+    "rtfx": 3.08,
+    "gen_time_s": {
+      "mean": 1.1652,
+      "p50": 1.01,
+      "p95": 2.318
+    },
+    "roundtrip_error_rate": {
+      "center": 0.2099,
+      "wilson95": [
+        0.1466,
+        0.2732
+      ],
+      "errors": 31,
+      "units": 153
+    }
+  },
+  "items": [
+    {
+      "id": "en_01",
+      "lang": "en",
+      "text": "What's the weather like today?",
+      "duration": 1.09,
+      "gen_time_s": 0.358,
+      "rtf": 0.3277,
+      "roundtrip": {
+        "hyp": "WHATS THE WEATHER LIKE TODAY",
+        "errors": 0,
+        "ref_units": 5,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "en_02",
+      "lang": "en",
+      "text": "Please turn off the lights in the kitchen.",
+      "duration": 1.7,
+      "gen_time_s": 0.545,
+      "rtf": 0.3215,
+      "roundtrip": {
+        "hyp": "PLEASE TURN OFF THE LIGHTS IN THE KITCHEN",
+        "errors": 0,
+        "ref_units": 8,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "en_03",
+      "lang": "en",
+      "text": "My flight leaves at seven thirty tomorrow morning.",
+      "duration": 2.14,
+      "gen_time_s": 0.771,
+      "rtf": 0.3611,
+      "roundtrip": {
+        "hyp": "MY FLIGHT LEAVES AT SEVEN THIRTY TOMORROW MORNING",
+        "errors": 0,
+        "ref_units": 8,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "en_04",
+      "lang": "en",
+      "text": "The meeting has been moved to Room 204 on the second floor.",
+      "duration": 3.17,
+      "gen_time_s": 1.01,
+      "rtf": 0.3186,
+      "roundtrip": {
+        "hyp": "TWO HUNDRED FOUR ON THE SECOND FOUR",
+        "errors": 9,
+        "ref_units": 12,
+        "error_rate": 0.75
+      }
+    },
+    {
+      "id": "en_05",
+      "lang": "en",
+      "text": "This recipe calls for 300 grams of flour and a pinch of salt.",
+      "duration": 3.76,
+      "gen_time_s": 1.285,
+      "rtf": 0.3416,
+      "roundtrip": {
+        "hyp": "THIS RECIPE CAUSED FOR THREE HUNDRED GRAMS OF FLOWER AND A PINCH OF SAL",
+        "errors": 5,
+        "ref_units": 13,
+        "error_rate": 0.3846
+      }
+    },
+    {
+      "id": "en_06",
+      "lang": "en",
+      "text": "Artificial intelligence is changing the way we access information.",
+      "duration": 3.42,
+      "gen_time_s": 1.246,
+      "rtf": 0.3637,
+      "roundtrip": {
+        "hyp": "ARTIFICIAL INTELLIGENCE IS CHANGING THE WAY WE ACCESS INFORMATION",
+        "errors": 0,
+        "ref_units": 9,
+        "error_rate": 0.0
+      }
+    },
+    {
+      "id": "en_07",
+      "lang": "en",
+      "text": "Could you remind me to call the dentist at three this afternoon?",
+      "duration": 2.68,
+      "gen_time_s": 0.985,
+      "rtf": 0.3672,
+      "roundtrip": {
+        "hyp": "GOOD YOU REMIND ME TO CALL THE DANTES THAT THREE THIS AFTERNO",
+        "errors": 4,
+        "ref_units": 12,
+        "error_rate": 0.3333
+      }
+    },
+    {
+      "id": "en_08",
+      "lang": "en",
+      "text": "The library is open from 9 AM to 6 PM on weekdays.",
+      "duration": 3.7,
+      "gen_time_s": 1.278,
+      "rtf": 0.3451,
+      "roundtrip": {
+        "hyp": "THE LIBRARY IS OPEN FROM NINE AM TO SIX P M ON WEEKDAY",
+        "errors": 5,
+        "ref_units": 12,
+        "error_rate": 0.4167
+      }
+    },
+    {
+      "id": "en_09",
+      "lang": "en",
+      "text": "She bought 2 tickets for the concert on Saturday, May 14th.",
+      "duration": 3.01,
+      "gen_time_s": 1.009,
+      "rtf": 0.335,
+      "roundtrip": {
+        "hyp": "SHE BOUGHT TO TAKE ITS FOR THE CONCERT ON SATURDAY MAY FOURTEEN",
+        "errors": 4,
+        "ref_units": 11,
+        "error_rate": 0.3636
+      }
+    },
+    {
+      "id": "en_10",
+      "lang": "en",
+      "text": "According to a recent study, walking eight thousand steps a day can significantly reduce the risk of heart disease.",
+      "duration": 5.59,
+      "gen_time_s": 1.68,
+      "rtf": 0.3003,
+      "roundtrip": {
+        "hyp": "ACCORDING TO A RECENT STUDY WALKING EIGHT THOUSAND STEPS A DAY CAN SIGNIFICANTLY REDUCED THE RISK OF HEART DISEAS",
+        "errors": 2,
+        "ref_units": 19,
+        "error_rate": 0.1053
+      }
+    },
+    {
+      "id": "en_11",
+      "lang": "en",
+      "text": "The new update adds support for voice commands, so you can control the app without touching your phone.",
+      "duration": 4.81,
+      "gen_time_s": 1.497,
+      "rtf": 0.3114,
+      "roundtrip": {
+        "hyp": "THE NEW UBE ADD SUPPORT FOR VOICE COMMANDS SO YOU CAN CONTROL THE APP WITHOUT TOUCHING YOUR PHONE",
+        "errors": 2,
+        "ref_units": 18,
+        "error_rate": 0.1111
+      }
+    },
+    {
+      "id": "en_12",
+      "lang": "en",
+      "text": "With the spread of high-speed networks and edge computing, more and more smart devices can run speech recognition locally without uploading audio to the cloud.",
+      "duration": 7.99,
+      "gen_time_s": 2.318,
+      "rtf": 0.2901,
+      "roundtrip": {
+        "hyp": "WITH THE SPREAD OF HIGH SPEED NETWORKS AND EDGE COMPUTING MORE AND MORE SMART DEVICES CAN RUN SPEECH RECOGNITION LOCALLY WITHOUT UPLOADING AUDIO TO THE CLOUD",
+        "errors": 0,
+        "ref_units": 26,
+        "error_rate": 0.0
+      }
+    }
+  ]
+}
