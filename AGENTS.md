@@ -37,7 +37,7 @@ TTS 矩阵跑完（`bash bench/run_p3.sh`）：RTF matcha 0.25 < piper-en 0.32 <
 
 ### 可选提权（改善资源曲线）
 
-`sudo chmod o+r /sys/kernel/debug/rknpu/load` —— 不解则 sysmon 的 npu_load 全为 null（其余 CPU/RSS/温度不受影响）。
+`sudo chmod o+r /sys/kernel/debug/rknpu/load` —— 不解则 sysmon 的 npu_load 全为 null（其余 CPU/RSS/温度不受影响）。无 sudo 替代路径已排除：`/sys/class/devfreq/27700000.npu/load` 虽免 root 可读，但本板内核下恒报 `100@950000000Hz`（空闲与推理中不变，2026-10-10 实测），不可用。
 
 注：zipformer large 自转 RKNN 已到位并语料级验收（2026-10-10）：en WER 11.4% 与 cpu 完全相同且 30/30 逐条一致，叠词定量 0 次（此前 smoke 的 ALWAYS ALWAYS 为孤立事件）；zh CER 7.57% vs cpu 7.76%。large 的 rknn 与 cpu RTF 同为 0.41（NPU 对 large 无加速），报告如实呈现。
 
