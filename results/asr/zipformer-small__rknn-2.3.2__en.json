@@ -13,19 +13,20 @@
     "board": "Seeed Studio ReComputer RK3576 Dev Kit",
     "kernel": "6.1.115-vendor-seeed-rk3576",
     "machine": "aarch64",
-    "date_utc": "2026-10-09T10:04:54+00:00"
+    "date_utc": "2026-10-10T04:05:12+00:00"
   },
   "sysmon": {
-    "samples": 2423,
-    "cpu_pct_mean": 6.9,
-    "cpu_pct_peak": 39.3,
-    "rss_mb_peak": 484.9,
+    "samples": 2413,
+    "cpu_pct_mean": 6.5,
+    "cpu_pct_peak": 26.8,
+    "rss_mb_peak": 485.3,
     "temp_soc_peak_c": 37.9,
-    "temp_bigcore_peak_c": 38.8,
+    "temp_bigcore_peak_c": 39.8,
     "temp_littlecore_peak_c": 38.8,
     "temp_ddr_peak_c": 37.9,
-    "temp_npu_peak_c": 37.0,
-    "temp_gpu_peak_c": 38.8
+    "temp_npu_peak_c": 37.9,
+    "temp_gpu_peak_c": 38.8,
+    "npu_load_last": "NPU load:  Core0:  9%, Core1:  0%,"
   },
   "aggregate": {
     "wer": {
@@ -37,17 +38,17 @@
       "errors": 113,
       "units": 592
     },
-    "rtf_mean": 0.1497,
-    "rtfx": 6.75,
+    "rtf_mean": 0.1456,
+    "rtfx": 6.87,
     "first_token_s": {
-      "mean": 1.2584,
-      "p50": 1.197,
-      "p95": 1.254
+      "mean": 1.2633,
+      "p50": 1.194,
+      "p95": 1.246
     },
     "endpoint_s": {
-      "mean": 0.0005,
+      "mean": 0.0004,
       "p50": 0.0,
-      "p95": 0.002
+      "p95": 0.001
     },
     "text_diff_ab": 0
   },
@@ -61,8 +62,8 @@
       "errors": 1,
       "ref_units": 16,
       "error_rate": 0.0625,
-      "rtf": 0.1643,
-      "first_token_s": 1.214,
+      "rtf": 0.1913,
+      "first_token_s": 1.186,
       "endpoint_s": 0.0
     },
     {
@@ -74,8 +75,8 @@
       "errors": 3,
       "ref_units": 29,
       "error_rate": 0.1034,
-      "rtf": 0.1563,
-      "first_token_s": 1.164,
+      "rtf": 0.1467,
+      "first_token_s": 1.126,
       "endpoint_s": 0.0
     },
     {
@@ -87,9 +88,9 @@
       "errors": 3,
       "ref_units": 31,
       "error_rate": 0.0968,
-      "rtf": 0.1402,
-      "first_token_s": 1.142,
-      "endpoint_s": 0.001
+      "rtf": 0.1354,
+      "first_token_s": 1.228,
+      "endpoint_s": 0.0
     },
     {
       "id": "en_003",
@@ -100,8 +101,8 @@
       "errors": 3,
       "ref_units": 30,
       "error_rate": 0.1,
-      "rtf": 0.1323,
-      "first_token_s": 1.241,
+      "rtf": 0.1419,
+      "first_token_s": 1.168,
       "endpoint_s": 0.001
     },
     {
@@ -113,9 +114,9 @@
       "errors": 12,
       "ref_units": 41,
       "error_rate": 0.2927,
-      "rtf": 0.1445,
-      "first_token_s": 3.033,
-      "endpoint_s": 0.0
+      "rtf": 0.1477,
+      "first_token_s": 3.134,
+      "endpoint_s": 0.001
     },
     {
       "id": "en_005",
@@ -126,8 +127,8 @@
       "errors": 0,
       "ref_units": 9,
       "error_rate": 0.0,
-      "rtf": 0.1683,
-      "first_token_s": 1.248,
+      "rtf": 0.1527,
+      "first_token_s": 1.164,
       "endpoint_s": 0.0
     },
     {
@@ -139,8 +140,8 @@
       "errors": 3,
       "ref_units": 9,
       "error_rate": 0.3333,
-      "rtf": 0.1642,
-      "first_token_s": 1.219,
+      "rtf": 0.1268,
+      "first_token_s": 1.15,
       "endpoint_s": 0.001
     },
     {
@@ -152,8 +153,8 @@
       "errors": 8,
       "ref_units": 12,
       "error_rate": 0.6667,
-      "rtf": 0.1433,
-      "first_token_s": 1.173,
+      "rtf": 0.1244,
+      "first_token_s": 1.187,
       "endpoint_s": 0.001
     },
     {
@@ -165,9 +166,9 @@
       "errors": 4,
       "ref_units": 10,
       "error_rate": 0.4,
-      "rtf": 0.1539,
-      "first_token_s": 1.151,
-      "endpoint_s": 0.0
+      "rtf": 0.1406,
+      "first_token_s": 1.226,
+      "endpoint_s": 0.001
     },
     {
       "id": "en_009",
@@ -178,8 +179,8 @@
       "errors": 6,
       "ref_units": 20,
       "error_rate": 0.3,
-      "rtf": 0.1407,
-      "first_token_s": 1.227,
+      "rtf": 0.1354,
+      "first_token_s": 1.187,
       "endpoint_s": 0.0
     },
     {
@@ -191,8 +192,8 @@
       "errors": 7,
       "ref_units": 42,
       "error_rate": 0.1667,
-      "rtf": 0.1438,
-      "first_token_s": 1.24,
+      "rtf": 0.1404,
+      "first_token_s": 1.194,
       "endpoint_s": 0.0
     },
     {
@@ -204,9 +205,9 @@
       "errors": 5,
       "ref_units": 9,
       "error_rate": 0.5556,
-      "rtf": 0.1303,
-      "first_token_s": 1.196,
-      "endpoint_s": 0.0
+      "rtf": 0.1356,
+      "first_token_s": 1.229,
+      "endpoint_s": 0.001
     },
     {
       "id": "en_012",
@@ -217,8 +218,8 @@
       "errors": 3,
       "ref_units": 12,
       "error_rate": 0.25,
-      "rtf": 0.1966,
-      "first_token_s": 1.171,
+      "rtf": 0.1479,
+      "first_token_s": 1.151,
       "endpoint_s": 0.0
     },
     {
@@ -230,8 +231,8 @@
       "errors": 2,
       "ref_units": 8,
       "error_rate": 0.25,
-      "rtf": 0.1495,
-      "first_token_s": 1.198,
+      "rtf": 0.131,
+      "first_token_s": 1.24,
       "endpoint_s": 0.0
     },
     {
@@ -243,8 +244,8 @@
       "errors": 5,
       "ref_units": 7,
       "error_rate": 0.7143,
-      "rtf": 0.1082,
-      "first_token_s": 1.154,
+      "rtf": 0.1353,
+      "first_token_s": 1.158,
       "endpoint_s": 0.001
     },
     {
@@ -256,9 +257,9 @@
       "errors": 5,
       "ref_units": 29,
       "error_rate": 0.1724,
-      "rtf": 0.1577,
-      "first_token_s": 1.184,
-      "endpoint_s": 0.002
+      "rtf": 0.1425,
+      "first_token_s": 1.218,
+      "endpoint_s": 0.0
     },
     {
       "id": "en_016",
@@ -269,8 +270,8 @@
       "errors": 2,
       "ref_units": 19,
       "error_rate": 0.1053,
-      "rtf": 0.1463,
-      "first_token_s": 1.226,
+      "rtf": 0.142,
+      "first_token_s": 1.193,
       "endpoint_s": 0.001
     },
     {
@@ -282,9 +283,9 @@
       "errors": 3,
       "ref_units": 24,
       "error_rate": 0.125,
-      "rtf": 0.1452,
-      "first_token_s": 1.175,
-      "endpoint_s": 0.001
+      "rtf": 0.1506,
+      "first_token_s": 1.184,
+      "endpoint_s": 0.0
     },
     {
       "id": "en_018",
@@ -295,9 +296,9 @@
       "errors": 5,
       "ref_units": 32,
       "error_rate": 0.1562,
-      "rtf": 0.1417,
-      "first_token_s": 1.18,
-      "endpoint_s": 0.001
+      "rtf": 0.1493,
+      "first_token_s": 1.19,
+      "endpoint_s": 0.0
     },
     {
       "id": "en_019",
@@ -308,9 +309,9 @@
       "errors": 4,
       "ref_units": 31,
       "error_rate": 0.129,
-      "rtf": 0.1364,
-      "first_token_s": 1.229,
-      "endpoint_s": 0.0
+      "rtf": 0.1399,
+      "first_token_s": 1.211,
+      "endpoint_s": 0.001
     },
     {
       "id": "en_020",
@@ -321,8 +322,8 @@
       "errors": 5,
       "ref_units": 34,
       "error_rate": 0.1471,
-      "rtf": 0.1463,
-      "first_token_s": 1.192,
+      "rtf": 0.1493,
+      "first_token_s": 1.246,
       "endpoint_s": 0.0
     },
     {
@@ -334,8 +335,8 @@
       "errors": 1,
       "ref_units": 32,
       "error_rate": 0.0312,
-      "rtf": 0.1563,
-      "first_token_s": 1.172,
+      "rtf": 0.1536,
+      "first_token_s": 1.151,
       "endpoint_s": 0.001
     },
     {
@@ -347,7 +348,7 @@
       "errors": 3,
       "ref_units": 17,
       "error_rate": 0.1765,
-      "rtf": 0.16,
+      "rtf": 0.1579,
       "first_token_s": 1.198,
       "endpoint_s": 0.0
     },
@@ -360,9 +361,9 @@
       "errors": 3,
       "ref_units": 17,
       "error_rate": 0.1765,
-      "rtf": 0.1384,
-      "first_token_s": 1.254,
-      "endpoint_s": 0.002
+      "rtf": 0.167,
+      "first_token_s": 1.238,
+      "endpoint_s": 0.001
     },
     {
       "id": "en_024",
@@ -373,8 +374,8 @@
       "errors": 1,
       "ref_units": 18,
       "error_rate": 0.0556,
-      "rtf": 0.1588,
-      "first_token_s": 1.203,
+      "rtf": 0.1609,
+      "first_token_s": 1.23,
       "endpoint_s": 0.001
     },
     {
@@ -386,8 +387,8 @@
       "errors": 4,
       "ref_units": 10,
       "error_rate": 0.4,
-      "rtf": 0.1467,
-      "first_token_s": 1.155,
+      "rtf": 0.152,
+      "first_token_s": 1.238,
       "endpoint_s": 0.0
     },
     {
@@ -399,8 +400,8 @@
       "errors": 8,
       "ref_units": 14,
       "error_rate": 0.5714,
-      "rtf": 0.149,
-      "first_token_s": 1.227,
+      "rtf": 0.1408,
+      "first_token_s": 1.224,
       "endpoint_s": 0.0
     },
     {
@@ -412,9 +413,9 @@
       "errors": 2,
       "ref_units": 16,
       "error_rate": 0.125,
-      "rtf": 0.1471,
-      "first_token_s": 1.189,
-      "endpoint_s": 0.0
+      "rtf": 0.1401,
+      "first_token_s": 1.19,
+      "endpoint_s": 0.001
     },
     {
       "id": "en_028",
@@ -425,8 +426,8 @@
       "errors": 1,
       "ref_units": 9,
       "error_rate": 0.1111,
-      "rtf": 0.1509,
-      "first_token_s": 1.201,
+      "rtf": 0.1369,
+      "first_token_s": 1.231,
       "endpoint_s": 0.0
     },
     {
@@ -438,8 +439,8 @@
       "errors": 1,
       "ref_units": 5,
       "error_rate": 0.2,
-      "rtf": 0.1752,
-      "first_token_s": 1.197,
+      "rtf": 0.152,
+      "first_token_s": 1.23,
       "endpoint_s": 0.0
     }
   ]

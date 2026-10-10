@@ -49,12 +49,13 @@ def npu_stats(tag: str, d: Path) -> tuple[float | None, int | None]:
     for line in f.read_text().splitlines():
         s = json.loads(line).get("npu_load")
         if s:
-            m = re.search(r"(\d+)", str(s))
-            if m:
-                vals.append(int(m.group(1)))
+            # 格式 "NPU load:  Core0:  0%, Core1:  0%,"——取各核百分比均值
+            cores = [int(x) for x in re.findall(r"Core\d+:\s*(\d+)%", str(s))]
+            if cores:
+                vals.append(sum(cores) / len(cores))
     if not vals:
         return None, None
-    return round(sum(vals) / len(vals), 1), max(vals)
+    return round(sum(vals) / len(vals), 1), round(max(vals), 1)
 
 
 def pct(x: float) -> str:
@@ -112,6 +113,15 @@ def main() -> None:
             consist_ratio[model] = f"{same}/{len(hr)}"
     consist_zh = f"small {consist_ratio.get('small zh')}、large {consist_ratio.get('large zh')}"
     consist_en = f"small {consist_ratio.get('small en')}、large {consist_ratio.get('large en')}"
+
+    # NPU 占用描述（发现 2 用）：small/large 的 rknn 配置均值
+    def _npu_of(tag):
+        m, _ = npu_stats(tag, ASR_DIR)
+        return m
+    npu_means = {k: _npu_of(t) for k, t in [
+        ("small", "zipformer-small__rknn-2.3.2__zh"), ("large", "zipformer-large__rknn-2.3.2__zh")]}
+    npu_frag = (f"（实测占用佐证：small 均值 {npu_means['small']}%、large 均值 {npu_means['large']}%、峰值均 ~23%，算力大量闲置）"
+                if all(v is not None for v in npu_means.values()) else "")
 
     # TTS 行
     tts_rows, worst = [], []
@@ -188,7 +198,7 @@ On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-to
 ## 发现
 
 1. **fp16 转换零退化**：四组对比逐条一致率 {consist_ratio.get('small zh')}、{consist_ratio.get('small en')}、{consist_ratio.get('large zh')}、{consist_ratio.get('large en')}，差异仅拼写变体/虚词近平局翻转且聚合错误数不变；本场景 fp16 不需要 int8，精度焦虑可以放下。
-2. **NPU 对 large 无加速**：large 的 rknn 与 cpu RTF 同为 0.41，瓶颈疑似在 decoder/joiner 的 CPU 侧串行步骤；small 则有明确（虽不大）的加速。选型含义：要精度上 large 时，不必纠结 NPU。
+2. **NPU 对 large 无加速**：large 的 rknn 与 cpu RTF 同为 0.41，瓶颈疑似在 decoder/joiner 的 CPU 侧串行步骤{npu_frag}；small 则有明确（虽不大）的加速。选型含义：要精度上 large 时，不必纠结 NPU。
 3. **Matcha en 可懂度差**：英文句被裁判听成中文音节（如 `My flight leaves…` → `帅气才三万三他们`），该模型的英文前端/训练偏中文，英文场景勿选。
 4. **Kokoro zh 数字串会读成英文**（`2026年的春节` → `TWO THOUSAND TWENTY SIX…`），中英混排场景需前端预处理。
 5. **Kokoro 在 A72 上 RTF 2.87**：fp32 82M 对四核 A72 过重，仅离线批处理可用；实时场景选 Matcha/Piper。

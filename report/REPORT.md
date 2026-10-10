@@ -21,19 +21,19 @@ On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-to
 - **NPU 版 = 自转 fp16**（rknn-toolkit2 2.3.2，librknnrt 2.2.0）：官方 RKNN zipformer 在上游坏掉（small 全 blank / large 叠词，#2861 未修），官方版不进矩阵。
 - **流式延迟**：首字延迟 = 音频起点到首个 stable partial（100ms 帧真实节奏喂入）；端点延迟 = 语音尾到 final（端点检测关闭，故≈0，纯解码收尾耗时）。
 - **TTS 回译可懂度是下界**：裁判为 zipformer small（CPU，与 ASR 基线同口径），合成音频重采样 16k 后转写对比。数字口读（`204`→`TWO HUNDRED FOUR`）与同音词（`flour`→`FLOWER`）被计为错误，**所有模型吃同一裁判、同一文本，横向比较成立，绝对值偏悲观**。
-- **资源占用**：10Hz 采样 CPU%/RSS/温度；NPU 占用读 debugfs `/sys/kernel/debug/rknpu/load`（本期未获 root 授权，NPU 占用缺失）。
+- **资源占用**：10Hz 采样 CPU%/RSS/温度；NPU 占用读 debugfs `/sys/kernel/debug/rknpu/load`（已启用）。
 
 ## ASR 结果
 
 | 模型 | 后端 | 语言 | 错误率 [95% CI] | RTF | 倍速 | 首字 p50/p95 (s) | CPU 均值 | RSS 峰值 (MB) | NPU 占用 均值/峰值 |
 |---|---|---|---|---|---|---|---|---|---|
-| Zipformer small（双语） | NPU fp16 自转 | zh | 10.1% [8.3%–11.9%] | 0.14 | 7.0× | 2.21 / 4.96 | 6% | 487 | – |
+| Zipformer small（双语） | NPU fp16 自转 | zh | 10.1% [8.3%–11.9%] | 0.14 | 7.0× | 2.21 / 5.04 | 7% | 488 | 6.8% / 23.0% |
 | Zipformer small（双语） | CPU fp32 | zh | 10.1% [8.3%–11.9%] | 0.16 | 6.3× | 2.19 / 4.96 | 30% | 267 | – |
-| Zipformer large（双语） | NPU fp16 自转 | zh | 7.6% [6.0%–9.2%] | 0.41 | 2.4× | 2.17 / 4.33 | 9% | 609 | – |
+| Zipformer large（双语） | NPU fp16 自转 | zh | 7.6% [6.0%–9.2%] | 0.41 | 2.4× | 2.16 / 4.33 | 9% | 609 | 14.8% / 23.5% |
 | Zipformer large（双语） | CPU fp32 | zh | 7.8% [6.1%–9.4%] | 0.41 | 2.5× | 2.14 / 4.34 | 59% | 488 | – |
-| Zipformer small（双语） | NPU fp16 自转 | en | 19.3% [16.1%–22.4%] | 0.15 | 6.8× | 1.20 / 1.25 | 7% | 485 | – |
+| Zipformer small（双语） | NPU fp16 自转 | en | 19.3% [16.1%–22.4%] | 0.15 | 6.9× | 1.19 / 1.25 | 6% | 485 | 6.7% / 21.5% |
 | Zipformer small（双语） | CPU fp32 | en | 19.3% [16.1%–22.4%] | 0.17 | 5.9× | 1.18 / 1.24 | 31% | 246 | – |
-| Zipformer large（双语） | NPU fp16 自转 | en | 11.4% [8.9%–13.9%] | 0.41 | 2.4× | 0.91 / 1.49 | 9% | 607 | – |
+| Zipformer large（双语） | NPU fp16 自转 | en | 11.4% [8.9%–13.9%] | 0.41 | 2.4× | 0.89 / 1.51 | 9% | 607 | 15.0% / 23.0% |
 | Zipformer large（双语） | CPU fp32 | en | 11.4% [8.9%–13.9%] | 0.44 | 2.3× | 0.89 / 1.50 | 62% | 494 | – |
 
 ### NPU vs CPU 逐条一致率（fp16 零退化验证）
@@ -75,7 +75,7 @@ On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-to
 ## 发现
 
 1. **fp16 转换零退化**：四组对比逐条一致率 30/30、27/30、29/30、30/30，差异仅拼写变体/虚词近平局翻转且聚合错误数不变；本场景 fp16 不需要 int8，精度焦虑可以放下。
-2. **NPU 对 large 无加速**：large 的 rknn 与 cpu RTF 同为 0.41，瓶颈疑似在 decoder/joiner 的 CPU 侧串行步骤；small 则有明确（虽不大）的加速。选型含义：要精度上 large 时，不必纠结 NPU。
+2. **NPU 对 large 无加速**：large 的 rknn 与 cpu RTF 同为 0.41，瓶颈疑似在 decoder/joiner 的 CPU 侧串行步骤（实测占用佐证：small 均值 6.8%、large 均值 14.8%、峰值均 ~23%，算力大量闲置）；small 则有明确（虽不大）的加速。选型含义：要精度上 large 时，不必纠结 NPU。
 3. **Matcha en 可懂度差**：英文句被裁判听成中文音节（如 `My flight leaves…` → `帅气才三万三他们`），该模型的英文前端/训练偏中文，英文场景勿选。
 4. **Kokoro zh 数字串会读成英文**（`2026年的春节` → `TWO THOUSAND TWENTY SIX…`），中英混排场景需前端预处理。
 5. **Kokoro 在 A72 上 RTF 2.87**：fp32 82M 对四核 A72 过重，仅离线批处理可用；实时场景选 Matcha/Piper。

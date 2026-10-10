@@ -48,10 +48,11 @@ def npu_stats(tag: str, d: Path):
     for line in f.read_text().splitlines():
         s = json.loads(line).get("npu_load")
         if s:
-            m = re.search(r"(\d+)", str(s))
-            if m:
-                vals.append(int(m.group(1)))
-    return (round(sum(vals) / len(vals), 1), max(vals)) if vals else (None, None)
+            # 格式 "NPU load:  Core0:  0%, Core1:  0%,"——取各核百分比均值
+            cores = [int(x) for x in re.findall(r"Core\d+:\s*(\d+)%", str(s))]
+            if cores:
+                vals.append(sum(cores) / len(cores))
+    return (round(sum(vals) / len(vals), 1), round(max(vals), 1)) if vals else (None, None)
 
 
 def main() -> None:
