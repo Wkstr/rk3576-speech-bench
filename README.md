@@ -1,32 +1,33 @@
 # RK3576 ASR / TTS Benchmark
 
-[![在线站点 Site](https://img.shields.io/badge/site-GitHub%20Pages-0d9488?logo=github)](https://wkstr.github.io/rk3576-speech-bench/)
+[![Live site](https://img.shields.io/badge/site-GitHub%20Pages-0d9488?logo=github)](https://wkstr.github.io/rk3576-speech-bench/)
 [![platform](https://img.shields.io/badge/platform-RK3576%20NPU%20%2B%20Cortex--A72-blue)](https://www.seeedstudio.com/)
 [![harness](https://img.shields.io/badge/harness-sherpa--onnx%20%2B%20librknnrt%202.2.0-orange)](https://github.com/k2-fsa/sherpa-onnx)
 
-**中文** · [English](#english)
+English | [中文](README.zh-CN.md)
 
-在瑞芯微 RK3576 开发板（reComputer，8GB）上对**端侧语音识别（ASR）与语音合成（TTS）**做的可复现实测：同一份 harness 切换 NPU（自转 fp16 RKNN）与 CPU（fp32）双口径，所有数字带 Wilson 95% 置信区间，原始 JSON 与合成样本全部入库。
+Reproducible on-device benchmarks for speech recognition (ASR) and speech synthesis (TTS) on the Rockchip RK3576 board (reComputer, 8GB): one harness, two backends — self-converted fp16 RKNN on the NPU vs fp32 on CPU. All numbers carry Wilson 95% confidence intervals; raw JSON results and synthesized audio samples are checked into the repo.
 
-**👉 在线对比站点（可排序表格 + 图表 + TTS 试听，中英文切换）：https://wkstr.github.io/rk3576-speech-bench/**
-**📄 完整报告：[report/REPORT.md](report/REPORT.md)**（中文正文 + 英文摘要，口径/局限/复现命令全在其中）
+**👉 Interactive comparison site (sortable tables, charts, TTS audio playback, zh/en toggle): <https://wkstr.github.io/rk3576-speech-bench/>**
 
-## 结果速览（数据快照 2026-10-10，最新以站点为准）
+**📄 Full report: [report/REPORT.md](report/REPORT.md)** (Chinese main text + English abstract — methodology, limitations, and reproduction commands included)
 
-### ASR（流式 zipformer，30 条/语言）
+## Results at a glance (snapshot 2026-10-10; the site always shows the latest)
 
-| 模型 | 后端 | zh CER | en WER | RTF (zh / en) |
+### ASR (streaming zipformer, 30 clips per language)
+
+| Model | Backend | zh CER | en WER | RTF (zh / en) |
 |---|---|---|---|---|
-| small（双语） | **NPU fp16 自转** | 10.1% | 19.3% | 0.14 / 0.15 |
-| small（双语） | CPU fp32 | 10.1% | 19.3% | 0.16 / 0.17 |
-| large（双语） | **NPU fp16 自转** | 7.6% | 11.4% | 0.41 / 0.41 |
-| large（双语） | CPU fp32 | 7.8% | 11.4% | 0.41 / 0.44 |
+| small (bilingual) | **NPU fp16 self-converted** | 10.1% | 19.3% | 0.14 / 0.15 |
+| small (bilingual) | CPU fp32 | 10.1% | 19.3% | 0.16 / 0.17 |
+| large (bilingual) | **NPU fp16 self-converted** | 7.6% | 11.4% | 0.41 / 0.41 |
+| large (bilingual) | CPU fp32 | 7.8% | 11.4% | 0.41 / 0.44 |
 
-要点：NPU 自转 fp16 与 CPU 输出近乎逐条一致（zh 30/30、29/30；en 27/30、30/30）——**fp16 零退化**；NPU 对 large 无加速。官方 RKNN zipformer 在上游是坏掉的（[sherpa-onnx#2861](https://github.com/k2-fsa/sherpa-onnx/issues/2861)），本仓库 NPU 数字来自自转模型（toolkit2 2.3.2）。
+Key points: the self-converted NPU fp16 models produce output near-identical to CPU fp32 (zh 30/30 and 29/30; en 27/30 and 30/30 per-clip match) — zero fp16 degradation. The NPU gives no speedup on large (its bottleneck is CPU-side decoding). The vendor's official RKNN zipformer is broken upstream ([sherpa-onnx#2861](https://github.com/k2-fsa/sherpa-onnx/issues/2861)), so all NPU numbers here come from self-converted models (rknn-toolkit2 2.3.2).
 
-### TTS（CPU fp32，自建文本）
+### TTS (CPU fp32, self-built text set)
 
-| 模型 | 语言 | RTF | 回译可懂度错误率（下界） |
+| Model | Lang | RTF | Round-trip intelligibility ER (lower bound) |
 |---|---|---|---|
 | Matcha + vocos | zh+en | **0.25** | 36.7% |
 | Piper (huayan) | zh | 0.34 | **13.4%** |
@@ -34,40 +35,27 @@
 | MMS | en | 1.66 | 31.2% |
 | Kokoro 82M v1.1 | zh+en | 2.87 | 29.8% |
 
-要点：Matcha 最快但英文可懂度差；Piper 均衡推荐；Kokoro 在四核 A72 上仅批处理可用；MMS 仅作地板对照。回译为下界口径（数字口读/同音词计为错误，横向比较公平），详见报告「口径」节。
+Key points: Matcha is the fastest but its English intelligibility is poor; Piper is the balanced recommendation; Kokoro is batch-only on the quad-core A72; MMS serves as a floor reference. The round-trip metric is a lower bound (number readouts and homophones are counted as errors, which keeps cross-model comparison fair) — see the methodology section of the report. A hybrid Matcha variant (acoustic model on CPU + vocos vocoder on NPU) reaches RTF 0.18.
 
-## 目录结构
+## Repository layout
 
 ```
-bench/    测量 harness（run_asr.py / run_tts.py / sysmon.py / run_p1.sh / run_p3.sh）
-results/  原始结果 JSON + 10Hz 资源采样（呈现层唯一数据源）
-report/   build_report.py → REPORT.md（双语）
-site/     build_site.py → index.html（自包含单页）+ audio/（84 条 TTS 试听样本）
-models.yaml / datasets.yaml  模型与数据集注册表
+bench/    measurement harness (run_asr.py / run_tts.py / sysmon.py / run_p1.sh / run_p3.sh)
+results/  raw result JSON + 10 Hz resource sampling (single source of truth for the report and site)
+report/   build_report.py → REPORT.md (bilingual)
+site/     build_site.py → index.html (self-contained single page) + audio/ (84 TTS samples)
+models.yaml / datasets.yaml  model and dataset registries
 ```
 
-## 复现
+## Reproduce
 
 ```bash
-bash setup/install.sh && bash setup/check_env.sh   # 环境（librknnrt 2.2.0 + sherpa-onnx）
-.venv/bin/python scripts/prepare_data.py en        # 及 zh；数据集获取见 AGENTS.md
-bash bench/run_p1.sh                               # ASR 4 配置 × zh/en
-bash bench/run_p3.sh                               # TTS 5 模型
-.venv/bin/python report/build_report.py            # 报告
-.venv/bin/python site/build_site.py --copy-audio 99  # 站点
+bash setup/install.sh && bash setup/check_env.sh     # environment (librknnrt 2.2.0 + sherpa-onnx)
+.venv/bin/python scripts/prepare_data.py en          # and zh; dataset notes in AGENTS.md
+bash bench/run_p1.sh                                 # ASR: 4 configs × zh/en
+bash bench/run_p3.sh                                 # TTS: 5 models
+.venv/bin/python report/build_report.py              # report
+.venv/bin/python site/build_site.py --copy-audio 99  # site
 ```
 
-数据/模型来源：[LibriSpeech test-clean](https://www.openslr.org/12)、[FLEURS cmn_hans_cn](https://huggingface.co/datasets/google/fleurs)、[sherpa-onnx 模型仓库](https://github.com/k2-fsa/sherpa-onnx)、[rknn-toolkit2 2.3.2](https://github.com/airockchip/rknn-toolkit2)。
-
----
-
-## English
-
-Reproducible on-device **ASR & TTS benchmarks on the Rockchip RK3576** (reComputer, 8GB): one harness, two backends (self-converted fp16 RKNN on NPU vs fp32 on CPU), Wilson 95% CIs on all numbers, raw JSON and synthesized samples checked in.
-
-**👉 Interactive comparison site (sortable tables, charts, TTS audio, zh/en toggle): https://wkstr.github.io/rk3576-speech-bench/**
-**📄 Full report: [report/REPORT.md](report/REPORT.md)** (Chinese main text + English abstract)
-
-Snapshot (2026-10-10; see the site for latest): streaming zipformer ASR — small NPU RTF 0.14–0.15 with output near-identical to CPU fp32 (zero fp16 degradation); large gets **no NPU speedup** (RTF 0.41 on both). TTS on CPU — Matcha+vocos fastest (RTF 0.25, bilingual but poor English), Piper balanced (RTF 0.32–0.34, best intelligibility), Kokoro-82M batch-only (RTF 2.87), MMS is a floor reference. The vendor's official RKNN zipformer is broken upstream ([sherpa-onnx#2861](https://github.com/k2-fsa/sherpa-onnx/issues/2861)); NPU numbers here come from self-converted models (rknn-toolkit2 2.3.2).
-
-Layout: `bench/` measurement harness · `results/` raw JSON (single source of truth) · `report/` bilingual report generator · `site/` self-contained static page + audio samples. Reproduce: see commands above.
+Data and model sources: [LibriSpeech test-clean](https://www.openslr.org/12), [FLEURS cmn_hans_cn](https://huggingface.co/datasets/google/fleurs), [sherpa-onnx model hub](https://github.com/k2-fsa/sherpa-onnx), [rknn-toolkit2 2.3.2](https://github.com/airockchip/rknn-toolkit2).
