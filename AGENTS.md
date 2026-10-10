@@ -27,6 +27,10 @@ librknnrt 2.1.0 不需要（#2861 证实换版本无效）。arm64 版 toolkit2 
 zh 源已从 AISHELL-1 换成 FLEURS cmn_hans_cn test（用户拍板 2026-10-09：AISHELL 太大；FLEURS 与 P2 日韩粤同源）。
 已到位：zipformer small CPU+自转 RKNN / large CPU+自转 RKNN（`rknn-2.3.2/`）/ LibriSpeech en 30 条 + FLEURS zh 30 条已采样 / TTS 五模型。SenseVoice 全线移出当前范围（用户拍板，后续需要再补）。MMS 官方只打包了 eng，无 zh。
 
+### P5 状态（2026-10-10）
+
+已发布：repo 已翻公开，站点 https://wkstr.github.io/rk3576-speech-bench/（gh-pages 分支，`git subtree push --prefix site origin gh-pages` 更新）。报告 `report/REPORT.md`（`report/build_report.py` 从 results JSON 渲染，重跑后需重跑生成器）。站点音频已拍板全量入库 `site/audio/`（84 条，~14MB）。遗留：NPU 占用待用户 sudo 提权后重测 4 个 rknn 配置 + 重生成报告/站点。
+
 ### P3 状态（2026-10-10）
 
 TTS 矩阵跑完（`bash bench/run_p3.sh`）：RTF matcha 0.25 < piper-en 0.32 < piper-zh 0.34 < mms 1.66 < kokoro 2.87；roundtrip ER 13%–37%（口径=可懂度下界，数字口读/同音词不归一化）。回译截尾坑（尾部需补 1s 静音）与口径依据：`.agents/notes/implemented/testing/2026-10-10-tts-roundtrip-harness.md`。kokoro 只跑 zh+en（裁判是中英双语，ja/ko/yue 回译无意义，属 P2）。
