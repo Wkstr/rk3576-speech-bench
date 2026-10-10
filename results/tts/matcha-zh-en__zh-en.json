@@ -13,35 +13,36 @@
     "board": "Seeed Studio ReComputer RK3576 Dev Kit",
     "kernel": "6.1.115-vendor-seeed-rk3576",
     "machine": "aarch64",
-    "date_utc": "2026-10-10T03:02:50+00:00"
+    "date_utc": "2026-10-10T07:37:36+00:00"
   },
   "sysmon": {
-    "samples": 488,
-    "cpu_pct_mean": 73.2,
+    "samples": 490,
+    "cpu_pct_mean": 73.1,
     "cpu_pct_peak": 100.0,
-    "rss_mb_peak": 413.0,
-    "temp_soc_peak_c": 43.5,
-    "temp_bigcore_peak_c": 48.1,
+    "rss_mb_peak": 424.1,
+    "temp_soc_peak_c": 42.5,
+    "temp_bigcore_peak_c": 47.2,
     "temp_littlecore_peak_c": 48.1,
     "temp_ddr_peak_c": 42.5,
     "temp_npu_peak_c": 41.6,
-    "temp_gpu_peak_c": 44.4
+    "temp_gpu_peak_c": 44.4,
+    "npu_load_last": "NPU load:  Core0:  0%, Core1:  0%,"
   },
   "aggregate": {
-    "rtf_mean": 0.2505,
-    "rtfx": 3.99,
+    "rtf_mean": 0.2536,
+    "rtfx": 3.94,
     "gen_time_s": {
-      "mean": 1.1758,
-      "p50": 1.035,
-      "p95": 2.414
+      "mean": 1.1687,
+      "p50": 1.064,
+      "p95": 2.194
     },
     "roundtrip_error_rate": {
-      "center": 0.3673,
+      "center": 0.2473,
       "wilson95": [
-        0.3196,
-        0.415
+        0.2047,
+        0.29
       ],
-      "errors": 142,
+      "errors": 95,
       "units": 388
     }
   },
@@ -50,9 +51,9 @@
       "id": "zh_01",
       "lang": "zh",
       "text": "今天天气怎么样？",
-      "duration": 1.45,
-      "gen_time_s": 0.434,
-      "rtf": 0.2994,
+      "duration": 1.43,
+      "gen_time_s": 0.448,
+      "rtf": 0.3135,
       "roundtrip": {
         "hyp": "今天天气怎么样",
         "errors": 0,
@@ -64,9 +65,9 @@
       "id": "zh_02",
       "lang": "zh",
       "text": "请把客厅的灯打开。",
-      "duration": 1.77,
-      "gen_time_s": 0.499,
-      "rtf": 0.2819,
+      "duration": 1.74,
+      "gen_time_s": 0.497,
+      "rtf": 0.2855,
       "roundtrip": {
         "hyp": "请把客厅的灯打开",
         "errors": 0,
@@ -78,9 +79,9 @@
       "id": "zh_03",
       "lang": "zh",
       "text": "明天上午十点我有一个会议。",
-      "duration": 2.52,
-      "gen_time_s": 0.601,
-      "rtf": 0.2387,
+      "duration": 2.49,
+      "gen_time_s": 0.654,
+      "rtf": 0.2626,
       "roundtrip": {
         "hyp": "明天上午十点我有一个会议",
         "errors": 0,
@@ -92,9 +93,9 @@
       "id": "zh_04",
       "lang": "zh",
       "text": "北京到上海的高铁大约需要四个半小时。",
-      "duration": 3.6,
-      "gen_time_s": 0.894,
-      "rtf": 0.2488,
+      "duration": 3.57,
+      "gen_time_s": 0.823,
+      "rtf": 0.2308,
       "roundtrip": {
         "hyp": "北京到上海的高铁大约需要四个半小时",
         "errors": 0,
@@ -106,23 +107,23 @@
       "id": "zh_05",
       "lang": "zh",
       "text": "这道菜的配方需要三百克面粉和两个鸡蛋。",
-      "duration": 3.94,
-      "gen_time_s": 1.035,
-      "rtf": 0.2629,
+      "duration": 3.91,
+      "gen_time_s": 0.972,
+      "rtf": 0.2485,
       "roundtrip": {
-        "hyp": "这道菜的配方需要三百克面粉和养的鸡蛋",
-        "errors": 2,
+        "hyp": "这道菜的配方需要三百克面粉和两个鸡蛋",
+        "errors": 0,
         "ref_units": 18,
-        "error_rate": 0.1111
+        "error_rate": 0.0
       }
     },
     {
       "id": "zh_06",
       "lang": "zh",
       "text": "人工智能正在改变我们获取信息的方式。",
-      "duration": 3.69,
-      "gen_time_s": 0.809,
-      "rtf": 0.2194,
+      "duration": 3.67,
+      "gen_time_s": 0.782,
+      "rtf": 0.2132,
       "roundtrip": {
         "hyp": "人工智能正在改变我们获取信息的方式",
         "errors": 0,
@@ -134,9 +135,9 @@
       "id": "zh_07",
       "lang": "zh",
       "text": "请提醒我下午三点给客户回电话。",
-      "duration": 3.09,
-      "gen_time_s": 0.664,
-      "rtf": 0.2149,
+      "duration": 3.05,
+      "gen_time_s": 0.702,
+      "rtf": 0.23,
       "roundtrip": {
         "hyp": "请提醒我下午三点给客户回电话",
         "errors": 0,
@@ -148,51 +149,51 @@
       "id": "zh_08",
       "lang": "zh",
       "text": "2026年的春节是2月17日，星期二。",
-      "duration": 5.0,
-      "gen_time_s": 1.399,
-      "rtf": 0.2801,
+      "duration": 4.93,
+      "gen_time_s": 1.278,
+      "rtf": 0.2593,
       "roundtrip": {
-        "hyp": "TO SUSAN TWENTY SIX IN THE春节是托运三问天日星期二",
-        "errors": 26,
+        "hyp": "TWO THOUSAND TWENTY SIX YEAR是 TWO SEVENTY日星期二",
+        "errors": 34,
         "ref_units": 17,
-        "error_rate": 1.5294
+        "error_rate": 2.0
       }
     },
     {
       "id": "zh_09",
       "lang": "zh",
       "text": "这个应用支持中文和English双语切换。",
-      "duration": 3.44,
-      "gen_time_s": 0.865,
-      "rtf": 0.2516,
+      "duration": 3.41,
+      "gen_time_s": 0.859,
+      "rtf": 0.2522,
       "roundtrip": {
-        "hyp": "这个应用支持中和宾馆是商业切换",
-        "errors": 10,
+        "hyp": "这个应用支持中和英格式双语切换",
+        "errors": 8,
         "ref_units": 20,
-        "error_rate": 0.5
+        "error_rate": 0.4
       }
     },
     {
       "id": "zh_10",
       "lang": "zh",
       "text": "根据最新的研究报告，每天走八千步可以显著降低心血管疾病的风险。",
-      "duration": 6.12,
-      "gen_time_s": 1.51,
-      "rtf": 0.2469,
+      "duration": 6.04,
+      "gen_time_s": 1.547,
+      "rtf": 0.256,
       "roundtrip": {
-        "hyp": "根据最新的研究报告每天走八千不可以显著降低吸血管疾病的风险",
-        "errors": 2,
+        "hyp": "根据最新的研究报告每天走八千不可以显著降低心血管疾病的风险",
+        "errors": 1,
         "ref_units": 29,
-        "error_rate": 0.069
+        "error_rate": 0.0345
       }
     },
     {
       "id": "zh_11",
       "lang": "zh",
       "text": "他们家养了一只金毛犬，每天早上都要带它去公园跑两圈，风雨无阻。",
-      "duration": 5.97,
-      "gen_time_s": 1.706,
-      "rtf": 0.2859,
+      "duration": 5.72,
+      "gen_time_s": 1.659,
+      "rtf": 0.2901,
       "roundtrip": {
         "hyp": "他们家养了一只金毛犬每天早上都要带他去公园跑两圈风雨无阻",
         "errors": 1,
@@ -204,81 +205,81 @@
       "id": "zh_12",
       "lang": "zh",
       "text": "随着5G网络的普及和边缘计算的发展，越来越多的智能设备可以在本地完成语音识别，不需要把音频上传到云端。",
-      "duration": 10.17,
-      "gen_time_s": 2.414,
-      "rtf": 0.2375,
+      "duration": 10.06,
+      "gen_time_s": 2.194,
+      "rtf": 0.2179,
       "roundtrip": {
-        "hyp": "谁发给网络的普及和边缘计算的发展越来越多的智能设备可以在本地完成语音识别不需要把音频上传到云端",
-        "errors": 4,
+        "hyp": "谁 FIVE G网络的普及和边缘计算的发展越来越多的智能设备可以在本地完成语音识别不需要把音频上传到云端",
+        "errors": 5,
         "ref_units": 48,
-        "error_rate": 0.0833
+        "error_rate": 0.1042
       }
     },
     {
       "id": "en_01",
       "lang": "en",
       "text": "What's the weather like today?",
-      "duration": 1.84,
-      "gen_time_s": 0.478,
-      "rtf": 0.2592,
+      "duration": 1.8,
+      "gen_time_s": 0.55,
+      "rtf": 0.3056,
       "roundtrip": {
-        "hyp": "WAS THE WIND I LIKE TO",
-        "errors": 4,
+        "hyp": "WAS THE WEATHER LIKE TODAY",
+        "errors": 1,
         "ref_units": 5,
-        "error_rate": 0.8
+        "error_rate": 0.2
       }
     },
     {
       "id": "en_02",
       "lang": "en",
       "text": "Please turn off the lights in the kitchen.",
-      "duration": 2.63,
-      "gen_time_s": 0.74,
-      "rtf": 0.2807,
+      "duration": 2.6,
+      "gen_time_s": 0.719,
+      "rtf": 0.2768,
       "roundtrip": {
-        "hyp": "PLEASED ASK THE LIVES IN THE TEACHER",
-        "errors": 5,
+        "hyp": "PLEASE TEN OFF THE LIGHTS IN THE KING",
+        "errors": 2,
         "ref_units": 8,
-        "error_rate": 0.625
+        "error_rate": 0.25
       }
     },
     {
       "id": "en_03",
       "lang": "en",
       "text": "My flight leaves at seven thirty tomorrow morning.",
-      "duration": 3.41,
-      "gen_time_s": 0.936,
-      "rtf": 0.275,
+      "duration": 3.37,
+      "gen_time_s": 0.919,
+      "rtf": 0.273,
       "roundtrip": {
-        "hyp": "帅气才三万三他们",
-        "errors": 8,
+        "hyp": "MY FLIGHT AT SEVEN THIRTY TOMORROW MORNING",
+        "errors": 1,
         "ref_units": 8,
-        "error_rate": 1.0
+        "error_rate": 0.125
       }
     },
     {
       "id": "en_04",
       "lang": "en",
       "text": "The meeting has been moved to Room 204 on the second floor.",
-      "duration": 4.74,
-      "gen_time_s": 1.161,
-      "rtf": 0.2449,
+      "duration": 4.7,
+      "gen_time_s": 1.163,
+      "rtf": 0.2473,
       "roundtrip": {
-        "hyp": "明天 HAS BEEN MOVED TO ROOM TO HUNDRED FOR DROVE ON THE SECOND FOR HER",
-        "errors": 8,
+        "hyp": "THE MEETING HAS BEEN MOVED TO ROOM TOO HUNDREDS FOR DREW ROUND THE SECOND FLORI",
+        "errors": 6,
         "ref_units": 12,
-        "error_rate": 0.6667
+        "error_rate": 0.5
       }
     },
     {
       "id": "en_05",
       "lang": "en",
       "text": "This recipe calls for 300 grams of flour and a pinch of salt.",
-      "duration": 5.18,
-      "gen_time_s": 1.151,
-      "rtf": 0.222,
+      "duration": 5.12,
+      "gen_time_s": 1.093,
+      "rtf": 0.2134,
       "roundtrip": {
-        "hyp": "THIS RECIPE CALLS FOR FREE HUNDRED GRANDS A FAR AND SO PINCH OF SALT",
+        "hyp": "THIS RECIPE CAUSED FOR THREE HUNDRED GRANDS OF FLOOR AND SO PINCH OF SALT",
         "errors": 6,
         "ref_units": 13,
         "error_rate": 0.4615
@@ -288,98 +289,98 @@
       "id": "en_06",
       "lang": "en",
       "text": "Artificial intelligence is changing the way we access information.",
-      "duration": 4.81,
-      "gen_time_s": 1.119,
-      "rtf": 0.2327,
+      "duration": 4.77,
+      "gen_time_s": 1.198,
+      "rtf": 0.2513,
       "roundtrip": {
-        "hyp": "而且非常简单 WAY WE ACCESS INFORMATION",
-        "errors": 5,
+        "hyp": "ARTIFICIAL INTELLIGENCE IS CHANGING THE WAY WE ACCESS INFORMATION",
+        "errors": 0,
         "ref_units": 9,
-        "error_rate": 0.5556
+        "error_rate": 0.0
       }
     },
     {
       "id": "en_07",
       "lang": "en",
       "text": "Could you remind me to call the dentist at three this afternoon?",
-      "duration": 3.98,
-      "gen_time_s": 1.041,
-      "rtf": 0.2618,
+      "duration": 3.94,
+      "gen_time_s": 1.105,
+      "rtf": 0.2805,
       "roundtrip": {
-        "hyp": "MIGHT ME TOOK CALL THAT AND HIS AFRIED THIS AFTERNO",
-        "errors": 9,
+        "hyp": "COULD YOU REMIND ME TO CALL THE DANTES AT THREE THIS AFTERNOON",
+        "errors": 1,
         "ref_units": 12,
-        "error_rate": 0.75
+        "error_rate": 0.0833
       }
     },
     {
       "id": "en_08",
       "lang": "en",
       "text": "The library is open from 9 AM to 6 PM on weekdays.",
-      "duration": 4.23,
-      "gen_time_s": 0.915,
-      "rtf": 0.2162,
+      "duration": 4.07,
+      "gen_time_s": 1.064,
+      "rtf": 0.2616,
       "roundtrip": {
-        "hyp": "THE ISOLM MADAM TO SIX BAR WEAPERS",
-        "errors": 10,
+        "hyp": "THE LABORY IS OPEN FROM NINETEM TO SIX PM ON WEEKDAYS",
+        "errors": 4,
         "ref_units": 12,
-        "error_rate": 0.8333
+        "error_rate": 0.3333
       }
     },
     {
       "id": "en_09",
       "lang": "en",
       "text": "She bought 2 tickets for the concert on Saturday, May 14th.",
-      "duration": 4.86,
-      "gen_time_s": 1.46,
-      "rtf": 0.3006,
+      "duration": 4.65,
+      "gen_time_s": 1.417,
+      "rtf": 0.3049,
       "roundtrip": {
-        "hyp": "谁把土 TAKE CARES FAR THE CONCERT ON SATURDAY MY FOOT TENS",
-        "errors": 8,
+        "hyp": "SHE BOUGHT TWO TEACS FOR THE CONCERT ON SATURDAY MAY FOR TEEN",
+        "errors": 4,
         "ref_units": 11,
-        "error_rate": 0.7273
+        "error_rate": 0.3636
       }
     },
     {
       "id": "en_10",
       "lang": "en",
       "text": "According to a recent study, walking eight thousand steps a day can significantly reduce the risk of heart disease.",
-      "duration": 8.39,
-      "gen_time_s": 1.956,
-      "rtf": 0.2333,
+      "duration": 8.19,
+      "gen_time_s": 1.95,
+      "rtf": 0.238,
       "roundtrip": {
-        "hyp": "哎叮嘱小 RESTA OK发现 STATDAY CAN SIGNIFICANTLY REDUCED THE RISK OF HEART DISEASE",
-        "errors": 12,
+        "hyp": "ACARDIN TO小 RECENT STUDY WALKING A THOUSAND STUDS小 DAY CAN SIGNIFICANTLY REDUCED THE RISK OF HEART DISEAS",
+        "errors": 8,
         "ref_units": 19,
-        "error_rate": 0.6316
+        "error_rate": 0.4211
       }
     },
     {
       "id": "en_11",
       "lang": "en",
       "text": "The new update adds support for voice commands, so you can control the app without touching your phone.",
-      "duration": 6.83,
-      "gen_time_s": 1.764,
-      "rtf": 0.2582,
+      "duration": 6.67,
+      "gen_time_s": 1.753,
+      "rtf": 0.263,
       "roundtrip": {
-        "hyp": "THE TESTIMATERUIT FORWARD COMMENCE SO YOU CAN CONTROL THE ADWETH ARE TATCHING YOUR FAULT",
-        "errors": 11,
+        "hyp": "THE NEW UPDATE ADDS SUPERTRUIT FOR VOICE COMMENCE SO YOU CAN CONTROL THE AB WITHOUT WIDOW TOUCHING YOUR PHONE",
+        "errors": 4,
         "ref_units": 18,
-        "error_rate": 0.6111
+        "error_rate": 0.2222
       }
     },
     {
       "id": "en_12",
       "lang": "en",
       "text": "With the spread of high-speed networks and edge computing, more and more smart devices can run speech recognition locally without uploading audio to the cloud.",
-      "duration": 10.98,
-      "gen_time_s": 2.669,
-      "rtf": 0.2431,
+      "duration": 10.72,
+      "gen_time_s": 2.702,
+      "rtf": 0.252,
       "roundtrip": {
-        "hyp": "WITH THE SPREADTH HAS BEEN MATWORKS AND ADD COMPUTING MURD AND MIRON SMART DEVICES CAN RUN SPEECH RECOGNITION LOCALLY WITHOUT ANY OTHER TWO THE CLOUD",
-        "errors": 11,
+        "hyp": "WITH THE SPREAD OF HAPPY NETWORK AND AT COMPUTING MURRA AND MORM DEVICES CAN RUN SPEECH RECOGNITION LOCALLY WITHOUT A PUDY AUDIO TO THE CLOUD",
+        "errors": 9,
         "ref_units": 26,
-        "error_rate": 0.4231
+        "error_rate": 0.3462
       }
     }
   ]

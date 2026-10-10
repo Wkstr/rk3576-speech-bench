@@ -23,7 +23,8 @@ ASR_NAMES = {
 TTS_NAMES = {
     "piper-zh-huayan__zh": ("Piper zh（huayan medium）", "VITS", "zh"),
     "piper-en-ryan__en": ("Piper en（ryan medium）", "VITS", "en"),
-    "matcha-zh-en__zh-en": ("Matcha + vocos（中英）", "Matcha", "zh+en"),
+    "matcha-zh-en__zh-en": ("Matcha + vocos-16k（中英）", "Matcha", "zh+en"),
+    "matcha-hybrid__zh-en": ("Matcha 混合（声学 CPU + vocos NPU）", "Matcha", "zh+en"),
     "kokoro__zh-en": ("Kokoro 82M v1.1（多语）", "Kokoro", "zh+en"),
     "mms-eng__en": ("MMS en（地板对照）", "VITS", "en"),
 }
@@ -123,6 +124,13 @@ def main() -> None:
     npu_frag = (f"（实测占用佐证：small 均值 {npu_means['small']}%、large 均值 {npu_means['large']}%、峰值均 ~23%，算力大量闲置）"
                 if all(v is not None for v in npu_means.values()) else "")
 
+    # TTS 关键数字（TL;DR/英文摘要/发现 3 用）
+    ma = tts.get("matcha-zh-en__zh-en")
+    hy = tts.get("matcha-hybrid__zh-en")
+    ma_rtf = ma["aggregate"]["rtf_mean"] if ma else float("nan")
+    ma_rt = ma["aggregate"]["roundtrip_error_rate"]["center"] if ma else float("nan")
+    hy_rtf = hy["aggregate"]["rtf_mean"] if hy else float("nan")
+
     # TTS 行
     tts_rows, worst = [], []
     for tag, (name, arch, langs) in TTS_NAMES.items():
@@ -153,12 +161,12 @@ def main() -> None:
 
 - **流式 ASR 上 NPU 完全可用**：自转 fp16（toolkit2 2.3.2）zipformer 与 CPU fp32 近乎**逐条一致**（zh：{consist_zh}；en：{consist_en}——差异仅 1 词/1 字级，聚合错误数不变），零精度退化；官方 RKNN 版在上游是坏掉的（sherpa-onnx#2861），自转是唯一可行路径。
 - **速度**：small NPU RTF 0.14–0.15（≈7 倍实时）；large 在 NPU 与 CPU 上同为 RTF 0.41——**NPU 对 large 无加速收益**，large 的唯一 NPU 价值是 offload 省电。
-- **TTS 速度王是 Matcha**（RTF 0.25，中英双语）；Piper 单语 RTF 0.32–0.34；Kokoro 82M fp32 在 A72 上 RTF 2.87（0.35 倍实时，仅批处理可用）；MMS en 1.66。
-- **回译可懂度**（下界口径，见「口径」）：Piper zh 13% 最优；Matcha en 与 Kokoro zh 长句有真实可懂度问题。
+- **TTS 速度王是 Matcha**（CPU RTF {ma_rtf:.2f}，中英双语）；**vocos 换 NPU 后再降 {1-hy_rtf/ma_rtf:.0%} 到 {hy_rtf:.2f}**，回译不变——vocos 是 TTS 唯一稳赢的 NPU 卸载点。Piper 单语 RTF 0.32–0.34；Kokoro 82M fp32 在 A72 上 RTF 2.87（0.35 倍实时，仅批处理可用）；MMS en 1.66。
+- **回译可懂度**（下界口径，见「口径」）：Piper zh 13% 最优；Matcha 修正声码器错配（22k→16k）后 en 可懂度恢复正常；Kokoro zh 长句数字串会读成英文。
 
 ## English summary
 
-On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-toolkit2 2.3.2) transcribe **near-identically to the CPU fp32 baseline** (zh: {consist_zh}; en: {consist_en} — diffs are single word/character, aggregate error counts unchanged), while the vendor's official RKNN zipformer is broken upstream (sherpa-onnx#2861). RTF: small NPU ≈0.14 (7× realtime); large shows **no NPU speedup** (RTF 0.41 on both). For TTS on CPU: Matcha+vocos is fastest (RTF 0.25, bilingual), Piper RTF 0.32–0.34 per language, Kokoro-82M fp32 RTF 2.87 (batch only), MMS en 1.66. Roundtrip-ASR intelligibility (a lower bound — digit verbalization and homophones count as errors): Piper zh 13%, Piper en 21%, Kokoro 30%, MMS 31%, Matcha 37%, with genuine intelligibility failures on Matcha-EN and Kokoro-ZH long sentences. All numbers come with Wilson 95% CIs in `results/`.
+On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-toolkit2 2.3.2) transcribe **near-identically to the CPU fp32 baseline** (zh: {consist_zh}; en: {consist_en} — diffs are single word/character, aggregate error counts unchanged), while the vendor's official RKNN zipformer is broken upstream (sherpa-onnx#2861). RTF: small NPU ≈0.14 (7× realtime); large shows **no NPU speedup** (RTF 0.41 on both). For TTS: Matcha+vocos-16k is fastest (CPU RTF {ma_rtf:.2f}, bilingual; **RTF {hy_rtf:.2f} with the vocoder offloaded to NPU**, same roundtrip intelligibility — the vocoder is the only reliably profitable TTS NPU offload; the fp16 acoustic estimator is not viable, and upstream's own production doesn't use it either). Piper RTF 0.32–0.34 per language, Kokoro-82M fp32 RTF 2.87 (batch only), MMS en 1.66. Roundtrip-ASR intelligibility (a lower bound — digit verbalization and homophones count as errors): Piper zh 13%, Piper en 21%, Matcha {ma_rt:.0%}, Kokoro 30%, MMS 31%; Kokoro-ZH reads digit strings in English. All numbers come with Wilson 95% CIs in `results/`.
 
 ## 口径（读数字前必读）
 
@@ -199,7 +207,7 @@ On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-to
 
 1. **fp16 转换零退化**：四组对比逐条一致率 {consist_ratio.get('small zh')}、{consist_ratio.get('small en')}、{consist_ratio.get('large zh')}、{consist_ratio.get('large en')}，差异仅拼写变体/虚词近平局翻转且聚合错误数不变；本场景 fp16 不需要 int8，精度焦虑可以放下。
 2. **NPU 对 large 无加速**：large 的 rknn 与 cpu RTF 同为 0.41，瓶颈疑似在 decoder/joiner 的 CPU 侧串行步骤{npu_frag}；small 则有明确（虽不大）的加速。选型含义：要精度上 large 时，不必纠结 NPU。
-3. **Matcha en 可懂度差**：英文句被裁判听成中文音节（如 `My flight leaves…` → `帅气才三万三他们`），该模型的英文前端/训练偏中文，英文场景勿选。
+3. **Matcha 两条教训**：(a) 声码器必须配 16k——matcha-icefall-zh-en 是 16kHz 模型，首轮我们错配 vocos-22khz（sherpa 有告警被日志过滤吞了），导致音频 1.38× 快进、en 回译 63% 的冤案；修正后 en 30.1%、总 ER {ma_rt:.1%}。(b) 声学模型的 estimator 转 fp16 RKNN 精度不足（逐步偏差 25%→63%，ODE 累积后输出不可懂；上游生产也不用它——官方 compose 里标 `MATCHA_USE_ORT=1`，ORT CPU 9/10 vs RKNN 拆分 7/10）。encoder/vocos 的 NPU 版都验证可用。
 4. **Kokoro zh 数字串会读成英文**（`2026年的春节` → `TWO THOUSAND TWENTY SIX…`），中英混排场景需前端预处理。
 5. **Kokoro 在 A72 上 RTF 2.87**：fp32 82M 对四核 A72 过重，仅离线批处理可用；实时场景选 Matcha/Piper。
 6. **MMS en（RTF 1.66）既慢可懂度又差**，纯地板对照，不建议任何场景使用。

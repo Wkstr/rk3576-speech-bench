@@ -1,488 +1,490 @@
-{"ts": 3371538.671, "cpu_pct": 0.0, "rss_mb": 382.4, "npu_load": null, "temp": {"soc": 39.768, "bigcore": 41.615, "littlecore": 41.615, "ddr": 38.845, "npu": 38.845, "gpu": 39.768}}
-{"ts": 3371538.773, "cpu_pct": 59.3, "rss_mb": 384.1, "npu_load": null, "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 42.538, "ddr": 39.768, "npu": 38.845, "gpu": 40.692}}
-{"ts": 3371538.876, "cpu_pct": 53.7, "rss_mb": 384.1, "npu_load": null, "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 42.538, "ddr": 39.768, "npu": 39.768, "gpu": 40.692}}
-{"ts": 3371538.98, "cpu_pct": 67.5, "rss_mb": 384.1, "npu_load": null, "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 44.384, "ddr": 39.768, "npu": 39.768, "gpu": 40.692}}
-{"ts": 3371539.084, "cpu_pct": 63.4, "rss_mb": 384.1, "npu_load": null, "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 43.461, "ddr": 39.768, "npu": 39.768, "gpu": 41.615}}
-{"ts": 3371539.187, "cpu_pct": 27.2, "rss_mb": 385.0, "npu_load": null, "temp": {"soc": 40.692, "bigcore": 41.615, "littlecore": 41.615, "ddr": 39.768, "npu": 39.768, "gpu": 40.692}}
-{"ts": 3371539.29, "cpu_pct": 48.2, "rss_mb": 385.0, "npu_load": null, "temp": {"soc": 40.692, "bigcore": 43.461, "littlecore": 42.538, "ddr": 39.768, "npu": 39.768, "gpu": 40.692}}
-{"ts": 3371539.396, "cpu_pct": 94.2, "rss_mb": 387.6, "npu_load": null, "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
-{"ts": 3371539.499, "cpu_pct": 94.9, "rss_mb": 389.8, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
-{"ts": 3371539.602, "cpu_pct": 92.8, "rss_mb": 391.4, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
-{"ts": 3371539.726, "cpu_pct": 60.2, "rss_mb": 392.3, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
-{"ts": 3371539.829, "cpu_pct": 59.5, "rss_mb": 392.3, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
-{"ts": 3371539.937, "cpu_pct": 57.1, "rss_mb": 392.3, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
-{"ts": 3371540.039, "cpu_pct": 71.6, "rss_mb": 392.3, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
-{"ts": 3371540.142, "cpu_pct": 50.6, "rss_mb": 393.1, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
-{"ts": 3371540.247, "cpu_pct": 51.8, "rss_mb": 393.1, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
-{"ts": 3371540.353, "cpu_pct": 91.9, "rss_mb": 393.1, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
-{"ts": 3371540.455, "cpu_pct": 91.4, "rss_mb": 393.1, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371540.558, "cpu_pct": 95.2, "rss_mb": 393.1, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371540.66, "cpu_pct": 87.7, "rss_mb": 394.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371540.762, "cpu_pct": 51.2, "rss_mb": 394.4, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371540.865, "cpu_pct": 53.6, "rss_mb": 394.4, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371540.967, "cpu_pct": 64.2, "rss_mb": 394.4, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371541.072, "cpu_pct": 65.1, "rss_mb": 394.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371541.174, "cpu_pct": 50.6, "rss_mb": 394.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371541.279, "cpu_pct": 70.7, "rss_mb": 394.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371541.383, "cpu_pct": 98.8, "rss_mb": 394.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371541.488, "cpu_pct": 94.0, "rss_mb": 394.7, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371541.59, "cpu_pct": 100.0, "rss_mb": 394.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371541.693, "cpu_pct": 97.5, "rss_mb": 394.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371541.795, "cpu_pct": 83.1, "rss_mb": 396.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371541.902, "cpu_pct": 54.1, "rss_mb": 396.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371542.007, "cpu_pct": 62.4, "rss_mb": 396.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371542.11, "cpu_pct": 53.1, "rss_mb": 396.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371542.212, "cpu_pct": 50.6, "rss_mb": 396.4, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371542.316, "cpu_pct": 72.6, "rss_mb": 396.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371542.42, "cpu_pct": 51.9, "rss_mb": 396.4, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371542.524, "cpu_pct": 59.0, "rss_mb": 396.4, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371542.629, "cpu_pct": 53.0, "rss_mb": 396.9, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371542.732, "cpu_pct": 80.5, "rss_mb": 396.9, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371542.835, "cpu_pct": 98.8, "rss_mb": 396.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371542.939, "cpu_pct": 100.0, "rss_mb": 396.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371543.042, "cpu_pct": 93.9, "rss_mb": 396.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371543.145, "cpu_pct": 100.0, "rss_mb": 396.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371543.25, "cpu_pct": 84.5, "rss_mb": 396.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371543.353, "cpu_pct": 100.0, "rss_mb": 396.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371543.459, "cpu_pct": 55.4, "rss_mb": 397.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371543.563, "cpu_pct": 54.8, "rss_mb": 397.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371543.667, "cpu_pct": 62.7, "rss_mb": 397.2, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371543.77, "cpu_pct": 53.7, "rss_mb": 397.2, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371543.873, "cpu_pct": 59.0, "rss_mb": 397.2, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371543.98, "cpu_pct": 56.5, "rss_mb": 397.2, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371544.087, "cpu_pct": 69.4, "rss_mb": 398.3, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371544.192, "cpu_pct": 60.7, "rss_mb": 398.3, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371544.301, "cpu_pct": 55.8, "rss_mb": 398.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371544.404, "cpu_pct": 43.9, "rss_mb": 398.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371544.506, "cpu_pct": 93.7, "rss_mb": 398.5, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371544.608, "cpu_pct": 98.8, "rss_mb": 398.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371544.715, "cpu_pct": 100.0, "rss_mb": 398.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371544.817, "cpu_pct": 94.0, "rss_mb": 398.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371544.92, "cpu_pct": 84.1, "rss_mb": 398.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371545.023, "cpu_pct": 93.8, "rss_mb": 398.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371545.126, "cpu_pct": 91.4, "rss_mb": 398.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371545.229, "cpu_pct": 75.3, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371545.334, "cpu_pct": 71.8, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371545.436, "cpu_pct": 52.4, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371545.539, "cpu_pct": 51.2, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371545.641, "cpu_pct": 51.8, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371545.744, "cpu_pct": 53.7, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371545.852, "cpu_pct": 81.4, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371545.956, "cpu_pct": 50.6, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371546.058, "cpu_pct": 51.9, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371546.161, "cpu_pct": 50.0, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371546.263, "cpu_pct": 100.0, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371546.371, "cpu_pct": 90.7, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371546.476, "cpu_pct": 100.0, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371546.578, "cpu_pct": 100.0, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371546.681, "cpu_pct": 97.6, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371546.787, "cpu_pct": 98.8, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371546.889, "cpu_pct": 56.8, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371546.992, "cpu_pct": 56.1, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371547.094, "cpu_pct": 52.4, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371547.197, "cpu_pct": 68.3, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371547.302, "cpu_pct": 55.4, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371547.405, "cpu_pct": 51.2, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371547.507, "cpu_pct": 72.3, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371547.609, "cpu_pct": 96.4, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371547.712, "cpu_pct": 96.3, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371547.814, "cpu_pct": 98.8, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371547.917, "cpu_pct": 97.6, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371548.019, "cpu_pct": 95.2, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371548.124, "cpu_pct": 100.0, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371548.231, "cpu_pct": 57.0, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371548.339, "cpu_pct": 53.6, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371548.443, "cpu_pct": 53.5, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371548.546, "cpu_pct": 60.5, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371548.655, "cpu_pct": 57.0, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371548.76, "cpu_pct": 67.9, "rss_mb": 398.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371548.862, "cpu_pct": 74.7, "rss_mb": 399.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371548.965, "cpu_pct": 54.9, "rss_mb": 399.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371549.068, "cpu_pct": 56.6, "rss_mb": 399.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371549.175, "cpu_pct": 68.2, "rss_mb": 399.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371549.278, "cpu_pct": 53.1, "rss_mb": 399.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371549.381, "cpu_pct": 72.3, "rss_mb": 399.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371549.487, "cpu_pct": 50.6, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371549.59, "cpu_pct": 46.3, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371549.698, "cpu_pct": 98.8, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371549.8, "cpu_pct": 98.8, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371549.902, "cpu_pct": 100.0, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371550.004, "cpu_pct": 94.0, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371550.106, "cpu_pct": 97.6, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371550.208, "cpu_pct": 97.5, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371550.31, "cpu_pct": 98.8, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371550.413, "cpu_pct": 97.6, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371550.519, "cpu_pct": 89.4, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371550.622, "cpu_pct": 55.6, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371550.725, "cpu_pct": 53.1, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371550.834, "cpu_pct": 55.7, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371550.937, "cpu_pct": 52.4, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371551.044, "cpu_pct": 62.4, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371551.153, "cpu_pct": 66.7, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371551.256, "cpu_pct": 53.0, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371551.36, "cpu_pct": 50.6, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371551.465, "cpu_pct": 50.6, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371551.569, "cpu_pct": 100.0, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371551.671, "cpu_pct": 98.8, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371551.777, "cpu_pct": 98.8, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371551.879, "cpu_pct": 100.0, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371551.981, "cpu_pct": 100.0, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371552.086, "cpu_pct": 100.0, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371552.189, "cpu_pct": 72.3, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371552.293, "cpu_pct": 59.0, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371552.404, "cpu_pct": 58.0, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371552.522, "cpu_pct": 68.5, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371552.625, "cpu_pct": 69.9, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371552.729, "cpu_pct": 51.9, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371552.836, "cpu_pct": 58.8, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371552.939, "cpu_pct": 56.6, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371553.041, "cpu_pct": 51.2, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371553.144, "cpu_pct": 54.9, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371553.248, "cpu_pct": 62.7, "rss_mb": 400.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371553.356, "cpu_pct": 62.4, "rss_mb": 400.3, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371553.464, "cpu_pct": 64.4, "rss_mb": 400.3, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371553.581, "cpu_pct": 46.2, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371553.683, "cpu_pct": 53.7, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371553.788, "cpu_pct": 100.0, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371553.89, "cpu_pct": 96.4, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371553.992, "cpu_pct": 97.5, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371554.094, "cpu_pct": 95.2, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371554.197, "cpu_pct": 97.5, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371554.299, "cpu_pct": 93.8, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371554.404, "cpu_pct": 100.0, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371554.506, "cpu_pct": 96.3, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371554.609, "cpu_pct": 97.5, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371554.712, "cpu_pct": 100.0, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371554.815, "cpu_pct": 84.3, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371554.919, "cpu_pct": 54.8, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371555.024, "cpu_pct": 59.5, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371555.13, "cpu_pct": 69.4, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371555.24, "cpu_pct": 60.2, "rss_mb": 400.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371555.347, "cpu_pct": 69.9, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371555.453, "cpu_pct": 52.9, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371555.556, "cpu_pct": 53.0, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371555.663, "cpu_pct": 62.4, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371555.765, "cpu_pct": 58.8, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371555.87, "cpu_pct": 68.2, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371555.973, "cpu_pct": 54.2, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371556.078, "cpu_pct": 65.9, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371556.182, "cpu_pct": 61.0, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371556.3, "cpu_pct": 68.7, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371556.414, "cpu_pct": 55.6, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371556.517, "cpu_pct": 43.4, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371556.621, "cpu_pct": 80.5, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371556.728, "cpu_pct": 96.6, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371556.831, "cpu_pct": 95.1, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371556.935, "cpu_pct": 97.6, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371557.037, "cpu_pct": 100.0, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371557.139, "cpu_pct": 100.0, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371557.242, "cpu_pct": 100.0, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371557.344, "cpu_pct": 93.9, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 41.615, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371557.446, "cpu_pct": 95.2, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371557.549, "cpu_pct": 96.2, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371557.651, "cpu_pct": 91.6, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371557.754, "cpu_pct": 100.0, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371557.857, "cpu_pct": 62.7, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371557.959, "cpu_pct": 53.0, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371558.064, "cpu_pct": 54.2, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371558.168, "cpu_pct": 55.4, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371558.272, "cpu_pct": 57.3, "rss_mb": 402.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371558.378, "cpu_pct": 72.6, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371558.483, "cpu_pct": 60.0, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371558.585, "cpu_pct": 50.6, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371558.688, "cpu_pct": 66.3, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371558.792, "cpu_pct": 54.8, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371558.895, "cpu_pct": 64.6, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371558.998, "cpu_pct": 51.2, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371559.1, "cpu_pct": 53.1, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371559.203, "cpu_pct": 52.4, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371559.305, "cpu_pct": 72.3, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371559.409, "cpu_pct": 62.7, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371559.511, "cpu_pct": 53.7, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371559.613, "cpu_pct": 65.1, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371559.716, "cpu_pct": 53.0, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371559.82, "cpu_pct": 53.0, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371559.927, "cpu_pct": 65.5, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371560.033, "cpu_pct": 74.7, "rss_mb": 405.2, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371560.169, "cpu_pct": 40.4, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 43.461, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371560.272, "cpu_pct": 40.2, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371560.376, "cpu_pct": 86.6, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371560.48, "cpu_pct": 98.8, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371560.582, "cpu_pct": 98.8, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371560.685, "cpu_pct": 96.3, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371560.787, "cpu_pct": 100.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371560.89, "cpu_pct": 100.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371560.992, "cpu_pct": 95.1, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371561.095, "cpu_pct": 98.8, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371561.197, "cpu_pct": 100.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371561.299, "cpu_pct": 81.2, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371561.401, "cpu_pct": 100.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371561.503, "cpu_pct": 100.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371561.607, "cpu_pct": 94.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371561.709, "cpu_pct": 96.2, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371561.811, "cpu_pct": 98.8, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371561.914, "cpu_pct": 97.6, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371562.016, "cpu_pct": 100.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371562.12, "cpu_pct": 74.7, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371562.222, "cpu_pct": 51.2, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371562.325, "cpu_pct": 65.9, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371562.429, "cpu_pct": 59.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371562.532, "cpu_pct": 55.4, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371562.635, "cpu_pct": 90.2, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371562.738, "cpu_pct": 97.6, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371562.844, "cpu_pct": 98.8, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371562.946, "cpu_pct": 73.2, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371563.052, "cpu_pct": 53.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 42.538, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371563.155, "cpu_pct": 52.4, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371563.259, "cpu_pct": 53.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371563.363, "cpu_pct": 72.9, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371563.468, "cpu_pct": 52.4, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371563.571, "cpu_pct": 51.8, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371563.675, "cpu_pct": 52.4, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371563.795, "cpu_pct": 99.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371563.897, "cpu_pct": 96.3, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371563.999, "cpu_pct": 98.7, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371564.101, "cpu_pct": 100.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371564.204, "cpu_pct": 84.3, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371564.308, "cpu_pct": 52.4, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371564.414, "cpu_pct": 54.7, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371564.518, "cpu_pct": 52.4, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371564.621, "cpu_pct": 51.8, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371564.724, "cpu_pct": 57.3, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371564.83, "cpu_pct": 80.5, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371564.932, "cpu_pct": 54.3, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371565.035, "cpu_pct": 54.2, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371565.141, "cpu_pct": 48.2, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371565.245, "cpu_pct": 87.8, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371565.353, "cpu_pct": 94.3, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371565.456, "cpu_pct": 96.2, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371565.56, "cpu_pct": 95.2, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371565.662, "cpu_pct": 100.0, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371565.764, "cpu_pct": 88.9, "rss_mb": 408.4, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371565.868, "cpu_pct": 86.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371565.971, "cpu_pct": 51.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371566.075, "cpu_pct": 53.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371566.181, "cpu_pct": 54.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371566.285, "cpu_pct": 53.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371566.389, "cpu_pct": 59.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371566.496, "cpu_pct": 56.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371566.599, "cpu_pct": 73.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371566.702, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371566.806, "cpu_pct": 55.3, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371566.912, "cpu_pct": 56.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371567.017, "cpu_pct": 47.7, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371567.12, "cpu_pct": 73.5, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371567.225, "cpu_pct": 98.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371567.33, "cpu_pct": 98.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 46.23, "littlecore": 48.076, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371567.432, "cpu_pct": 83.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371567.534, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371567.637, "cpu_pct": 91.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371567.742, "cpu_pct": 98.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371567.847, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371567.95, "cpu_pct": 74.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371568.054, "cpu_pct": 62.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371568.156, "cpu_pct": 51.3, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371568.258, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371568.361, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371568.463, "cpu_pct": 51.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371568.566, "cpu_pct": 55.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371568.675, "cpu_pct": 84.1, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371568.777, "cpu_pct": 51.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371568.879, "cpu_pct": 52.5, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371568.982, "cpu_pct": 49.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371569.087, "cpu_pct": 47.1, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371569.19, "cpu_pct": 95.1, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371569.293, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371569.399, "cpu_pct": 95.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371569.502, "cpu_pct": 92.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371569.605, "cpu_pct": 97.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371569.708, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371569.81, "cpu_pct": 90.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371569.915, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371570.017, "cpu_pct": 97.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371570.12, "cpu_pct": 86.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371570.224, "cpu_pct": 60.5, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371570.326, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371570.431, "cpu_pct": 53.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371570.537, "cpu_pct": 53.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371570.64, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371570.745, "cpu_pct": 55.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371570.858, "cpu_pct": 80.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371570.96, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371571.062, "cpu_pct": 51.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371571.166, "cpu_pct": 47.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371571.28, "cpu_pct": 53.3, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371571.383, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371571.487, "cpu_pct": 77.1, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371571.592, "cpu_pct": 95.1, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371571.695, "cpu_pct": 94.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371571.797, "cpu_pct": 97.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371571.901, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371572.003, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371572.105, "cpu_pct": 86.1, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371572.209, "cpu_pct": 53.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371572.314, "cpu_pct": 54.1, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371572.418, "cpu_pct": 59.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371572.523, "cpu_pct": 54.7, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371572.626, "cpu_pct": 56.1, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371572.729, "cpu_pct": 71.3, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371572.833, "cpu_pct": 52.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371572.937, "cpu_pct": 55.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371573.047, "cpu_pct": 58.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371573.149, "cpu_pct": 60.7, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371573.252, "cpu_pct": 96.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371573.355, "cpu_pct": 93.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371573.458, "cpu_pct": 92.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371573.561, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371573.664, "cpu_pct": 89.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371573.77, "cpu_pct": 96.5, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371573.873, "cpu_pct": 93.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371573.975, "cpu_pct": 80.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371574.078, "cpu_pct": 57.3, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371574.18, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371574.282, "cpu_pct": 51.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371574.385, "cpu_pct": 53.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371574.487, "cpu_pct": 51.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371574.589, "cpu_pct": 76.5, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371574.692, "cpu_pct": 51.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371574.801, "cpu_pct": 52.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371574.903, "cpu_pct": 45.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371575.005, "cpu_pct": 96.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371575.108, "cpu_pct": 97.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371575.213, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371575.317, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371575.42, "cpu_pct": 97.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371575.522, "cpu_pct": 98.7, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371575.625, "cpu_pct": 94.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371575.727, "cpu_pct": 81.5, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371575.832, "cpu_pct": 54.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371575.936, "cpu_pct": 55.3, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371576.04, "cpu_pct": 51.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371576.144, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371576.251, "cpu_pct": 58.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371576.354, "cpu_pct": 61.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371576.461, "cpu_pct": 63.5, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371576.569, "cpu_pct": 55.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371576.673, "cpu_pct": 64.3, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371576.776, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371576.88, "cpu_pct": 56.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371576.983, "cpu_pct": 72.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371577.096, "cpu_pct": 51.1, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371577.2, "cpu_pct": 48.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371577.303, "cpu_pct": 93.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371577.405, "cpu_pct": 95.1, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371577.507, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371577.61, "cpu_pct": 98.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371577.713, "cpu_pct": 90.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371577.823, "cpu_pct": 98.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371577.928, "cpu_pct": 90.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371578.03, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371578.132, "cpu_pct": 88.8, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371578.239, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371578.343, "cpu_pct": 62.2, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371578.451, "cpu_pct": 53.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371578.553, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371578.657, "cpu_pct": 75.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371578.762, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371578.867, "cpu_pct": 71.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371578.976, "cpu_pct": 60.9, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371579.079, "cpu_pct": 50.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371579.182, "cpu_pct": 52.4, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371579.284, "cpu_pct": 53.7, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371579.387, "cpu_pct": 53.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371579.49, "cpu_pct": 61.0, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371579.592, "cpu_pct": 50.6, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371579.696, "cpu_pct": 54.3, "rss_mb": 408.9, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371579.805, "cpu_pct": 73.9, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371579.907, "cpu_pct": 53.1, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371580.01, "cpu_pct": 62.2, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371580.119, "cpu_pct": 51.7, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371580.222, "cpu_pct": 25.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371580.326, "cpu_pct": 69.5, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371580.429, "cpu_pct": 95.2, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371580.533, "cpu_pct": 95.3, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371580.636, "cpu_pct": 93.7, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371580.739, "cpu_pct": 97.6, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371580.841, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371580.943, "cpu_pct": 95.1, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371581.047, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371581.153, "cpu_pct": 98.8, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371581.256, "cpu_pct": 95.2, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371581.358, "cpu_pct": 97.5, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371581.461, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371581.569, "cpu_pct": 97.7, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371581.677, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371581.779, "cpu_pct": 69.1, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371581.883, "cpu_pct": 54.2, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371581.987, "cpu_pct": 53.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371582.09, "cpu_pct": 53.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371582.196, "cpu_pct": 61.7, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371582.299, "cpu_pct": 53.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371582.402, "cpu_pct": 72.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371582.504, "cpu_pct": 54.9, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371582.609, "cpu_pct": 62.2, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371582.718, "cpu_pct": 60.2, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371582.829, "cpu_pct": 58.1, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371582.931, "cpu_pct": 53.7, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371583.034, "cpu_pct": 51.8, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371583.136, "cpu_pct": 63.9, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371583.245, "cpu_pct": 64.7, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371583.354, "cpu_pct": 59.8, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371583.456, "cpu_pct": 36.3, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371583.561, "cpu_pct": 76.5, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371583.669, "cpu_pct": 96.5, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371583.775, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371583.879, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371583.984, "cpu_pct": 96.3, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371584.086, "cpu_pct": 97.6, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371584.192, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371584.295, "cpu_pct": 95.2, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371584.398, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371584.5, "cpu_pct": 96.4, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371584.607, "cpu_pct": 98.8, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371584.711, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371584.814, "cpu_pct": 59.8, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 45.307, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371584.918, "cpu_pct": 63.4, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371585.027, "cpu_pct": 55.2, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371585.131, "cpu_pct": 53.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371585.234, "cpu_pct": 53.7, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371585.34, "cpu_pct": 54.8, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371585.445, "cpu_pct": 74.7, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371585.55, "cpu_pct": 59.5, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371585.652, "cpu_pct": 58.2, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 42.538, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371585.756, "cpu_pct": 60.0, "rss_mb": 409.5, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371585.859, "cpu_pct": 52.4, "rss_mb": 409.8, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 41.615, "gpu": 42.538}}
-{"ts": 3371585.965, "cpu_pct": 62.7, "rss_mb": 409.8, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371586.068, "cpu_pct": 62.7, "rss_mb": 409.8, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371586.17, "cpu_pct": 51.9, "rss_mb": 411.6, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371586.272, "cpu_pct": 51.2, "rss_mb": 411.6, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371586.377, "cpu_pct": 53.0, "rss_mb": 411.6, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371586.482, "cpu_pct": 52.4, "rss_mb": 411.6, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371586.585, "cpu_pct": 57.3, "rss_mb": 411.6, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371586.688, "cpu_pct": 53.0, "rss_mb": 411.6, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371586.792, "cpu_pct": 54.9, "rss_mb": 411.6, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371586.894, "cpu_pct": 72.3, "rss_mb": 412.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371586.997, "cpu_pct": 53.1, "rss_mb": 412.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371587.1, "cpu_pct": 57.8, "rss_mb": 412.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371587.203, "cpu_pct": 53.0, "rss_mb": 412.7, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371587.32, "cpu_pct": 52.2, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
-{"ts": 3371587.426, "cpu_pct": 13.1, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 42.538, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
-{"ts": 3371587.53, "cpu_pct": 49.4, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
-{"ts": 3371587.634, "cpu_pct": 98.8, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371587.736, "cpu_pct": 100.0, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
-{"ts": 3371587.839, "cpu_pct": 100.0, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371587.941, "cpu_pct": 96.4, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371588.044, "cpu_pct": 100.0, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
-{"ts": 3371588.146, "cpu_pct": 100.0, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371588.249, "cpu_pct": 94.0, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371588.351, "cpu_pct": 96.3, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371588.454, "cpu_pct": 100.0, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371588.557, "cpu_pct": 91.6, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371588.661, "cpu_pct": 100.0, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371588.763, "cpu_pct": 96.4, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371588.866, "cpu_pct": 97.5, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371588.968, "cpu_pct": 100.0, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371589.07, "cpu_pct": 88.1, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371589.173, "cpu_pct": 97.6, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371589.28, "cpu_pct": 98.8, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 48.076, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
-{"ts": 3371589.382, "cpu_pct": 83.8, "rss_mb": 413.0, "npu_load": null, "temp": {"soc": 43.461, "bigcore": 47.153, "littlecore": 48.076, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
+{"ts": 3388024.08, "cpu_pct": 0.0, "rss_mb": 392.7, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 38.845, "bigcore": 42.538, "littlecore": 41.615, "ddr": 37.922, "npu": 37.922, "gpu": 39.768}}
+{"ts": 3388024.183, "cpu_pct": 55.4, "rss_mb": 394.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 39.768, "bigcore": 42.538, "littlecore": 41.615, "ddr": 38.845, "npu": 37.922, "gpu": 39.768}}
+{"ts": 3388024.287, "cpu_pct": 54.2, "rss_mb": 394.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 39.768, "bigcore": 43.461, "littlecore": 41.615, "ddr": 38.845, "npu": 37.922, "gpu": 39.768}}
+{"ts": 3388024.392, "cpu_pct": 68.2, "rss_mb": 394.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 39.768, "bigcore": 43.461, "littlecore": 43.461, "ddr": 38.845, "npu": 38.845, "gpu": 39.768}}
+{"ts": 3388024.497, "cpu_pct": 64.6, "rss_mb": 394.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 39.768, "bigcore": 43.461, "littlecore": 41.615, "ddr": 39.768, "npu": 38.845, "gpu": 39.768}}
+{"ts": 3388024.601, "cpu_pct": 56.5, "rss_mb": 395.4, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 39.768, "bigcore": 43.461, "littlecore": 41.615, "ddr": 39.768, "npu": 38.845, "gpu": 39.768}}
+{"ts": 3388024.705, "cpu_pct": 68.3, "rss_mb": 395.4, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 44.384, "ddr": 39.768, "npu": 38.845, "gpu": 41.615}}
+{"ts": 3388024.81, "cpu_pct": 100.0, "rss_mb": 398.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 45.307, "ddr": 39.768, "npu": 38.845, "gpu": 41.615}}
+{"ts": 3388024.912, "cpu_pct": 89.2, "rss_mb": 400.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 44.384, "ddr": 40.692, "npu": 38.845, "gpu": 41.615}}
+{"ts": 3388025.023, "cpu_pct": 64.4, "rss_mb": 402.7, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 43.461, "ddr": 39.768, "npu": 38.845, "gpu": 40.692}}
+{"ts": 3388025.129, "cpu_pct": 66.7, "rss_mb": 402.7, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 42.538, "ddr": 39.768, "npu": 39.768, "gpu": 40.692}}
+{"ts": 3388025.234, "cpu_pct": 53.7, "rss_mb": 402.7, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 42.538, "ddr": 39.768, "npu": 38.845, "gpu": 40.692}}
+{"ts": 3388025.337, "cpu_pct": 71.6, "rss_mb": 402.7, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388025.445, "cpu_pct": 59.6, "rss_mb": 402.7, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 43.461, "ddr": 39.768, "npu": 39.768, "gpu": 40.692}}
+{"ts": 3388025.55, "cpu_pct": 44.4, "rss_mb": 403.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 42.538, "ddr": 39.768, "npu": 39.768, "gpu": 40.692}}
+{"ts": 3388025.654, "cpu_pct": 68.7, "rss_mb": 403.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 44.384, "ddr": 39.768, "npu": 38.845, "gpu": 41.615}}
+{"ts": 3388025.761, "cpu_pct": 100.0, "rss_mb": 403.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388025.863, "cpu_pct": 100.0, "rss_mb": 403.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388025.966, "cpu_pct": 89.0, "rss_mb": 404.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388026.069, "cpu_pct": 52.9, "rss_mb": 404.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388026.175, "cpu_pct": 57.6, "rss_mb": 404.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 43.461, "ddr": 39.768, "npu": 38.845, "gpu": 40.692}}
+{"ts": 3388026.283, "cpu_pct": 60.2, "rss_mb": 404.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388026.385, "cpu_pct": 75.6, "rss_mb": 404.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388026.489, "cpu_pct": 53.7, "rss_mb": 404.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388026.595, "cpu_pct": 44.0, "rss_mb": 405.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 42.538, "ddr": 39.768, "npu": 38.845, "gpu": 40.692}}
+{"ts": 3388026.698, "cpu_pct": 66.7, "rss_mb": 405.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 44.384, "ddr": 39.768, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388026.802, "cpu_pct": 100.0, "rss_mb": 405.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388026.905, "cpu_pct": 100.0, "rss_mb": 405.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388027.009, "cpu_pct": 92.9, "rss_mb": 405.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388027.115, "cpu_pct": 100.0, "rss_mb": 405.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388027.219, "cpu_pct": 69.5, "rss_mb": 406.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388027.322, "cpu_pct": 59.8, "rss_mb": 406.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388027.425, "cpu_pct": 54.9, "rss_mb": 406.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388027.527, "cpu_pct": 52.5, "rss_mb": 406.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388027.631, "cpu_pct": 62.4, "rss_mb": 406.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388027.739, "cpu_pct": 66.7, "rss_mb": 406.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388027.842, "cpu_pct": 58.5, "rss_mb": 406.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388027.945, "cpu_pct": 41.5, "rss_mb": 407.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 42.538, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388028.065, "cpu_pct": 59.8, "rss_mb": 407.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388028.167, "cpu_pct": 100.0, "rss_mb": 407.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388028.272, "cpu_pct": 87.1, "rss_mb": 407.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388028.377, "cpu_pct": 96.3, "rss_mb": 407.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388028.481, "cpu_pct": 96.4, "rss_mb": 407.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388028.583, "cpu_pct": 100.0, "rss_mb": 407.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388028.686, "cpu_pct": 93.8, "rss_mb": 407.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388028.789, "cpu_pct": 91.5, "rss_mb": 407.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388028.893, "cpu_pct": 54.9, "rss_mb": 407.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388029.002, "cpu_pct": 62.1, "rss_mb": 407.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388029.104, "cpu_pct": 53.1, "rss_mb": 407.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388029.207, "cpu_pct": 53.7, "rss_mb": 407.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388029.311, "cpu_pct": 54.9, "rss_mb": 407.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388029.415, "cpu_pct": 76.2, "rss_mb": 407.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388029.517, "cpu_pct": 61.3, "rss_mb": 408.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388029.62, "cpu_pct": 54.9, "rss_mb": 408.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388029.728, "cpu_pct": 36.8, "rss_mb": 408.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 41.615, "littlecore": 41.615, "ddr": 39.768, "npu": 39.768, "gpu": 40.692}}
+{"ts": 3388029.832, "cpu_pct": 47.6, "rss_mb": 408.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 42.538, "ddr": 39.768, "npu": 39.768, "gpu": 40.692}}
+{"ts": 3388029.935, "cpu_pct": 95.2, "rss_mb": 408.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388030.048, "cpu_pct": 96.7, "rss_mb": 408.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388030.152, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388030.254, "cpu_pct": 93.7, "rss_mb": 408.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388030.357, "cpu_pct": 97.5, "rss_mb": 408.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388030.459, "cpu_pct": 100.0, "rss_mb": 408.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388030.562, "cpu_pct": 98.8, "rss_mb": 409.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388030.664, "cpu_pct": 80.2, "rss_mb": 409.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388030.767, "cpu_pct": 52.4, "rss_mb": 409.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388030.87, "cpu_pct": 54.2, "rss_mb": 409.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388030.973, "cpu_pct": 52.4, "rss_mb": 409.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388031.075, "cpu_pct": 56.6, "rss_mb": 409.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388031.181, "cpu_pct": 69.5, "rss_mb": 409.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388031.284, "cpu_pct": 53.0, "rss_mb": 409.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388031.387, "cpu_pct": 42.7, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 43.461, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388031.49, "cpu_pct": 49.4, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388031.594, "cpu_pct": 97.6, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388031.697, "cpu_pct": 98.8, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388031.8, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388031.908, "cpu_pct": 79.3, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388032.016, "cpu_pct": 98.8, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388032.118, "cpu_pct": 98.8, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388032.22, "cpu_pct": 80.0, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388032.322, "cpu_pct": 52.4, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388032.425, "cpu_pct": 54.2, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388032.528, "cpu_pct": 53.7, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388032.63, "cpu_pct": 72.5, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388032.733, "cpu_pct": 55.4, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388032.838, "cpu_pct": 51.2, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388032.942, "cpu_pct": 52.4, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388033.045, "cpu_pct": 98.8, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388033.147, "cpu_pct": 97.5, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388033.249, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388033.352, "cpu_pct": 94.0, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388033.454, "cpu_pct": 100.0, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388033.557, "cpu_pct": 85.5, "rss_mb": 409.5, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388033.661, "cpu_pct": 63.1, "rss_mb": 409.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388033.764, "cpu_pct": 51.2, "rss_mb": 409.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388033.867, "cpu_pct": 62.2, "rss_mb": 409.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388033.971, "cpu_pct": 54.2, "rss_mb": 409.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388034.073, "cpu_pct": 52.4, "rss_mb": 409.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388034.175, "cpu_pct": 71.3, "rss_mb": 409.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388034.287, "cpu_pct": 55.4, "rss_mb": 410.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388034.392, "cpu_pct": 61.9, "rss_mb": 410.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388034.499, "cpu_pct": 67.1, "rss_mb": 410.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388034.602, "cpu_pct": 54.9, "rss_mb": 410.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388034.706, "cpu_pct": 59.5, "rss_mb": 410.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388034.819, "cpu_pct": 67.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388034.923, "cpu_pct": 42.9, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388035.029, "cpu_pct": 77.1, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388035.131, "cpu_pct": 100.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388035.234, "cpu_pct": 79.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388035.338, "cpu_pct": 95.2, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388035.441, "cpu_pct": 98.7, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388035.545, "cpu_pct": 88.2, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388035.647, "cpu_pct": 100.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388035.75, "cpu_pct": 85.4, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388035.852, "cpu_pct": 100.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388035.954, "cpu_pct": 87.8, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388036.058, "cpu_pct": 76.8, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388036.162, "cpu_pct": 53.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388036.266, "cpu_pct": 53.7, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388036.371, "cpu_pct": 57.8, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388036.476, "cpu_pct": 55.3, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 44.384, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388036.58, "cpu_pct": 76.8, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388036.69, "cpu_pct": 59.8, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388036.793, "cpu_pct": 53.7, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388036.895, "cpu_pct": 39.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388036.999, "cpu_pct": 76.8, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388037.102, "cpu_pct": 98.8, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388037.232, "cpu_pct": 100.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388037.334, "cpu_pct": 98.8, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388037.437, "cpu_pct": 100.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388037.545, "cpu_pct": 100.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388037.648, "cpu_pct": 71.1, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388037.753, "cpu_pct": 63.4, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388037.858, "cpu_pct": 55.4, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388037.968, "cpu_pct": 74.2, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388038.073, "cpu_pct": 65.9, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388038.182, "cpu_pct": 58.6, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388038.285, "cpu_pct": 63.0, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388038.388, "cpu_pct": 55.4, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388038.49, "cpu_pct": 53.2, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388038.593, "cpu_pct": 52.4, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388038.697, "cpu_pct": 58.5, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388038.802, "cpu_pct": 80.2, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388038.907, "cpu_pct": 52.4, "rss_mb": 410.3, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388039.018, "cpu_pct": 52.8, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388039.121, "cpu_pct": 28.0, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388039.225, "cpu_pct": 71.4, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388039.331, "cpu_pct": 98.8, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388039.435, "cpu_pct": 100.0, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388039.538, "cpu_pct": 98.8, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388039.641, "cpu_pct": 98.8, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388039.747, "cpu_pct": 100.0, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388039.85, "cpu_pct": 95.2, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388039.953, "cpu_pct": 100.0, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388040.055, "cpu_pct": 96.4, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388040.158, "cpu_pct": 98.8, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388040.266, "cpu_pct": 100.0, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388040.368, "cpu_pct": 72.6, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388040.472, "cpu_pct": 63.0, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388040.579, "cpu_pct": 59.5, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388040.689, "cpu_pct": 69.0, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388040.792, "cpu_pct": 65.9, "rss_mb": 411.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388040.902, "cpu_pct": 59.8, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388041.005, "cpu_pct": 62.2, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388041.108, "cpu_pct": 53.0, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388041.213, "cpu_pct": 56.1, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388041.324, "cpu_pct": 70.1, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388041.428, "cpu_pct": 57.6, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388041.534, "cpu_pct": 74.4, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388041.642, "cpu_pct": 57.5, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388041.745, "cpu_pct": 63.1, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388041.855, "cpu_pct": 67.4, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388041.972, "cpu_pct": 35.1, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 42.538, "ddr": 39.768, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388042.075, "cpu_pct": 74.7, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388042.178, "cpu_pct": 100.0, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388042.28, "cpu_pct": 97.5, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388042.383, "cpu_pct": 100.0, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388042.487, "cpu_pct": 100.0, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388042.589, "cpu_pct": 89.2, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388042.692, "cpu_pct": 92.9, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388042.794, "cpu_pct": 100.0, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388042.896, "cpu_pct": 96.3, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388042.999, "cpu_pct": 91.5, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388043.101, "cpu_pct": 53.8, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388043.203, "cpu_pct": 57.8, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388043.306, "cpu_pct": 54.3, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388043.409, "cpu_pct": 54.2, "rss_mb": 412.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388043.511, "cpu_pct": 69.5, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388043.617, "cpu_pct": 54.9, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388043.719, "cpu_pct": 57.3, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388043.822, "cpu_pct": 66.3, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388043.924, "cpu_pct": 51.2, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388044.027, "cpu_pct": 53.7, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388044.13, "cpu_pct": 52.4, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388044.232, "cpu_pct": 52.4, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388044.334, "cpu_pct": 72.8, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388044.437, "cpu_pct": 56.6, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388044.54, "cpu_pct": 52.4, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388044.642, "cpu_pct": 64.6, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388044.744, "cpu_pct": 52.5, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388044.846, "cpu_pct": 53.0, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388044.949, "cpu_pct": 69.5, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388045.054, "cpu_pct": 57.3, "rss_mb": 415.0, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388045.186, "cpu_pct": 32.7, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 41.615, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388045.29, "cpu_pct": 42.2, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 44.384, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388045.395, "cpu_pct": 89.2, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 44.384, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388045.501, "cpu_pct": 98.9, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388045.604, "cpu_pct": 98.7, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 39.768, "gpu": 43.461}}
+{"ts": 3388045.707, "cpu_pct": 97.6, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388045.81, "cpu_pct": 95.2, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388045.913, "cpu_pct": 93.8, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388046.015, "cpu_pct": 84.3, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388046.118, "cpu_pct": 100.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388046.22, "cpu_pct": 98.8, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388046.323, "cpu_pct": 97.6, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388046.432, "cpu_pct": 91.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388046.535, "cpu_pct": 93.9, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388046.666, "cpu_pct": 100.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388046.768, "cpu_pct": 89.3, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388046.871, "cpu_pct": 90.2, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388046.979, "cpu_pct": 100.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388047.081, "cpu_pct": 92.5, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388047.184, "cpu_pct": 92.8, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388047.288, "cpu_pct": 55.3, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388047.392, "cpu_pct": 61.7, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388047.497, "cpu_pct": 75.9, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388047.607, "cpu_pct": 55.7, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388047.712, "cpu_pct": 50.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388047.818, "cpu_pct": 76.5, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388047.924, "cpu_pct": 97.6, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388048.026, "cpu_pct": 96.3, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388048.133, "cpu_pct": 83.5, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388048.236, "cpu_pct": 53.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388048.34, "cpu_pct": 53.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388048.444, "cpu_pct": 65.1, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388048.553, "cpu_pct": 79.1, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388048.659, "cpu_pct": 54.1, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388048.763, "cpu_pct": 61.4, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 44.384, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388048.872, "cpu_pct": 56.3, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388048.977, "cpu_pct": 98.8, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388049.079, "cpu_pct": 98.8, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388049.185, "cpu_pct": 96.5, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388049.289, "cpu_pct": 98.8, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388049.391, "cpu_pct": 76.8, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388049.495, "cpu_pct": 59.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388049.6, "cpu_pct": 60.2, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388049.703, "cpu_pct": 54.3, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388049.806, "cpu_pct": 53.6, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388049.911, "cpu_pct": 71.1, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388050.018, "cpu_pct": 58.1, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388050.121, "cpu_pct": 61.4, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388050.225, "cpu_pct": 40.7, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 43.461, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388050.328, "cpu_pct": 57.8, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388050.432, "cpu_pct": 100.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388050.535, "cpu_pct": 98.8, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388050.638, "cpu_pct": 100.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388050.741, "cpu_pct": 100.0, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388050.843, "cpu_pct": 95.1, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388050.946, "cpu_pct": 97.6, "rss_mb": 417.6, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388051.049, "cpu_pct": 65.1, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388051.153, "cpu_pct": 54.9, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388051.259, "cpu_pct": 60.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388051.363, "cpu_pct": 53.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388051.466, "cpu_pct": 56.6, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388051.571, "cpu_pct": 53.1, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388051.677, "cpu_pct": 57.6, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388051.784, "cpu_pct": 82.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388051.887, "cpu_pct": 51.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388051.99, "cpu_pct": 54.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388052.111, "cpu_pct": 39.6, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 42.538, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388052.213, "cpu_pct": 46.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388052.32, "cpu_pct": 98.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388052.422, "cpu_pct": 86.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388052.524, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388052.626, "cpu_pct": 96.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388052.729, "cpu_pct": 97.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388052.831, "cpu_pct": 96.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388052.934, "cpu_pct": 91.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388053.04, "cpu_pct": 96.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388053.143, "cpu_pct": 72.6, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388053.246, "cpu_pct": 52.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388053.349, "cpu_pct": 54.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388053.451, "cpu_pct": 58.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388053.554, "cpu_pct": 54.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388053.657, "cpu_pct": 51.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388053.759, "cpu_pct": 59.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388053.865, "cpu_pct": 67.1, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388053.968, "cpu_pct": 58.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388054.07, "cpu_pct": 52.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388054.178, "cpu_pct": 28.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 41.615, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388054.28, "cpu_pct": 54.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388054.383, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388054.486, "cpu_pct": 87.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388054.588, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388054.69, "cpu_pct": 96.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388054.793, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388054.905, "cpu_pct": 96.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388055.008, "cpu_pct": 94.9, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388055.111, "cpu_pct": 98.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388055.215, "cpu_pct": 91.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388055.318, "cpu_pct": 95.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388055.421, "cpu_pct": 56.6, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388055.524, "cpu_pct": 66.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388055.627, "cpu_pct": 52.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388055.73, "cpu_pct": 54.9, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388055.834, "cpu_pct": 53.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388055.938, "cpu_pct": 53.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388056.046, "cpu_pct": 62.1, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388056.16, "cpu_pct": 74.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388056.263, "cpu_pct": 52.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388056.368, "cpu_pct": 57.1, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388056.474, "cpu_pct": 37.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 42.538, "littlecore": 42.538, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388056.578, "cpu_pct": 48.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388056.681, "cpu_pct": 93.6, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388056.784, "cpu_pct": 98.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388056.888, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388056.993, "cpu_pct": 91.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388057.096, "cpu_pct": 98.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388057.199, "cpu_pct": 96.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388057.301, "cpu_pct": 94.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388057.408, "cpu_pct": 98.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388057.511, "cpu_pct": 79.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388057.614, "cpu_pct": 53.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388057.718, "cpu_pct": 52.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388057.822, "cpu_pct": 57.6, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388057.927, "cpu_pct": 54.9, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388058.031, "cpu_pct": 53.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388058.135, "cpu_pct": 55.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388058.247, "cpu_pct": 75.9, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388058.35, "cpu_pct": 53.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388058.456, "cpu_pct": 55.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388058.563, "cpu_pct": 37.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 43.461, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 40.692}}
+{"ts": 3388058.667, "cpu_pct": 65.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 44.384, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388058.769, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388058.879, "cpu_pct": 88.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388058.981, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388059.084, "cpu_pct": 95.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388059.186, "cpu_pct": 94.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388059.293, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388059.396, "cpu_pct": 84.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388059.502, "cpu_pct": 97.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388059.606, "cpu_pct": 54.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388059.709, "cpu_pct": 53.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388059.813, "cpu_pct": 53.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388059.918, "cpu_pct": 68.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388060.02, "cpu_pct": 52.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388060.122, "cpu_pct": 56.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388060.23, "cpu_pct": 71.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388060.337, "cpu_pct": 55.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388060.44, "cpu_pct": 67.9, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388060.543, "cpu_pct": 39.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 44.384, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388060.658, "cpu_pct": 66.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 44.384, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388060.761, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388060.866, "cpu_pct": 86.6, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388060.974, "cpu_pct": 98.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388061.076, "cpu_pct": 98.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388061.179, "cpu_pct": 96.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388061.282, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388061.384, "cpu_pct": 96.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388061.486, "cpu_pct": 98.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388061.596, "cpu_pct": 56.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388061.701, "cpu_pct": 56.6, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388061.806, "cpu_pct": 56.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388061.909, "cpu_pct": 53.1, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388062.013, "cpu_pct": 55.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388062.121, "cpu_pct": 64.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388062.227, "cpu_pct": 69.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388062.33, "cpu_pct": 53.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388062.435, "cpu_pct": 71.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388062.541, "cpu_pct": 56.6, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388062.644, "cpu_pct": 63.4, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388062.746, "cpu_pct": 72.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388062.851, "cpu_pct": 47.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388062.954, "cpu_pct": 46.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388063.058, "cpu_pct": 93.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388063.16, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388063.264, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388063.367, "cpu_pct": 92.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388063.469, "cpu_pct": 95.1, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388063.571, "cpu_pct": 98.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388063.673, "cpu_pct": 92.8, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388063.776, "cpu_pct": 100.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388063.878, "cpu_pct": 75.9, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388063.982, "cpu_pct": 54.9, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388064.087, "cpu_pct": 53.0, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388064.191, "cpu_pct": 57.1, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388064.295, "cpu_pct": 84.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388064.406, "cpu_pct": 57.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388064.509, "cpu_pct": 68.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388064.611, "cpu_pct": 54.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388064.714, "cpu_pct": 53.1, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388064.818, "cpu_pct": 54.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388064.925, "cpu_pct": 63.5, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388065.028, "cpu_pct": 54.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388065.131, "cpu_pct": 53.7, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388065.235, "cpu_pct": 54.2, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388065.341, "cpu_pct": 78.3, "rss_mb": 417.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388065.445, "cpu_pct": 67.1, "rss_mb": 418.7, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388065.548, "cpu_pct": 65.4, "rss_mb": 418.7, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388065.65, "cpu_pct": 56.8, "rss_mb": 418.7, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388065.753, "cpu_pct": 38.3, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 43.461, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388065.857, "cpu_pct": 30.1, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388065.961, "cpu_pct": 80.5, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388066.064, "cpu_pct": 100.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388066.169, "cpu_pct": 98.8, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388066.282, "cpu_pct": 97.8, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388066.384, "cpu_pct": 98.8, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388066.487, "cpu_pct": 100.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388066.591, "cpu_pct": 100.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
+{"ts": 3388066.694, "cpu_pct": 100.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
+{"ts": 3388066.797, "cpu_pct": 97.6, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388066.903, "cpu_pct": 89.5, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388067.012, "cpu_pct": 100.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388067.116, "cpu_pct": 94.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
+{"ts": 3388067.224, "cpu_pct": 98.8, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388067.327, "cpu_pct": 100.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388067.43, "cpu_pct": 72.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388067.535, "cpu_pct": 57.6, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388067.638, "cpu_pct": 61.7, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388067.74, "cpu_pct": 53.7, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388067.842, "cpu_pct": 54.9, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388067.946, "cpu_pct": 60.2, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388068.054, "cpu_pct": 65.1, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388068.158, "cpu_pct": 61.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388068.261, "cpu_pct": 66.7, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388068.365, "cpu_pct": 56.6, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388068.469, "cpu_pct": 53.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388068.574, "cpu_pct": 60.2, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388068.679, "cpu_pct": 64.3, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388068.785, "cpu_pct": 56.5, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388068.891, "cpu_pct": 71.1, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388068.996, "cpu_pct": 57.1, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388069.106, "cpu_pct": 38.2, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388069.209, "cpu_pct": 49.4, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388069.325, "cpu_pct": 91.4, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 45.307, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388069.427, "cpu_pct": 97.5, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388069.531, "cpu_pct": 82.9, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388069.636, "cpu_pct": 98.8, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388069.748, "cpu_pct": 84.4, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388069.853, "cpu_pct": 94.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388069.955, "cpu_pct": 92.7, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
+{"ts": 3388070.057, "cpu_pct": 96.2, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
+{"ts": 3388070.162, "cpu_pct": 96.5, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
+{"ts": 3388070.267, "cpu_pct": 100.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388070.37, "cpu_pct": 97.6, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
+{"ts": 3388070.473, "cpu_pct": 98.8, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388070.577, "cpu_pct": 57.1, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388070.681, "cpu_pct": 54.8, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388070.786, "cpu_pct": 57.8, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388070.891, "cpu_pct": 55.3, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388070.995, "cpu_pct": 53.1, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388071.099, "cpu_pct": 53.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388071.203, "cpu_pct": 74.4, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388071.307, "cpu_pct": 53.7, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388071.411, "cpu_pct": 53.0, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388071.515, "cpu_pct": 69.8, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388071.621, "cpu_pct": 58.8, "rss_mb": 418.9, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388071.725, "cpu_pct": 53.1, "rss_mb": 419.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388071.829, "cpu_pct": 53.0, "rss_mb": 419.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388071.937, "cpu_pct": 56.5, "rss_mb": 419.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 43.461, "ddr": 40.692, "npu": 40.692, "gpu": 41.615}}
+{"ts": 3388072.04, "cpu_pct": 67.1, "rss_mb": 421.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388072.143, "cpu_pct": 53.7, "rss_mb": 421.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388072.245, "cpu_pct": 54.9, "rss_mb": 421.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388072.35, "cpu_pct": 53.6, "rss_mb": 421.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388072.452, "cpu_pct": 52.4, "rss_mb": 421.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388072.557, "cpu_pct": 58.0, "rss_mb": 421.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388072.667, "cpu_pct": 80.9, "rss_mb": 421.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388072.771, "cpu_pct": 57.8, "rss_mb": 422.2, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388072.881, "cpu_pct": 59.8, "rss_mb": 422.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388072.985, "cpu_pct": 59.0, "rss_mb": 422.8, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388073.094, "cpu_pct": 53.5, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388073.197, "cpu_pct": 18.3, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 40.692, "bigcore": 42.538, "littlecore": 42.538, "ddr": 40.692, "npu": 39.768, "gpu": 41.615}}
+{"ts": 3388073.312, "cpu_pct": 58.7, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 44.384, "ddr": 40.692, "npu": 39.768, "gpu": 42.538}}
+{"ts": 3388073.415, "cpu_pct": 98.8, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388073.52, "cpu_pct": 97.6, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 45.307, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 42.538}}
+{"ts": 3388073.624, "cpu_pct": 100.0, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388073.727, "cpu_pct": 98.8, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 41.615, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388073.83, "cpu_pct": 85.4, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 45.307, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388073.934, "cpu_pct": 96.4, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388074.037, "cpu_pct": 100.0, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}
+{"ts": 3388074.142, "cpu_pct": 100.0, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388074.245, "cpu_pct": 91.6, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 46.23, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388074.349, "cpu_pct": 98.8, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 48.076, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388074.452, "cpu_pct": 100.0, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 41.615, "gpu": 43.461}}
+{"ts": 3388074.555, "cpu_pct": 92.8, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
+{"ts": 3388074.657, "cpu_pct": 100.0, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 44.384}}
+{"ts": 3388074.767, "cpu_pct": 96.6, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 42.538, "npu": 41.615, "gpu": 44.384}}
+{"ts": 3388074.87, "cpu_pct": 95.1, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388074.973, "cpu_pct": 100.0, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 46.23, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388075.075, "cpu_pct": 96.4, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 41.615, "npu": 40.692, "gpu": 43.461}}
+{"ts": 3388075.178, "cpu_pct": 94.0, "rss_mb": 424.1, "npu_load": "NPU load:  Core0:  0%, Core1:  0%,", "temp": {"soc": 42.538, "bigcore": 47.153, "littlecore": 47.153, "ddr": 42.538, "npu": 40.692, "gpu": 44.384}}

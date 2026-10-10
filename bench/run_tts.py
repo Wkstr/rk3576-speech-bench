@@ -13,6 +13,7 @@ sherpa-onnx OfflineTts 为一次性合成，无流式首包概念——记录整
 """
 import argparse
 import json
+import os
 import sys
 import time
 from datetime import datetime, timezone
@@ -30,6 +31,21 @@ from sysmon import Sysmon  # noqa: E402
 
 def build_tts(args):
     import sherpa_onnx
+
+    if args.type == "matcha-rknn":
+        # 全 NPU 拆分路径（对照用）：--model 指向 rknn 产物目录，--data-dir 指向前端目录（cpu/）
+        from matcha_rknn import MatchaRKNN
+        engine = MatchaRKNN(rknn_dir=args.model, frontend_dir=args.data_dir,
+                            ode_steps=int(os.environ.get("MATCHA_ODE_STEPS", "1")))
+        engine.load()
+        return engine
+    if args.type == "matcha-hybrid":
+        # 声学 CPU ONNX + vocos NPU：--model=声学 onnx，--vocoder=vocos rknn，--data-dir=前端目录
+        from matcha_rknn import MatchaHybrid
+        engine = MatchaHybrid(acoustic_onnx=args.model, vocos_rknn=args.vocoder,
+                              frontend_dir=args.data_dir)
+        engine.load()
+        return engine
 
     common = dict(
         num_threads=args.num_threads,
@@ -68,11 +84,12 @@ def build_tts(args):
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--type", required=True, choices=["vits", "matcha", "kokoro"])
+    ap.add_argument("--type", required=True,
+                    choices=["vits", "matcha", "matcha-rknn", "matcha-hybrid", "kokoro"])
     ap.add_argument("--tag", required=True)
     ap.add_argument("--langs", nargs="+", required=True, help="跑哪些语言的文本")
     ap.add_argument("--model", required=True)
-    ap.add_argument("--tokens", required=True)
+    ap.add_argument("--tokens", default="")  # matcha-rknn 不需要（前端目录自带）
     ap.add_argument("--vocoder", default="")
     ap.add_argument("--voices", default="")
     ap.add_argument("--lexicon", default="")
@@ -85,6 +102,8 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--no-roundtrip", action="store_true", help="跳过 ASR 回译")
     args = ap.parse_args()
+    if not args.type.startswith("matcha-") and not args.tokens:
+        raise SystemExit("--tokens 必填（matcha-rknn/matcha-hybrid 除外）")
 
     texts = json.loads(Path(args.texts).read_text())["texts"]
     texts = [t for t in texts if t["lang"] in args.langs]

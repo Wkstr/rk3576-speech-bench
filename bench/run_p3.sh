@@ -13,7 +13,7 @@ PE=models/piper-en-ryan/cpu
 MA=models/matcha-zh-en/cpu
 KO=models/kokoro/cpu
 MM=models/mms-eng/cpu
-VOC=models/vocos/vocos-22khz-univ.onnx
+VOC=models/vocos/vocos-16khz-univ.onnx   # matcha 是 16kHz 模型（sherpa 有错配告警）；22khz 版是错配已弃用
 
 run() { # tag type langs... -- extra args 往 run_tts.py 透传
   local tag=$1 type=$2; shift 2
@@ -33,6 +33,14 @@ run matcha-zh-en__zh-en matcha \
   --langs zh en \
   --model "$MA/model-steps-3.onnx" --vocoder "$VOC" --tokens "$MA/tokens.txt" \
   --lexicon "$MA/lexicon.txt" --data-dir "$MA/espeak-ng-data"
+
+# 混合：声学 CPU + vocos NPU（vocos rknn 来自 scripts/matcha-rknn/ 转换）
+if [ -f models/matcha-zh-en/rknn/vocos-16khz-univ-fp16.rknn ]; then
+  run matcha-hybrid__zh-en matcha-hybrid \
+    --langs zh en \
+    --model "$MA/model-steps-3.onnx" --vocoder "models/matcha-zh-en/rknn/vocos-16khz-univ-fp16.rknn" \
+    --data-dir "$MA"
+fi
 
 run kokoro__zh-en kokoro \
   --langs zh en \

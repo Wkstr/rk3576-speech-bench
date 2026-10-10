@@ -53,9 +53,11 @@ aux:
     url: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx
     dest: models/silero_vad.onnx
   # Matcha 声码器（散文件，直接放 models/vocos/）
+  # ⚠️ matcha-icefall-zh-en 是 16kHz 模型（sherpa 对 22k vocos 有明确错配告警），必须用 16k 版；
+  # 22khz 版系 2026-10-09 错配（CPU matcha 首轮数据 1.38× 快进，已作废重测）
   vocos:
-    url: https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/vocos-22khz-univ.onnx
-    dest: models/vocos/vocos-22khz-univ.onnx
+    url: https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/vocos-16khz-univ.onnx
+    dest: models/vocos/vocos-16khz-univ.onnx
 
 # TTS：全部先跑 CPU（fp32）；RKNN 化尝试在 P4。Matcha 需搭配 aux.vocos 声码器。
 # MMS 官方 sherpa 只打包了 eng（无 zh/ja/ko/yue），只作 en 地板。
