@@ -2,7 +2,7 @@
 
 在 reComputer RK3576 (8GB, Debian 12) 上评测可跑的 ASR/TTS 模型，产出 JSON 结果 + 双语报告 + 静态对比站点。
 完整方案：`proposed/benchmark/2026-10-08-rk3576-asr-tts-benchmark.md`
-阶段计划：`.planning/2026-10-08-rk3576-asr-tts-benchmark/task_plan.md`
+阶段计划：`.planning/2026-10-08-rk3576-asr-tts-benchmark/task_plan.md`（**2026-10-10 已关闭**：主线交付即终点，P2/P4 余项用户拍板取消；新需求另开新 task）
 当前交接：`.agents/handoffs/CURRENT.md`（新会话先读它）
 
 ## ⚠️ 下载约定（用户硬性要求）
@@ -22,7 +22,7 @@ librknnrt 2.1.0 不需要（#2861 证实换版本无效）。arm64 版 toolkit2 
 
 ### 当前需要
 
-**全部下载已到位**（2026-10-10）：FLEURS zh 已采样 30 条（tarball 已删）；TTS 五模型已解压到 `models/<name>/cpu/` + vocos 在 `models/vocos/`。P2 恢复时需另下 FLEURS ja_jp/ko_kr/yue_hant_hk（同 zh 链接换语言码）。
+**全部下载已到位**（2026-10-10）：FLEURS zh 已采样 30 条（tarball 已删）；TTS 五模型已解压到 `models/<name>/cpu/` + vocos 在 `models/vocos/`。P2 已取消（2026-10-10 拍板），无需再下日韩粤。
 
 zh 源已从 AISHELL-1 换成 FLEURS cmn_hans_cn test（用户拍板 2026-10-09：AISHELL 太大；FLEURS 与 P2 日韩粤同源）。
 已到位：zipformer small CPU+自转 RKNN / large CPU+自转 RKNN（`rknn-2.3.2/`）/ LibriSpeech en 30 条 + FLEURS zh 30 条已采样 / TTS 五模型。SenseVoice 全线移出当前范围（用户拍板，后续需要再补）。MMS 官方只打包了 eng，无 zh。
@@ -31,9 +31,9 @@ zh 源已从 AISHELL-1 换成 FLEURS cmn_hans_cn test（用户拍板 2026-10-09�
 
 Matcha NPU 化实测闭环（note：`.agents/notes/implemented/testing/2026-10-10-matcha-npu-vocos-hybrid.md`）：estimator fp16 RKNN 精度不足不可用（上游生产也不用）；**混合版转正**：声学 CPU + vocos NPU（`--type matcha-hybrid`，RTF 0.18 vs CPU 0.25，回译一致）。**声码器错配修正**：matcha 是 16kHz 模型，首轮 CPU 数据错配 vocos-22khz（音频 1.38× 快进）已用 16k 重测。板上注意：rknn-toolkit-lite2 只认 `/usr/lib/librknnrt.so`（用户已软链到 2.3.2；sherpa 走 LD_LIBRARY_PATH 的 2.2.0 不受影响）；espeak C API 用 piper-phonemize 自带库。Kokoro NPU 有上游预编译包（HF harvestsu/seeed-local-voice-rk-artifacts），未启动。
 
-### P5 状态（2026-10-10）
+### P5 状态（2026-10-10，完成）
 
-已发布：repo 已翻公开，站点 https://wkstr.github.io/rk3576-speech-bench/（gh-pages 分支，`git subtree push --prefix site origin gh-pages` 更新）。报告 `report/REPORT.md`（`report/build_report.py` 从 results JSON 渲染，重跑后需重跑生成器）。站点音频已拍板全量入库 `site/audio/`（84 条，~14MB）。遗留：NPU 占用待用户 sudo 提权后重测 4 个 rknn 配置 + 重生成报告/站点。
+已发布：repo 已翻公开，站点 https://wkstr.github.io/rk3576-speech-bench/（gh-pages 分支，`git subtree push --prefix site origin gh-pages` 更新）。报告 `report/REPORT.md`（`report/build_report.py` 从 results JSON 渲染，重跑后需重跑生成器）。站点音频已拍板全量入库 `site/audio/`（84 条，~14MB）。NPU 占用已补齐：small rknn 均值 ~6.8%、large ~14.8%、峰值 ~23%（提权重启后失效，重测需重跑 chmod）。
 
 ### P3 状态（2026-10-10）
 
@@ -64,6 +64,6 @@ export LD_LIBRARY_PATH="$HOME/.local/rknn/lib"   # 跑 sherpa 必须
 
 ## 评测口径（已定，别回退）
 
-- 报告双语（中文正文 + 英文摘要）；样本 zh/en 各 30、日韩粤各 10（P2 顺延中）；数字带 Wilson 95% 置信区间
+- 报告双语（中文正文 + 英文摘要）；样本 zh/en 各 30（日韩粤 P2 已取消）；数字带 Wilson 95% 置信区间
 - NPU 自转 fp16（toolkit2 2.3.2）vs CPU fp32 基线，同 harness 切 provider（官方 RKNN 版坏掉，仅作对照，见 #2861）
 - 不测功耗；不做声音克隆；不做 Qwen3-ASR
