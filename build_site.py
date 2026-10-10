@@ -24,6 +24,7 @@ ASR_NAMES = {
     "zipformer-small__cpu96": ("Zipformer small", "CPU fp32"),
     "zipformer-large__rknn-2.3.2": ("Zipformer large", "NPU fp16"),
     "zipformer-large__cpu": ("Zipformer large", "CPU fp32"),
+    "qwen3-asr__rknn-w4a16": ("Qwen3-ASR (rkvoice-stream)", "NPU fp16+w4a16"),
 }
 TTS_NAMES = {
     "piper-zh-huayan__zh": ("Piper zh (huayan)", "VITS", "zh"),
@@ -67,7 +68,8 @@ def main() -> None:
 
     asr = []
     order = ["zipformer-small__rknn-2.3.2", "zipformer-small__cpu96",
-             "zipformer-large__rknn-2.3.2", "zipformer-large__cpu"]
+             "zipformer-large__rknn-2.3.2", "zipformer-large__cpu",
+             "qwen3-asr__rknn-w4a16"]
     for base in order:
         for lang in ("zh", "en"):
             r = asr_j.get(f"{base}__{lang}")
@@ -80,7 +82,7 @@ def main() -> None:
                             errKind="CER" if "cer" in a else "WER",
                             err=e["center"], errLo=e["wilson95"][0], errHi=e["wilson95"][1],
                             rtf=a["rtf_mean"], rtfx=a["rtfx"],
-                            ft50=a["first_token_s"]["p50"], ft95=a["first_token_s"]["p95"],
+                            ft50=a["first_token_s"].get("p50"), ft95=a["first_token_s"].get("p95"),
                             cpu=s["cpu_pct_mean"], rss=s["rss_mb_peak"], npuMean=nm, npuPeak=np_))
     tts = []
     for tag, (name, arch, langs) in TTS_NAMES.items():
@@ -305,7 +307,7 @@ function fillTable(id, rows, render){
 fillTable('t-asr', ASR, r=>`<tr>
 <td>${r.model}</td><td><span class="tag ${r.backend.includes('NPU')?'':'cpu'}">${r.backend}</span></td>
 <td>${r.lang}</td><td>${pct(r.err)} <small>${r.errKind}</small></td><td><small>${pct(r.errLo)}–${pct(r.errHi)}</small></td>
-<td>${r.rtf}</td><td>${r.rtfx}×</td><td>${r.ft50}</td><td>${r.ft95}</td>
+<td>${r.rtf}</td><td>${r.rtfx}×</td><td>${r.ft50==null?'–':r.ft50}</td><td>${r.ft95==null?'–':r.ft95}</td>
 <td>${r.cpu}%</td><td>${r.rss}</td><td>${r.npuMean==null?'–':r.npuMean+'% / '+r.npuPeak+'%'}</td></tr>`);
 fillTable('t-tts', TTS, r=>`<tr>
 <td>${r.name}</td><td>${r.arch}</td><td>${r.langs}</td><td>${r.n}</td>
