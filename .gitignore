@@ -4,7 +4,7 @@ models/
 data/
 
 # 结果中的音频落盘（TTS 样本等；JSON 结果保留入库以便复现与追溯）
-# P5 发布站点若需托管生成音频，届时再与用户确认
+# 站点音频已拍板全量入库：site/audio/ 不在此列（2026-10-10 用户确认）
 results/**/*.wav
 results/**/*.flac
 results/**/*.mp3
