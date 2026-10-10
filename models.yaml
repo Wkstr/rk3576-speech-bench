@@ -79,6 +79,10 @@ tts:
     variants:
       cpu:
         url: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/matcha-icefall-zh-en.tar.bz2
+      # NPU 版：用户 PC 自转（rkvoice-stream 方案，encoder+estimator 拆分 fp16 + vocos-16khz fp16，
+      # 转换说明 scripts/matcha-rknn/README.md；注意 vocoder 是 16kHz 版，与 cpu 的 22kHz 不同）
+      rknn:
+        note: self-converted via scripts/matcha-rknn/ (vendored from rkvoice-stream, Apache 2.0)
   kokoro:
     desc: Kokoro-82M 多语 v1.1（CPU 先行，NPU 进阶）
     languages: [zh, en, ja, ko, yue]
