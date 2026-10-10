@@ -9,11 +9,11 @@
 - **速度**：small NPU RTF 0.14–0.15（≈7 倍实时）；large 在 NPU 与 CPU 上同为 RTF 0.41——**NPU 对 large 无加速收益**，large 的唯一 NPU 价值是 offload 省电。
 - **TTS 速度王是 Matcha**（CPU RTF 0.25，中英双语）；**vocos 换 NPU 后再降 31% 到 0.18**，回译不变——vocos 是 TTS 唯一稳赢的 NPU 卸载点。Piper 单语 RTF 0.32–0.34；Kokoro 82M fp32 在 A72 上 RTF 2.87（0.35 倍实时，仅批处理可用）；MMS en 1.66。
 - **回译可懂度**（下界口径，见「口径」）：Piper zh 13% 最优；Matcha 修正声码器错配（22k→16k）后 en 可懂度恢复正常；Kokoro zh 长句数字串会读成英文。
-- **Qwen3-ASR（rkvoice-stream NPU 全栈）精度大幅领先 zipformer**：zh CER 4.4%（zipformer small 10.1%）、en WER 3.5%（zipformer large 11.4%），且多语覆盖 52 种。代价：RTF 0.40–0.47（比 small NPU 慢 3 倍），kv 整段定稿无流式 partial，尾帧定稿 p50 ≈2.1s——要精度/多语选它，要流式交互选 zipformer small。
+- **Qwen3-ASR（rkvoice-stream NPU 全栈）精度大幅领先 zipformer**：zh CER 4.4%（zipformer small 10.1%）、en WER 3.5%（zipformer large 11.4%），且多语覆盖 52 种。代价：RTF 0.40–0.47（比 small NPU 慢 3 倍），kv 整段定稿无流式 partial，尾帧定稿 p50 ≈2.1s——要精度/多语选它，要流式交互选 zipformer small。中英混合集（23 条合成）CER 3.4% vs zipformer small 30.0%，句内混说场景 zipformer 不可用（见发现 7）。
 
 ## English summary
 
-On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-toolkit2 2.3.2) transcribe **near-identically to the CPU fp32 baseline** (zh: small 30/30、large 29/30; en: small 27/30、large 30/30 — diffs are single word/character, aggregate error counts unchanged), while the vendor's official RKNN zipformer is broken upstream (sherpa-onnx#2861). RTF: small NPU ≈0.14 (7× realtime); large shows **no NPU speedup** (RTF 0.41 on both). For TTS: Matcha+vocos-16k is fastest (CPU RTF 0.25, bilingual; **RTF 0.18 with the vocoder offloaded to NPU**, same roundtrip intelligibility — the vocoder is the only reliably profitable TTS NPU offload; the fp16 acoustic estimator is not viable, and upstream's own production doesn't use it either). Piper RTF 0.32–0.34 per language, Kokoro-82M fp32 RTF 2.87 (batch only), MMS en 1.66. **Qwen3-ASR** (rkvoice-stream full-NPU stack: fp16 RKNN encoder + w4a16 RKLLM decoder) beats every zipformer on accuracy — zh CER 4.4% vs 10.1%, en WER 3.5% vs 11.4%, 52 languages, auto-detected — at RTF 0.40–0.47 with no streaming partials (whole-utterance KV decode; finalize p50 ≈2.1s after end-of-audio). Roundtrip-ASR intelligibility (a lower bound — digit verbalization and homophones count as errors): Piper zh 13%, Piper en 21%, Matcha 25%, Kokoro 30%, MMS 31%; Kokoro-ZH reads digit strings in English. All numbers come with Wilson 95% CIs in `results/`.
+On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-toolkit2 2.3.2) transcribe **near-identically to the CPU fp32 baseline** (zh: small 30/30、large 29/30; en: small 27/30、large 30/30 — diffs are single word/character, aggregate error counts unchanged), while the vendor's official RKNN zipformer is broken upstream (sherpa-onnx#2861). RTF: small NPU ≈0.14 (7× realtime); large shows **no NPU speedup** (RTF 0.41 on both). For TTS: Matcha+vocos-16k is fastest (CPU RTF 0.25, bilingual; **RTF 0.18 with the vocoder offloaded to NPU**, same roundtrip intelligibility — the vocoder is the only reliably profitable TTS NPU offload; the fp16 acoustic estimator is not viable, and upstream's own production doesn't use it either). Piper RTF 0.32–0.34 per language, Kokoro-82M fp32 RTF 2.87 (batch only), MMS en 1.66. **Qwen3-ASR** (rkvoice-stream full-NPU stack: fp16 RKNN encoder + w4a16 RKLLM decoder) beats every zipformer on accuracy — zh CER 4.4% vs 10.1%, en WER 3.5% vs 11.4%, 52 languages, auto-detected — at RTF 0.40–0.47 with no streaming partials (whole-utterance KV decode; finalize p50 ≈2.1s after end-of-audio); on a 23-utterance synthesized zh-en code-switch set it hits CER 3.4% while zipformer collapses on intra-sentence switching (small 30.0%). Roundtrip-ASR intelligibility (a lower bound — digit verbalization and homophones count as errors): Piper zh 13%, Piper en 21%, Matcha 25%, Kokoro 30%, MMS 31%; Kokoro-ZH reads digit strings in English. All numbers come with Wilson 95% CIs in `results/`.
 
 ## 口径（读数字前必读）
 
@@ -22,7 +22,7 @@ On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-to
 - **NPU 版 = 自转 fp16**（rknn-toolkit2 2.3.2，librknnrt 2.2.0）：官方 RKNN zipformer 在上游坏掉（small 全 blank / large 叠词，#2861 未修），官方版不进矩阵。
 - **流式延迟**：首字延迟 = 音频起点到首个 stable partial（100ms 帧真实节奏喂入）；端点延迟 = 语音尾到 final（端点检测关闭，故≈0，纯解码收尾耗时）。
 - **TTS 回译可懂度是下界**：裁判为 zipformer small（CPU，与 ASR 基线同口径），合成音频重采样 16k 后转写对比。数字口读（`204`→`TWO HUNDRED FOUR`）与同音词（`flour`→`FLOWER`）被计为错误，**所有模型吃同一裁判、同一文本，横向比较成立，绝对值偏悲观**。
-- **Qwen3-ASR 口径**：suharvest/rkvoice-stream 预编译产物（fp16 encoder 2s/4s + RKLLM w4a16_g128 decoder，librkllmrt v1.2.3），语言**自动检测**（不传 hint，与 zipformer 同口径）；走其 V2V 生产的 kv 整段解码路径（边喂边编码、finish 单次解码），无流式 partial，首字列显示 –；其 transcribe() 滑窗拼接路径在 en 上会丢段（见发现 7），未采用。输出自带标点、数字为阿拉伯形式，与 zipformer 原始输出同过一套 textnorm 后比较。
+- **Qwen3-ASR 口径**：suharvest/rkvoice-stream 预编译产物（fp16 encoder 2s/4s + RKLLM w4a16_g128 decoder，librkllmrt v1.2.3），语言**自动检测**（不传 hint，与 zipformer 同口径）；走其 V2V 生产的 kv 整段解码路径（边喂边编码、finish 单次解码），无流式 partial，首字列显示 –；其 transcribe() 滑窗拼接路径在 en 上会丢段（见发现 8），未采用。输出自带标点、数字为阿拉伯形式，与 zipformer 原始输出同过一套 textnorm 后比较。
 - **资源占用**：10Hz 采样 CPU%/RSS/温度；NPU 占用读 debugfs `/sys/kernel/debug/rknpu/load`（已启用）。
 
 ## ASR 结果
@@ -50,6 +50,16 @@ On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-to
 | large en | 30/30 |
 
 差异均为 1 词/1 字级（如 marveled/marvelled、who has/who's），且各配置聚合错误数不变——fp16 近平局翻转，非精度损失。
+
+### 中英混合（code-switch，23 条 TTS 合成语音）
+
+| 模型 | 后端 | CER [95% CI] | RTF | 条数 |
+|---|---|---|---|---|
+| Qwen3-ASR（rkvoice-stream 预编译） | NPU fp16+w4a16 | 3.4% [2.2%–4.6%] | 0.45 | 23 |
+| Zipformer small（双语） | CPU fp32 | 30.0% [26.9%–33.1%] | 0.19 | 23 |
+| Zipformer large（双语） | CPU fp32 | 24.3% [21.4%–27.2%] | 0.45 | 23 |
+
+语料为自建 24 句中英混合文本（职场/开发者/数码/生活/专名 5 类，难度梯度从单词插入到连续多词切换），用户侧 TTS 合成；cs_011（Wi-Fi 被 TTS 读成乱码，两模型一致确认）剔除不计分；4 条 ref 按两模型一致的实际读音校准（数字/型号口读形式，如 3.12→三点一二、café→咖啡）。口径同 zh CER（逐字、拉丁小写去空格）。**注意：合成语音比真人发音规整，绝对值偏乐观，只用于横向对比。**
 
 ## TTS 结果
 
@@ -87,7 +97,8 @@ On a reComputer RK3576 (8GB), self-converted fp16 RKNN zipformer models (rknn-to
 4. **Kokoro zh 数字串会读成英文**（`2026年的春节` → `TWO THOUSAND TWENTY SIX…`），中英混排场景需前端预处理。
 5. **Kokoro 在 A72 上 RTF 2.87**：fp32 82M 对四核 A72 过重，仅离线批处理可用；实时场景选 Matcha/Piper。
 6. **MMS en（RTF 1.66）既慢可懂度又差**，纯地板对照，不建议任何场景使用。
-7. **Qwen3-ASR 是精度天花板，但离线路径有坑**：其 transcribe() 默认滑窗拼接（中间块 6 token 早停 + rollback 重 decode）在 en 上会整段丢文本（`IT WAS SILENT AND GLOOMY BEING TENANTED SOLELY BY` 整句消失）并在块缝丢空格；kv 整段解码（V2V 路径）则逐句正确。接入方若复用 rkvoice-stream，离线转写务必走 kv_streaming，勿用 transcribe() 默认参数。RK3576 官方产物只带 2s/4s encoder 窗口（无 15s），长音频被限在 4s 窗口滑窗。
+7. **中英混合是 Qwen3-ASR 的结构性优势**：code-switch 集 CER Qwen3 3.4% vs zipformer small 30.0% / large 24.3%。zipformer 双语模型只支持整句单语，句内混说时英文词崩成音近汉字（debug→低霸隔、deliver→呆子晚）并伴随整段丢弃；Qwen3 基本逐字正确，残余错误里有一类是**翻译倾向**（把「我们 need 更多的 data」转写成「we need more data」），是语言模型味而非听力问题。
+8. **Qwen3-ASR 是精度天花板，但离线路径有坑**：其 transcribe() 默认滑窗拼接（中间块 6 token 早停 + rollback 重 decode）在 en 上会整段丢文本（`IT WAS SILENT AND GLOOMY BEING TENANTED SOLELY BY` 整句消失）并在块缝丢空格；kv 整段解码（V2V 路径）则逐句正确。接入方若复用 rkvoice-stream，离线转写务必走 kv_streaming，勿用 transcribe() 默认参数。RK3576 官方产物只带 2s/4s encoder 窗口（无 15s），长音频被限在 4s 窗口滑窗。
 
 ## 局限
 

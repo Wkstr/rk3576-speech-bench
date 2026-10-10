@@ -1,0 +1,123 @@
+[
+  {
+    "id": "cs_000",
+    "cat": "职场黑话",
+    "text": "明天的 meeting 改到下午三点，记得提前准备一下 slides。"
+  },
+  {
+    "id": "cs_001",
+    "cat": "职场黑话",
+    "text": "这个季度的 OKR 还差一半，周五之前必须 sync 一下进度。"
+  },
+  {
+    "id": "cs_002",
+    "cat": "职场黑话",
+    "text": "老板看了我的 report 说逻辑没问题，但是 data 不够扎实。"
+  },
+  {
+    "id": "cs_003",
+    "cat": "职场黑话",
+    "text": "你先出个 brief，我们 review 完再给 client 发过去。"
+  },
+  {
+    "id": "cs_004",
+    "cat": "开发者",
+    "text": "这个 bug 我 debug 了一下午，最后发现是 cache 没有清。"
+  },
+  {
+    "id": "cs_005",
+    "cat": "开发者",
+    "text": "你的 PR 我看过了，有两个 conflict 需要先 rebase 一下。"
+  },
+  {
+    "id": "cs_006",
+    "cat": "开发者",
+    "text": "线上服务挂了，先 rollback 到上一个 release 再慢慢查日志。"
+  },
+  {
+    "id": "cs_007",
+    "cat": "开发者",
+    "text": "这个 API 的 latency 太高，加一层 Redis 缓存应该能降到五十毫秒以内。"
+  },
+  {
+    "id": "cs_008",
+    "cat": "开发者",
+    "text": "把代码 push 到 GitHub 之前，记得先在本地跑一遍 unit test。"
+  },
+  {
+    "id": "cs_009",
+    "cat": "产品数码",
+    "text": "我刚买的 iPhone 15 续航不行，刷两个小时短视频就没电了。"
+  },
+  {
+    "id": "cs_010",
+    "cat": "产品数码",
+    "text": "这块开发板是 RK3576，有四个 A72 大核和一个 6TOPS 的 NPU。"
+  },
+  {
+    "id": "cs_011",
+    "cat": "产品数码",
+    "text": "家里的 Wi-Fi 信号太差了，卧室里连 5G 都比它快。",
+    "dropped": "TTS 把 Wi-Fi 等词读坏（两模型一致听到乱码），不计分"
+  },
+  {
+    "id": "cs_012",
+    "cat": "产品数码",
+    "text": "这个耳机支持 Bluetooth 5.3，延迟低到可以打游戏。"
+  },
+  {
+    "id": "cs_013",
+    "cat": "产品数码",
+    "text": "把 Python 升级到 3.12 之后，这个脚本的性能提升了差不多百分之二十。"
+  },
+  {
+    "id": "cs_014",
+    "cat": "连续切换",
+    "text": "我们打算用 Docker 部署一套 Whisper 加 Matcha 的语音方案，先用 benchmark 跑一下 RTF。"
+  },
+  {
+    "id": "cs_015",
+    "cat": "连续切换",
+    "text": "前端用 React 写，后端用 FastAPI，数据库先用 SQLite 顶着，上线前再换 PostgreSQL。"
+  },
+  {
+    "id": "cs_016",
+    "cat": "连续切换",
+    "text": "你在 terminal 里敲 git pull，然后重启一下 service，应该就能拿到最新的 patch 了。"
+  },
+  {
+    "id": "cs_017",
+    "cat": "生活场景",
+    "text": "周末我们去那家新开的 café 吧，听说他们的 latte 和 tiramisu 都很不错。"
+  },
+  {
+    "id": "cs_018",
+    "cat": "生活场景",
+    "text": "我报了一个 online 的瑜伽课，教练说每天练二十分钟 meditation 对睡眠特别好。"
+  },
+  {
+    "id": "cs_019",
+    "cat": "生活场景",
+    "text": "这部电影的 soundtrack 太好听了，尤其是 ending 那段钢琴 solo。"
+  },
+  {
+    "id": "cs_020",
+    "cat": "英主中辅",
+    "text": "I think 这个方案 basically 可行，but 我们 need 更多的 data 来 support 它。"
+  },
+  {
+    "id": "cs_021",
+    "cat": "英主中辅",
+    "text": "Please 把这个文件 send 给 张总，and 告诉他 deadline 是 下周五。"
+  },
+  {
+    "id": "cs_022",
+    "cat": "专有名词",
+    "text": "Transformer 架构出来之后，BERT 和 GPT 基本上统治了整个 NLP 领域。"
+  },
+  {
+    "id": "cs_023",
+    "cat": "专有名词",
+    "text": "她用 Excel 做了一个 pivot table，把去年四个季度的 sales data 都汇总进去了。"
+  }
+]
