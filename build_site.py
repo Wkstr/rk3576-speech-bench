@@ -28,7 +28,8 @@ ASR_NAMES = {
 TTS_NAMES = {
     "piper-zh-huayan__zh": ("Piper zh (huayan)", "VITS", "zh"),
     "piper-en-ryan__en": ("Piper en (ryan)", "VITS", "en"),
-    "matcha-zh-en__zh-en": ("Matcha + vocos", "Matcha", "zh+en"),
+    "matcha-zh-en__zh-en": ("Matcha + vocos-16k", "Matcha", "zh+en"),
+    "matcha-hybrid__zh-en": ("Matcha hybrid (acoustic CPU + vocos NPU)", "Matcha", "zh+en"),
     "kokoro__zh-en": ("Kokoro 82M v1.1", "Kokoro", "zh+en"),
     "mms-eng__en": ("MMS en", "VITS", "en"),
 }
@@ -243,8 +244,8 @@ zh: {
   h_audio: "TTS 试听",
   f1: "NPU 自转 fp16 与 CPU fp32 输出近乎逐条一致（zh 30/30、29/30，en 27/30、30/30，差异仅 1 词级）——fp16 零退化。",
   f2: "NPU 对 large 无加速（RTF 0.41 = CPU）；small NPU RTF 0.14–0.15（约 7 倍实时）。",
-  f3: "TTS：Matcha 最快（RTF 0.25）且中英双语，但英文可懂度差；Piper 均衡；Kokoro RTF 2.87 仅批处理可用；MMS 仅作地板。",
-  f4: "Kokoro zh 遇数字串会读成英文；Matcha en 被回译裁判听成中文音节——均为模型真实缺陷。",
+  f3: "TTS：Matcha 最快且中英双语，vocos 换 NPU 后 RTF 从 0.25 再降到 0.18（回译不变）；Piper 均衡；Kokoro RTF 2.87 仅批处理可用；MMS 仅作地板。",
+  f4: "Matcha 声学模型的 estimator fp16 NPU 精度不足（上游生产也不用它）；vocos 是 TTS 唯一稳赢的 NPU 卸载点。Kokoro zh 遇数字串会读成英文。",
   lk_report: "完整报告 REPORT.md", lk_issue: "上游 bug #2861",
   foot: `测量层：sherpa-onnx + librknnrt 2.2.0，双 pass（吞吐+实时节奏），10Hz 资源采样 ·
     呈现层只读 <code>results/*.json</code>，重跑 harness 后 <code>build_site.py</code> 重新生成 ·
@@ -267,8 +268,8 @@ en: {
   h_audio: "Listen to TTS samples",
   f1: "Self-converted fp16 NPU output matches CPU fp32 near-verbatim (zh 30/30, 29/30; en 27/30, 30/30 — single-word diffs) — zero fp16 degradation.",
   f2: "NPU gives large no speedup (RTF 0.41 = CPU); small on NPU reaches RTF 0.14–0.15 (~7× realtime).",
-  f3: "TTS: Matcha is fastest (RTF 0.25) and bilingual, but its English is unintelligible; Piper is balanced; Kokoro RTF 2.87 is batch-only; MMS is a floor reference.",
-  f4: "Kokoro reads digit strings in English inside zh sentences; Matcha's English is heard as Chinese syllables by the judge — both are genuine model defects.",
+  f3: "TTS: Matcha is fastest and bilingual; moving the vocoder to NPU cuts RTF 0.25 → 0.18 with unchanged intelligibility. Piper is balanced; Kokoro RTF 2.87 is batch-only; MMS is a floor reference.",
+  f4: "Matcha's fp16 acoustic estimator is not viable on NPU (upstream's production doesn't use it either); the vocoder is the only reliably profitable TTS NPU offload. Kokoro reads digit strings in English inside zh sentences.",
   lk_report: "Full report REPORT.md", lk_issue: "upstream bug #2861",
   foot: `Measurement: sherpa-onnx + librknnrt 2.2.0, dual pass (throughput + realtime pacing), 10 Hz resource sampling ·
     The presentation layer reads only <code>results/*.json</code>; rerun the harness, then <code>build_site.py</code> ·
