@@ -66,4 +66,4 @@ export LD_LIBRARY_PATH="$HOME/.local/rknn/lib"   # 跑 sherpa 必须
 
 - 报告双语（中文正文 + 英文摘要）；样本 zh/en 各 30（日韩粤 P2 已取消）；数字带 Wilson 95% 置信区间
 - NPU 自转 fp16（toolkit2 2.3.2）vs CPU fp32 基线，同 harness 切 provider（官方 RKNN 版坏掉，仅作对照，见 #2861）
-- 不测功耗；不做声音克隆；不做 Qwen3-ASR
+- 不测功耗；不做声音克隆；Qwen3-ASR 已纳入（2026-10-10 用户拍板，rkvoice-stream 预编译 w4a16，见 `.planning/2026-10-10-qwen3-asr-into-bench/`）
